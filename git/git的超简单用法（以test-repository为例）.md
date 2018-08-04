@@ -43,3 +43,4 @@
 #### 这个有点大就直接放地址了
 [菜鸟教程的教程 个人认为挺详细的](http://www.runoob.com/git/git-branch.html)
 
+[还有廖雪峰老师的教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
