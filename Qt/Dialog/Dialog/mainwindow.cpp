@@ -78,7 +78,7 @@ MainWindow::MainWindow(QWidget *parent)
     QAction *p6 = menu->addAction("错误对话框");
     connect(p6, &QAction::triggered,
             [=](){
-        QMessageBox::critical(this, "error", "错误")
+        QMessageBox::critical(this, "error", "错误");
     });
 
 }

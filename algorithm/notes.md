@@ -2,6 +2,8 @@
 
 [TOC]
 
+## 绪论
+
 ### 3.1分而治之
 
 - 二分递归
@@ -84,7 +86,7 @@
 
 - 作为一个函数对象的类XXX，它必须显式定义以下哪个成员函数： operator()()
   - 对于函数对象来说，()是用于执行函数调用的操作符 
-- T & Vector<T>::operator[]( Rank r ) { return _elem[r]; } 中的返回值T&是什么意义？ 
+- T & Vector< T >::operator[ ] ( Rank r ) { return _elem[r]; } 中的返回值T&是什么意义？ 
   - 这是类型T的引用，使用它是因为返回值可作为左值
 - 在binsearch(e, lo, hi)版本A中，若V[mi] < e，则下一步的查找范围是：
   - V(mi, hi) (注意右区间是开)
@@ -160,15 +162,15 @@ template <typename T> void List<T>::init(){
   {
       while(lo < (hi = bubble(lo, hi)));//直接根据最后的逆序对进行排序
   }
-  template <typename T> void Vector<T>::bubble(Rank lo, Rank hi)
+  template <typename T> rank Vector<T>::bubble(Rank lo, Rank hi)
   {
       Rank last = lo;//最右侧逆序对初始化为[lo - 1, lo]
       
-      while(++lo < hi)
+      while(++lo <= hi)
       {
           if(_elem[lo - 1] > _elem[lo])
           {
-              sorted = false;
+              last = lo;
               swap();
           }
       }
@@ -202,7 +204,6 @@ template <typename T> void List<T>::init(){
   }
   ```
 
-  
 
 ### 题目
 
