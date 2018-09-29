@@ -1,5 +1,6 @@
 /**
- * 
+ * 循环队列类
+ * 2018-09-24 author:xmmmmmovo
 */
 #ifndef QUEUE_H
 #define QUEUE_H
@@ -28,6 +29,7 @@ public:
 
 private:
     T* queueList;
+    T* finalListPoint;
     //基准点 此点只存放地址 实际所指向变量无实值
     T* benchMarkPoint;
     int maxSize = 100;
@@ -37,30 +39,39 @@ private:
 //构造函数
 template <class T>
 Queue<T>::Queue(){
-    queueList = new T<maxSize>;//为队列分配空间
-
-    benchMarkPoint = queueList + maxSize - 1;//选取最后点为基准点
+    queueList = new T[maxSize];//为队列分配空间
+    benchMarkPoint = finalListPoint = queueList + maxSize - 1;//选取最后点为基准点
 }
 
 //析构函数
 template <class T>
 Queue<T>::~Queue(){
-    free[] queueList;//释放内存 防止内存泄漏
+    delete[] queueList;//释放内存 防止内存泄漏
 }
 
 template <class T>
 bool Queue<T>::empty(){
-    return false;
+    if (nowSize)
+    {
+        return false;
+    }else{
+        return true;
+    }
 }
 
 template <class T>
 int Queue<T>::size(){
-
+    return nowSize;
 }
 
 template <class T>
 void Queue<T>::display(){
+    for(T* i = queueList;i != benchMarkPoint; i++)
+    {
+        if(i ==  finalListPoint){
 
+        }
+    }
 }
 
 template <class T>
