@@ -116,11 +116,11 @@ bool Vector<T>::disordered(){
     {
         if (sequenceList[i] > sequenceList[i+1])
         {
-            return false;
+            return true;
         }
     }
 
-    return true;
+    return false;
 }
 
 template <class T>
