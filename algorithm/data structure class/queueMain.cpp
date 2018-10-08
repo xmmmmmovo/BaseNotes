@@ -7,6 +7,9 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
+    int a = 1;
+    printf("%d", &a);
+
     system("pause");
     return 0;
 }
