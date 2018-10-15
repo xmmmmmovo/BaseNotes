@@ -33,6 +33,6 @@
         "type_traits": "cpp",
         "typeinfo": "cpp",
         "ctime": "cpp",
-        "list": "cpp"
+        "list": "cpp",
     }
 }

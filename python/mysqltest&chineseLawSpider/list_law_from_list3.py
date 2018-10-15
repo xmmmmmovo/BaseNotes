@@ -22,14 +22,14 @@ def get_data(file_name):
 
     for line in content:
         line = re.sub('[\n\r\t]', '', line)
-        #print(line)
+        # print(line)
         line_content = line.split('\u3000')
         # print(line_content)
         if line_content[0] != '':
             continue
         else:
             try:
-                if line_content[2][0] == '第':
+                if len(line_content[1]) != 0:
                     # print(line_content[2][0])
                     # print(line_content[2])
                     if len(line_law) != 0:
@@ -38,8 +38,8 @@ def get_data(file_name):
                         upload(law_where, gather_line, file_name)
                         line_law = []
 
-                    law_where = line_content[2]
-                    line_law.append(line_content[3])
+                    law_where = line_content[1]
+                    line_law.append(line_content[2])
                 else:
                     line_law.append(line_content[2])
             except:

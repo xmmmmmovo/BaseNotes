@@ -2,7 +2,6 @@
 #include "ui_mainwindow.h"
 #include <QTableWidget>
 #include <QString>
-#include <QList>
 #include <QTableWidgetItem>
 #include <QTextStream>
 #include <QFile>
@@ -21,5 +20,12 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::init(){
+    qlistwidget = ui->contactList;
+    qlistwidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
+    qlistwidget->setSelectionBehavior(QAbstractItemView::SelectRows);
+}
+
+void MainWindow::on_contactList_itemDoubleClicked(QListWidgetItem *item)
+{
 
 }

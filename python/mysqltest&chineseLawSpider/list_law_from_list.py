@@ -13,7 +13,7 @@ def upload(law_line, law_content, law_from):
     print(law_line + "success")
 
 def get_data(file_name):
-    file_path = "D:\\AndroidLabtest\\notes\\python\\mysqltest&chineseLawSpider\\ok_data\\"+str(file_name)
+    file_path = "D:\\AndroidLabtest\\notes\\python\\mysqltest&chineseLawSpider\\data\\"+str(file_name)
     file = open(file_path)
     content = file.readlines()
     line_law = []
@@ -49,7 +49,7 @@ def get_data(file_name):
     upload(law_where, gather_line, file_name)
 
 if __name__ == '__main__':
-    dir_path = "D:\\AndroidLabtest\\notes\\python\\mysqltest&chineseLawSpider\\ok_data"
+    dir_path = "D:\\AndroidLabtest\\notes\\python\\mysqltest&chineseLawSpider\\data"
     files = os.listdir(dir_path)
 
     for file in files:

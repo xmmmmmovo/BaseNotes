@@ -2,7 +2,7 @@
     "configurations": [
         {
             "name": "Win32",
-            "intelliSenseMode": "clang-x64",
+            "intelliSenseMode": "msvc-x64",
             "includePath": [
                 "${workspaceFolder}",
                 "D:/anzhuang/MinGW/lib/gcc/mingw32/6.3.0/include/c++",
@@ -14,7 +14,7 @@
             ],
             "defines": [
                 "_DEBUG",
-                "UNICODE",
+                "UTF8",
                 "__GNUC__=7",
                 "__cdecl=__attribute__((__cdecl__))"
             ],

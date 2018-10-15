@@ -11,16 +11,19 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$1.coverage" NAME="1 Coverage Results" MODIFIED="1538792020754" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$importData.coverage" NAME="importData Coverage Results" MODIFIED="1538821088053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$p8.coverage" NAME="p8 Coverage Results" MODIFIED="1538720016070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$output_sentence.coverage" NAME="output_sentence Coverage Results" MODIFIED="1539094369433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$ChineseLawSpider.coverage" NAME="ChineseLawSpider Coverage Results" MODIFIED="1538852001670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$test.coverage" NAME="test Coverage Results" MODIFIED="1538919518396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$importData.coverage" NAME="importData Coverage Results" MODIFIED="1538821088053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$import_law_list.coverage" NAME="import_law_list Coverage Results" MODIFIED="1538968288095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$testSocket.coverage" NAME="testSocket Coverage Results" MODIFIED="1538833426409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$p6.coverage" NAME="p6 Coverage Results" MODIFIED="1538654210191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$list_law_from_list2.coverage" NAME="list_law_from_list2 Coverage Results" MODIFIED="1539051162908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$p4.coverage" NAME="p4 Coverage Results" MODIFIED="1538649946256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$list_law_from_list.coverage" NAME="list_law_from_list Coverage Results" MODIFIED="1538968143229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$ChineseLawSpider.coverage" NAME="ChineseLawSpider Coverage Results" MODIFIED="1538852001670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$test.coverage" NAME="test Coverage Results" MODIFIED="1538919518396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$list_law_from_list.coverage" NAME="list_law_from_list Coverage Results" MODIFIED="1539051140087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$p7.coverage" NAME="p7 Coverage Results" MODIFIED="1538708655839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$list_law_from_list3.coverage" NAME="list_law_from_list3 Coverage Results" MODIFIED="1539051475233" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/mysqltest_chineseLawSpider$p3.coverage" NAME="p3 Coverage Results" MODIFIED="1538744622587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
@@ -28,7 +31,7 @@
       <file leaf-file-name="p8.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/edu/p8.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="637">
+            <state relative-caret-position="442">
               <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -41,7 +44,7 @@
       <file leaf-file-name="ChineseLawSpider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ChineseLawSpider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="156">
               <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding>
                 <marker date="1538852001601" expanded="true" signature="1267:1330" ph="INSERT INTO law_list... " />
@@ -51,12 +54,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="law_list.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="law_list.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/law_list.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="175" column="15" lean-forward="true" selection-start-line="175" selection-start-column="15" selection-end-line="175" selection-end-column="15" />
+            <state relative-caret-position="817">
+              <caret line="176" column="12" lean-forward="false" selection-start-line="176" selection-start-column="12" selection-end-line="176" selection-end-column="12" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="output_sentence.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/output_sentence.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding>
+                <element signature="e#20#54#0" expanded="true" />
+                <marker date="1539094367580" expanded="true" signature="313:350" ph="SELECT * fro... LawArticleAll_set" />
+                <marker date="1539094367580" expanded="true" signature="313:385" ph="SELECT * FRO... LawArticleAll_set" />
+                <marker date="1539094367580" expanded="true" signature="313:392" ph="SELECT * FRO... LawArticleAll_set" />
+                <marker date="1539094367580" expanded="true" signature="313:394" ph="SELECT * FRO... LawArticleAll_set" />
+                <marker date="1539094367580" expanded="true" signature="319:350" ph="select * fro... LawArticleAll_set" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,10 +84,10 @@
       <file leaf-file-name="list_law_from_list.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/list_law_from_list.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="351">
+              <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
               <folding>
-                <marker date="1538968143145" expanded="true" signature="311:399" ph="INSERT INTO test... " />
+                <marker date="1539009537789" expanded="true" signature="311:399" ph="INSERT INTO test... " />
               </folding>
             </state>
           </provider>
@@ -76,10 +96,10 @@
       <file leaf-file-name="list_law_from_list2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/list_law_from_list2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="16" column="80" lean-forward="false" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+            <state relative-caret-position="2158">
+              <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
               <folding>
-                <marker date="1538968611475" expanded="true" signature="332:420" ph="INSERT INTO LawArticleAll_set... " />
+                <marker date="1539044372524" expanded="true" signature="332:420" ph="INSERT INTO LawArticleAll_set... " />
               </folding>
             </state>
           </provider>
@@ -88,23 +108,10 @@
       <file leaf-file-name="list_law_from_list3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/list_law_from_list3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-936">
-              <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="117">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
-                <marker date="1538968626938" expanded="true" signature="326:414" ph="INSERT INTO LawArticleAll_set... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="importData.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/importData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding>
-                <element signature="e#14#36#0" expanded="true" />
-                <marker date="1538916097849" expanded="true" signature="555:610" ph="INSERT INTO lawlist... " />
+                <marker date="1539020688859" expanded="true" signature="326:414" ph="INSERT INTO LawArticleAll_set... " />
               </folding>
             </state>
           </provider>
@@ -136,11 +143,12 @@
         <option value="$PROJECT_DIR$/importData.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/1.ipynb" />
-        <option value="$PROJECT_DIR$/list_law_from_list.py" />
         <option value="$PROJECT_DIR$/import_law_list.py" />
-        <option value="$PROJECT_DIR$/list_law_from_list2.py" />
+        <option value="$PROJECT_DIR$/list_law_from_list.py" />
         <option value="$PROJECT_DIR$/list_law_from_list3.py" />
+        <option value="$PROJECT_DIR$/list_law_from_list2.py" />
         <option value="$PROJECT_DIR$/law_list.txt" />
+        <option value="$PROJECT_DIR$/output_sentence.py" />
       </list>
     </option>
   </component>
@@ -151,10 +159,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2405" />
-    <option name="y" value="-35" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -235,26 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.import_law_list">
-    <configuration name="ChineseLawSpider" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="mysqltest&amp;chineseLawSpider" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ChineseLawSpider.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.output_sentence">
     <configuration name="import_law_list" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -293,7 +282,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="list_law_from_list2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -306,13 +295,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="mysqltest&amp;chineseLawSpider" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/list_law_from_list2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="testSocket" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="list_law_from_list3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -325,26 +314,45 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="mysqltest&amp;chineseLawSpider" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testSocket.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/list_law_from_list3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="output_sentence" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="mysqltest&amp;chineseLawSpider" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/output_sentence.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ChineseLawSpider" />
-      <item index="1" class="java.lang.String" itemvalue="Python.testSocket" />
-      <item index="2" class="java.lang.String" itemvalue="Python.import_law_list" />
-      <item index="3" class="java.lang.String" itemvalue="Python.list_law_from_list" />
-      <item index="4" class="java.lang.String" itemvalue="Python.test" />
+      <item index="0" class="java.lang.String" itemvalue="Python.import_law_list" />
+      <item index="1" class="java.lang.String" itemvalue="Python.list_law_from_list" />
+      <item index="2" class="java.lang.String" itemvalue="Python.list_law_from_list2" />
+      <item index="3" class="java.lang.String" itemvalue="Python.list_law_from_list3" />
+      <item index="4" class="java.lang.String" itemvalue="Python.output_sentence" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.import_law_list" />
-        <item index="1" class="java.lang.String" itemvalue="Python.list_law_from_list" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ChineseLawSpider" />
-        <item index="4" class="java.lang.String" itemvalue="Python.testSocket" />
+        <item index="0" class="java.lang.String" itemvalue="Python.output_sentence" />
+        <item index="1" class="java.lang.String" itemvalue="Python.list_law_from_list3" />
+        <item index="2" class="java.lang.String" itemvalue="Python.list_law_from_list2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.list_law_from_list" />
+        <item index="4" class="java.lang.String" itemvalue="Python.import_law_list" />
       </list>
     </recent_temporary>
   </component>
@@ -365,16 +373,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29545453" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07251082" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39069265" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11353944" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11886994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -398,11 +406,71 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ChineseLawSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <marker date="1538852001601" expanded="true" signature="1267:1330" ph="INSERT INTO law_list... " />
+            <marker date="1538852001601" expanded="true" signature="1267:1331" ph="INSERT INTO law_list... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list_law_from_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding>
+            <marker date="1539009537789" expanded="true" signature="311:399" ph="INSERT INTO test... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list_law_from_list2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="16" column="80" lean-forward="false" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+          <folding>
+            <marker date="1539044372524" expanded="true" signature="332:420" ph="INSERT INTO LawArticleAll_set... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list_law_from_list3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding>
+            <marker date="1539020688859" expanded="true" signature="326:414" ph="INSERT INTO LawArticleAll_set... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/importData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#14#36#0" expanded="true" />
+            <marker date="1538916097849" expanded="true" signature="555:610" ph="INSERT INTO lawlist... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/law_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6825">
+          <caret line="175" column="15" lean-forward="true" selection-start-line="175" selection-start-column="15" selection-end-line="175" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/edu/p8.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1014">
@@ -418,9 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -428,7 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12597">
           <caret line="351" column="34" lean-forward="false" selection-start-line="351" selection-start-column="34" selection-end-line="351" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -533,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -583,7 +646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="988" column="8" lean-forward="false" selection-start-line="988" selection-start-column="8" selection-end-line="988" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -591,7 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -599,7 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -607,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="2290" column="8" lean-forward="false" selection-start-line="2290" selection-start-column="8" selection-end-line="2290" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -622,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12597">
           <caret line="351" column="34" lean-forward="false" selection-start-line="351" selection-start-column="34" selection-end-line="351" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,9 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="15" column="44" lean-forward="false" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#15#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -654,18 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edu/p8.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <marker date="1538720015997" expanded="true" signature="935:998" ph="INSERT INTO jinri... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -673,18 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-585">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ChineseLawSpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <marker date="1538852001601" expanded="true" signature="1267:1330" ph="INSERT INTO law_list... " />
-            <marker date="1538852001601" expanded="true" signature="1267:1331" ph="INSERT INTO law_list... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,15 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/2049922077/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="3613" column="8" lean-forward="false" selection-start-line="3613" selection-start-column="8" selection-end-line="3613" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,14 +733,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/importData.py">
+    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/2049922077/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="e#14#36#0" expanded="true" />
-            <marker date="1538916097849" expanded="true" signature="555:610" ph="INSERT INTO lawlist... " />
-          </folding>
+        <state relative-caret-position="279">
+          <caret line="3604" column="0" lean-forward="true" selection-start-line="3604" selection-start-column="0" selection-end-line="3604" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -727,46 +745,102 @@
         <state relative-caret-position="234">
           <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding>
-            <marker date="1538968189604" expanded="true" signature="561:649" ph="INSERT INTO lawlist... " />
+            <marker date="1538968189604" expanded="true" signature="561:649" ph="INSERT INTO LawArticleAll_set... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/list_law_from_list.py">
+    <entry file="file://$PROJECT_DIR$/edu/p8.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        <state relative-caret-position="442">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding>
-            <marker date="1538968143145" expanded="true" signature="311:399" ph="INSERT INTO test... " />
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1538720015997" expanded="true" signature="935:998" ph="INSERT INTO jinri... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/anzhuang/Anaconda3/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="744" column="0" lean-forward="false" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/law_list.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="176" column="12" lean-forward="false" selection-start-line="176" selection-start-column="12" selection-end-line="176" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ChineseLawSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <marker date="1538852001601" expanded="true" signature="1267:1330" ph="INSERT INTO law_list... " />
+            <marker date="1538852001601" expanded="true" signature="1267:1331" ph="INSERT INTO law_list... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/list_law_from_list2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="16" column="80" lean-forward="false" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+        <state relative-caret-position="2158">
+          <caret line="60" column="25" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
           <folding>
-            <marker date="1538968611475" expanded="true" signature="332:420" ph="INSERT INTO LawArticleAll_set... " />
+            <marker date="1539044372524" expanded="true" signature="332:420" ph="INSERT INTO LawArticleAll_set... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/importData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding>
+            <element signature="e#14#36#0" expanded="true" />
+            <marker date="1538916097849" expanded="true" signature="555:610" ph="INSERT INTO lawlist... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/list_law_from_list3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        <state relative-caret-position="117">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <marker date="1538968626938" expanded="true" signature="326:414" ph="INSERT INTO LawArticleAll_set... " />
+            <marker date="1539020688859" expanded="true" signature="326:414" ph="INSERT INTO LawArticleAll_set... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/law_list.txt">
+    <entry file="file://$PROJECT_DIR$/list_law_from_list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="175" column="15" lean-forward="true" selection-start-line="175" selection-start-column="15" selection-end-line="175" selection-end-column="15" />
-          <folding />
+        <state relative-caret-position="351">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <marker date="1539009537789" expanded="true" signature="311:399" ph="INSERT INTO test... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_sentence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <element signature="e#20#54#0" expanded="true" />
+            <marker date="1539094367580" expanded="true" signature="313:350" ph="SELECT * fro... LawArticleAll_set" />
+            <marker date="1539094367580" expanded="true" signature="313:385" ph="SELECT * FRO... LawArticleAll_set" />
+            <marker date="1539094367580" expanded="true" signature="313:392" ph="SELECT * FRO... LawArticleAll_set" />
+            <marker date="1539094367580" expanded="true" signature="313:394" ph="SELECT * FRO... LawArticleAll_set" />
+            <marker date="1539094367580" expanded="true" signature="319:350" ph="select * fro... LawArticleAll_set" />
+          </folding>
         </state>
       </provider>
     </entry>
