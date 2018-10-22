@@ -1,150 +1,166 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-# include <stdio.h>
-# include <stdlib.h>
-# include <string.h>
+typedef  struct node{
+    char data;
+    struct node *next;
+}linkstrnode;
+typedef linkstrnode *nodestr;
 
-typedef struct a
+void strinsert(nodestr *s, int i, nodestr T){
+    int k = 1;
+    nodestr p, q;
+    p = *s;
+    while (p && k < i-1) {
+        p = p->next;
+        k++;
+    }
+    if (!p) printf("error\n");
+    else {
+         q = T;
+         while (q && q->next)   q = q->next;
+         q->next = p->next;
+         p->next = T;
+    }
+}
+
+void strdele(nodestr *S,int i, int len)
 {
-	  int num;
-	  char name[10];
-	  long tel;
-}stu;
+    int k = 1;
+    nodestr p, q, r;
+    p = *S; q = NULL;
+    while (p && k<i) {
+        q = p;  p = p->next; k++;
+    }
+    if (!p) printf("error1\n");
+    else
+    {
+        k = 1;
+        while(k<len && p) {
+            p = p->next;    k++;
+        }
+        if (!p) printf("error2\n");
+        else {
+            if(!q)  {r = *S;    *S = p->next;}
+            else
+                { r = q->next;    q->next = p->next; }
+            p->next = NULL;
+            while(r != NULL)
+            { p = r; r = r->next; free(p); }
+        }
+    }
+}
+
+void *strconcat (nodestr *s1,nodestr s2){
+    nodestr p;
+    if(!(*s1))
+        *s1 = s2;
+    else
+        if (s2){
+            p = *s1;
+            while (p->next)     p = p->next;
+            p->next = s2;
+        }
+}
+
+nodestr *substring(nodestr S, int i, int len){
+    int k = 1;
+    nodestr p, q, r, t;
+    p = S;
+    while(p && k <i)    {p = p->next; k++;}
+    if(!p)  {
+        printf("error1\n");
+        return NULL;
+    }
+    else{
+        r = (nodestr*)malloc(sizeof(linkstrnode));
+        r->data = p->data;  r->next = NULL;
+        k = 1;  q = r;
+        while(p->next && k<len)
+        {
+            p = p->next;    k++;
+            t = (nodestr)malloc(sizeof(linkstrnode));
+            t->data = p->data;
+            q->next = t;    q = t;
+        }
+        if (k<len) {
+            printf("error2\n");
+            return NULL;
+        }
+        else{
+            q->next = NULL;
+            return r;
+        }
+    }
+}
+
+void print(nodestr s){
+    nodestr p = s;
+    if(p){
+        printf("%s",p->data);
+        p = p->next;
+    }
+}
 
 
-typedef struct link_node
-{
-    stu *student;
-	struct link_node *next;
-}node;
+    void strcreate(nodestr *s){
+    char ch;
+    linkstrnode *p, *r;
+    *s = NULL;  r = NULL;
+    printf("输入字符串:\n");
+    while ((ch = getchar()) != '\n')
+    {
+        p = (linkstrnode*)malloc(sizeof(linkstrnode));
+        p->data = ch;
+        if (*s == NULL)
+            *s = p;
+        else    r->next = p;
+        r = p;
+    }
+    if (r != NULL)  r->next = NULL;
+}
 
-node *init()   
-{
-	return NULL;
-}//建立一个空的单链表
-
-node *find (node *head, char Name[])
-{
-	node *p = head;
-	while((p!=NULL)&&(strcmp(p->student->name,Name)))
-	{
-		p=p->next;
-	}
-	if(p == NULL){
-		printf("can't find!");
-	}
-	return p;
-}//查找指定姓名的结点
-
-node *insert (node *head,char name[])
-{
-	node *p,*q;
-	p = (node*)malloc(sizeof(node));
-	p->student = (stu*)malloc(sizeof(stu));
-	scanf ("%d %s %ld",&p->student->num, p->student->name,&p->student->tel);
-	q = find(head, name);//返回现阶段符合的指针 如果没有符合的就返回NULL
-	if(q != NULL){
-		p->next = q->next;
-		q->next = p;
-	}
-
-	return head;
-}//在某位同学后插入一个同学信息
-
-node *dele (node *head,char name[])
-{
-	node *p = NULL, *pre = NULL;
-	if (head == NULL)
-	{
-		printf ("通讯录为空");
-		return head ;
-	}
-	//判断是否存在node
-	p=head;
-	while (p&&(strcmp(p->student->name,name)))
-	{
-		pre = p;
-		p = p->next;
-	}
-	//判断是否是最后一个
-	if(p == NULL){
-		printf("can't find node!");
-	}else{
-		node *needDele;//需要删除的节点
-		needDele = pre->next;
-		pre->next = pre->next->next;
-		free(needDele);
-	}
-
-	return head;
-}//删除某位同学信息
-
-void display (node *head)
-{
-	node *p;
-	p=head;
-	if (!p) printf ("通讯录为空");
-	else
-	{
-		printf ("结点值为:\n");
-		while (p)
-		{
-			printf ("%5d %s %ld\n",p->student->num,p->student->name,p->student->tel);
-			p = p->next;
-		}
-	}
-}//输出通讯录中各同学的信息
-
-void display2(node *head,char name[])
-{
-	node *p;
-	p=find(head,name);
-	if(p != NULL)
-		printf ("%5d %s %ld\n",p->student->num,p->student->name,p->student->tel);
-}//输出通讯录中指定同学信息
-
-int main()
-{
-	node *p,*q,*head;
-	q=NULL;
-	int i;
-	printf ("请输入通讯录人数:");
-	scanf ("%d",&i);
-	int j=0;
-	while (j<i)
-	{
-    	p=(node*)malloc(sizeof(node));
-    	p->student = (stu*)malloc(sizeof(stu));	
-    	scanf ("%d %s %ld",&p->student->num,p->student->name,&p->student->tel);
-    	if(q == NULL){
-			head = p;
-			q = p;
-			p->next = NULL;
-		}else{
-			q->next= p;
-			q = p;
-			p->next = NULL;
-		}
-    	j++;   	
-	}//录入通讯录信息
-	
-	char name1[10];
-	printf ("请输入插入位置前同学姓名:");
-	scanf ("%s",name1);
-	insert(head,name1);//插入
-	
-	
-	char name2[10];
-	printf ("请输入删除同学姓名:");
-	scanf ("%s",name2);
-	dele (head,name2);//删除
-	
-	display (head);//打印全部成员信息
-	
-	char name3[10];
-	printf ("请输入指定同学姓名:");
-	scanf ("%s",name3);
-	display2 (head,name3);//打印指定同学信息
-	
-	system("pause");
-	return 0;
+int main() {
+    int x, y, len, flag = 1;
+    nodestr s1, s2;
+    strcreate(s1);
+    while(flag){
+        printf("------------------------\n"
+               "1.插入\n"
+               "2.删除\n"
+               "3.拼接\n"
+               "4.取子串\n"
+               "5.打印\n"
+               "6.退出\n"
+               "------------------------\n");
+        scanf("%d", &x);
+        if (x == 1) {
+            printf("输入位置和字符串:\n");
+            scanf("%d",&y);
+            strcreate(s2);
+            strinsert(&s1, y, s2);
+        }
+        else if (x == 2) {
+            printf("输入位置和长度:\n");
+            scanf("%d",&y);
+            scanf("%d",&len);
+            strdele(&s1, y, len);
+        }
+        else if (x == 3) {
+            printf("输入字符串:\n");
+            strcreate(s2);
+            strconcat(s1, s2);
+            print(s1);
+        }
+        else if (x == 4) {
+            printf("输入位置和长度:\n");
+            scanf("%d",&y);
+            scanf("%d",&len);
+            print(*substring(s1, y, len));
+        }
+        else if (x == 5) print(s1);
+        else if (x == 6) flag = 0;
+    }
+    return 0;
 }

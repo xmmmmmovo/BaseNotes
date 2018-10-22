@@ -1,3 +1,7 @@
+## [游戏网址](https://nazo.io/)
+
+
+
 ### 1.欢迎
 
 ![1](http://ww1.sinaimg.cn/large/006ZO6XQgy1fw949qhqf5j30ih0dk0sv.jpg)
@@ -82,7 +86,7 @@
 
 这张图片是斜角图片，就是字都向内偏向了45°
 
-仔细看一下就知道答案了：**pineapple**
+用画图打开拉长一下就知道答案了：**pineapple**
 
 ### 10.回到上世纪
 
@@ -164,4 +168,40 @@ key显现
 
 ### 17.虚空
 
-未破
+![17](http://ww1.sinaimg.cn/large/006ZO6XQly1fw98fbl0nhj30i10crdfp.jpg)
+
+空格切换 盗用@"C₆H₆Cl₆"502milk的图片
+
+![答案](http://ww1.sinaimg.cn/large/006ZO6XQgy1fw98gt6vvwj30k00cpaaz.jpg)
+
+答案：**entropy**
+
+### 18.Twitter
+
+科学上网
+
+![18](http://ww1.sinaimg.cn/large/006ZO6XQly1fw98fblypnj30hp0dnjrk.jpg)
+
+打开发现居然作者是位打ctf的大佬
+
+![作者推特](http://ww1.sinaimg.cn/large/006ZO6XQly1fw98fbpojoj30gn0lt429.jpg)
+
+答案：**th4nky0u**
+
+### 19.最后
+
+感谢语
+
+![19](http://ww1.sinaimg.cn/large/006ZO6XQgy1fw98kipw7hj30fr0fht8s.jpg)
+
+我是**125**位通关的，**你呢？**
+
+### 20.强迫症与总结
+
+花了我2个多小时的游戏终于完美落下了帷幕
+
+期初我只是想分享一下在群里，没想到大家兴致如此之高，以至于最后都为找到一个个key而兴致高涨:smile:
+
+这种游戏果然需要跟大家一起玩才有意思嘛
+
+总之，游戏体验良好，5:star: 好评！

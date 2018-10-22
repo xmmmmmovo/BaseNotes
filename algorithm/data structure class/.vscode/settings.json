@@ -34,5 +34,8 @@
         "typeinfo": "cpp",
         "ctime": "cpp",
         "list": "cpp",
+        "string": "cpp",
+        "stdlib.h": "c",
+        "math.h": "c"
     }
 }
