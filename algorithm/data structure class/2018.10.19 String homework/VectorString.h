@@ -4,6 +4,7 @@
  * 2018-10-21 author:xmmmmmovo
 */
 #include <iostream>
+#include <cstdlib>
 #include <cmath>
 #include <vector>
 
@@ -29,6 +30,7 @@ public:
     int index(vectorString &);
     void strinsert(char *, int);
     void strinsert(vectorString &, int);
+    void strinsert(vectorString &, vectorString &);//根据字符串匹配插入删除
     void strdelete(int, int);
     void replace(char *, char *);
     void replace(vectorString &, vectorString &);
@@ -47,9 +49,14 @@ vectorString::~vectorString(){
 }
 
 void vectorString::strcreate(char *str){
+    for(int i = 0;i < strlength(str);i++)
+    {
+        string.push_back(str[i]);
+    }
 }
 
 void vectorString::strassign(char *str){
+    string.assign(str, str + strlength(str) - 1);
 }
 
 int vectorString::strlength(){
@@ -58,7 +65,7 @@ int vectorString::strlength(){
 
 int vectorString::strlength(char *str){
     int i = 0;
-    for(i = 0;str[i] != '\0' ;i++);
+    for(i = 0;(str[i] != '\0')||(str[i] != '\n') ;i++);
     return i;
 }
 
@@ -90,4 +97,33 @@ int vectorString::strcompare(char *str){
     }else{
         return -1;
     }
+}
+
+void vectorString::strconcat(char *str){
+    for(int i = 0;i < strlength(str);i++)
+    {
+        string.emplace_back(str[i]);
+    }
+}
+
+char* vectorString::substring(int pos, int length){
+    char *str = (char *)malloc(sizeof(char) * 20);//new 操作符不识别 改为malloc写法
+    for(int i = pos - 1, j = 0;(i < length) && (i<strlength()) ;i++, j++)
+    {
+        str[j] = string[i];
+    }
+
+    return str;
+}
+
+int vectorString::index(char *str){
+}
+
+void vectorString::strinsert(char *str, int pos){
+}
+
+void vectorString::strdelete(int flg1, int flg2){
+}
+
+void vectorString::replace(char *str, char *repstr){
 }

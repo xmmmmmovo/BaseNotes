@@ -1,15 +1,13 @@
-#include "queue.h"
 #include <iostream>
-#include <cmath>
 #include <cstdlib>
+#include <cmath>
 
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    int a = 1;
-    printf("%d", &a);
+    cout << "HelloWorld!\n";
 
     system("pause");
     return 0;
-}
+} 

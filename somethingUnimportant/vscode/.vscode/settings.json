@@ -33,6 +33,10 @@
         "type_traits": "cpp",
         "typeinfo": "cpp",
         "ctime": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "string": "cpp",
+        "stdlib.h": "c",
+        "math.h": "c",
+        "stdio.h": "c"
     }
 }

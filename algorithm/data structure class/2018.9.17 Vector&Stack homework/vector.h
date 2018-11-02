@@ -1,7 +1,7 @@
 /*
-因为模板类不能分离编译
+因为模板类不能分离编�?
 只能将实现与定义放在同一个文件里
-故放在.h头文件中
+故放�?.h头文件中
 */
 #ifndef VECTOR_H
 #define VECTOR_H
@@ -17,7 +17,7 @@ using namespace std;
 template <class T>
 class Vector{
     public:
-        Vector();//构造函数
+        Vector();//构造函�?
         Rank size();
         T get(Rank);
         void put(Rank, T);//替换
@@ -28,24 +28,24 @@ class Vector{
         bool disordered();//判断是否排列整齐 
         void sort(Rank, Rank);//从小到大排序
         Rank searchUnsortedList(Rank, Rank, T);//搜寻
-        Rank searchSortedList(Rank, Rank, T);//搜寻（有序向量
+        Rank searchSortedList(Rank, Rank, T);//搜寻（有序向�?
         void deduplicate(Rank, Rank);//剔除重复向量
         void uniquify(Rank, Rank);//剔除重复元素(有序向量
-        void show(Rank);//显示秩
-        void showAll();//显示所有
-        //有时间->写遍历并进行相同操作函数
+        void show(Rank);//显示�?
+        void showAll();//显示所�?
+        //有时�?->写遍历并进行相同操作函数
 
     private:
         T *sequenceList;//向量（连续表
-        Rank nowSize = 0;//存放数值长度
-        Rank maxSize = 16;//总长度
+        Rank nowSize = 0;//存放数值长�?
+        Rank maxSize = 16;//总长�?
 
         bool checkLoHi(Rank, Rank);
         void checkIfOut();
         void increaseList();
         void moveBack(Rank);
         void moveForward(Rank);
-        void swap(Rank, Rank);//交换数值操作
+        void swap(Rank, Rank);//交换数值操�?
         Rank bubbleSort(Rank, Rank);
 };
 
@@ -126,7 +126,7 @@ bool Vector<T>::disordered(){
 template <class T>
 void Vector<T>::sort(Rank lo, Rank hi){
     if(checkLoHi(lo--, hi--)){
-        while(lo < (hi = bubbleSort(lo, hi)));//当最后的逆序对是lo的时候跳出循环
+        while(lo < (hi = bubbleSort(lo, hi)));//当最后的逆序对是lo的时候跳出循�?
     }else{
         cout << "Out Of List !!";
     }
@@ -134,7 +134,7 @@ void Vector<T>::sort(Rank lo, Rank hi){
 }
 
 //冒泡排序
-//已优化 不过时间复杂度最差也为o(n^2)
+//已优�? 不过时间复杂度最差也为o(n^2)
 template <class T>
 Rank Vector<T>::bubbleSort(Rank lo, Rank hi){
     Rank last = lo;
@@ -142,7 +142,7 @@ Rank Vector<T>::bubbleSort(Rank lo, Rank hi){
     while(++lo <= hi){
         if (sequenceList[lo - 1] > sequenceList[lo])
         {
-            last = lo;//最后交换的逆序对
+            last = lo;//最后交换的逆序�?
             swap(lo - 1, lo);
         }
     }
@@ -193,7 +193,7 @@ Rank Vector<T>::searchSortedList(Rank lo, Rank hi, T num){
 
 //无序向量删除
 //bug原因
-//！！未完成！！
+//！！未完成！�?
 template <class T>
 void Vector<T>::deduplicate(Rank lo, Rank hi){
     if(checkLoHi(lo--, hi--)){
@@ -283,7 +283,7 @@ void Vector<T>::checkIfOut(){
 template <class T>
 void Vector<T>::increaseList(){
     T* oldList = sequenceList;
-    sequenceList = new T[maxSize <<= 1];//左移一位 容量加倍
+    sequenceList = new T[maxSize <<= 1];//左移一�? 容量加�?
     for(i = 0;i < nowSize - 1;i++)
     {
         sequenceList[i] = oldList[i];
@@ -291,7 +291,7 @@ void Vector<T>::increaseList(){
     delete []oldList;//释放空间 防止内存泄漏
 }
 
-//指针交换bug待解决!!!!
+//指针交换bug待解�?!!!!
 //暂时使用对象交换
 template <class T>
 void Vector<T>::swap(Rank a, Rank b){
