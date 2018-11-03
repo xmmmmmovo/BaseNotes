@@ -131,9 +131,14 @@
 }
 ```
 
+### 3.中文乱码问题
 
+你可能会遇到中文乱码问题 莫慌 只需几步你进能够完美解决这个问题
 
-### 3.愉悦的c++编程
+1. 打开设置<br>![](http://ww1.sinaimg.cn/large/006ZO6XQly1fwqlcbxzlej3064099dft.jpg)
+2. 输入encoding<br>并且在下面的Guess Encoding上打上对勾<br>并且将下面的Encoding改成gb2312<br>![](http://ww1.sinaimg.cn/large/006ZO6XQly1fwqlcbyr2yj30y409v74t.jpg)
+
+### 4.愉悦的c++编程
 
 这里可以有非调试启动，但其实都是调试启动 没什么区别
 
@@ -152,17 +157,6 @@ p.s. 认为编译效率低的请用cmake
 ![](http://ww1.sinaimg.cn/large/006ZO6XQgy1fwqfaavrn4j307h0anwei.jpg)
 
 ![](http://ww1.sinaimg.cn/large/006ZO6XQgy1fwqfbsj9g3j30tx05kwem.jpg)
-
-
-
-### 4.中文乱码问题
-
-你可能会遇到中文乱码问题 莫慌 只需几步你进能够完美解决这个问题
-
-1. 打开设置<br>![](http://ww1.sinaimg.cn/large/006ZO6XQly1fwqlcbxzlej3064099dft.jpg)
-2. 输入encoding<br>并且在下面的Guess Encoding上打上对勾<br>并且将下面的Encoding改成gb2312<br>![](http://ww1.sinaimg.cn/large/006ZO6XQly1fwqlcbyr2yj30y409v74t.jpg)
-
-
 
 ### 5.为什么需要用vscode？其他编译器不好吗？
 
