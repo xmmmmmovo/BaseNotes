@@ -33,9 +33,9 @@ def write_in_mysql(url, title = "no title"):
     for content in law_content_list:
         law_content = str(content.get_text())
         try:
-            cursor.execute("INSERT INTO law_list(law_title, law_content)VALUES('{0}','{1}');".format(title, law_content))
+            cursor.execute("INSERT INTO laws(law_title, law_content)VALUES('{0}','{1}');".format(title, law_content))
             connect.commit()
-            print(title + "OK")
+            print(law_content + "OK")
         except:
             print(title + "error!")
 
@@ -60,13 +60,13 @@ def getLaws(page):
         law_title = n.get_text()
         law_link = "https://www.chinacourt.org" + str(n.get("href"))
         write_in_mysql(law_link, str(law_title))
-        time.sleep(random.random() * 10)
+        time.sleep(random.random())
 
 
 if __name__ == '__main__':
-    for page in range(24, 532, 1):
+    for page in range(1, 532, 1):
         getLaws(page)
-        time.sleep(random.random() * 30)
+        time.sleep(random.random())
     print("over")
 
 

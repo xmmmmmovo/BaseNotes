@@ -1,9 +1,11 @@
 #coding=utf-8
 #主要针对的是tab问题导入
-import os, pymysql, io, string, re
+import os, pymysql, io, string, re, sqlite3
 
-connect = pymysql.connect(host='39.105.110.28', port=3306, user='root',
-                          password='FABAOin2018', db='lawList', charset='utf8')
+# connect = pymysql.connect(host='39.105.110.28', port=3306, user='root',
+#                           password='FABAOin2018', db='lawList', charset='utf8')
+# cursor = connect.cursor()
+connect = sqlite3.connect('lawList.db')
 cursor = connect.cursor()
 error_files = []
 
@@ -19,6 +21,7 @@ def get_data(file_name):
     content = file.readlines()
     line_law = []
     law_where = str
+    file_name = file_name.split(".")[0]
 
     for line in content:
         line = re.sub('[\n\r\t]', '', line)

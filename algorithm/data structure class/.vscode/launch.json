@@ -17,7 +17,7 @@
             "externalConsole": true,
             "targetArchitecture": "x64", 
             "MIMode": "gdb",
-            "miDebuggerPath": "D:\\anzhuang\\MinGW\\bin\\gdb.exe",
+            "miDebuggerPath": "D:\\anzhuang\\MinGW-w64\\mingw64\\bin\\gdb.exe",
             "preLaunchTask": "g++",
             "setupCommands": [
                 {
