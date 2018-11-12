@@ -4,7 +4,6 @@
 */
 #include <cstdio>
 #include <cstdlib>
-#include <cmath>
 #include <stack>
 
 using namespace std;//stack所需的命名空间
@@ -36,6 +35,7 @@ treeNode *createTree(){
 //前序遍历
 void preorder(treeNode *node){
     stack<treeNode *> buffer;//存储遍历节点
+    
     while(!buffer.empty() || node){
         if(node){
             printf("%c ", node->nodeCharctar);
@@ -46,6 +46,8 @@ void preorder(treeNode *node){
             buffer.pop();
         }
     }
+
+    printf("\n");
 }
 
 //中序遍历
@@ -53,17 +55,57 @@ void inorder(treeNode *node){
     stack<treeNode *> buffer;
     
     while(node || !buffer.empty()){
-        
+        if(node){
+            buffer.push(node);
+            node = node->left;
+        }else{
+            node = buffer.top();
+            buffer.pop();
+            printf("%c ", node->nodeCharctar);
+            node = node->right;
+        }
     }
+
+    printf("\n");
+}
+
+//后序遍历
+void postorder(treeNode *node){
+    stack<treeNode *> buffer;
+    stack<bool> tag;
+
+    while(node || !buffer.empty()){
+        if(node){
+            buffer.push(node);
+            tag.push(false);
+            node = node->left;
+        }else{
+            if(tag.top()){
+                tag.pop();
+                node = buffer.top();
+                buffer.pop();
+                printf("%c ", node->nodeCharctar);
+                node = NULL;
+            }else{
+                node = buffer.top();
+                node = node->right;
+                tag.top() = true;
+            }
+        }
+    }
+
+    printf("\n");
 }
 
 int main(int argc, char const *argv[])
 {
     treeNode *root;
 
+    //输入123##4##5##
     root = createTree();
     preorder(root);
     inorder(root);
+    postorder(root);
 
     system("pause");
     return 0;

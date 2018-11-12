@@ -1,11 +1,11 @@
-#include "stdio.h"
-#include "stdlib.h"
+#include <stdio.h>
+#include <stdlib.h>
 int main()
 {
     //定义一个指向文件类型的指针
     FILE *fp;
     fp = fopen("D:\\download\\text.txt","w");
-    if(fp == NULL )
+    if(fp == NULL)
     {
         printf("打开文件失败！\n");
         exit(0);
