@@ -37,6 +37,7 @@
         "string": "cpp",
         "stdlib.h": "c",
         "math.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "stack": "cpp"
     }
 }
