@@ -86,16 +86,15 @@ char inorder(treeNode *node){
     return endchar;
 }
 
-treeNode *searchFather(treeNode *node, char fr, char se){
+//前序搜索(非递归)
+stack<treeNode *> preorderSearch(treeNode *node, char searchChar){
     stack<treeNode *> buffer;//存储遍历节点
-
-    //节点
-    treeNode *frNode;
-    treeNode *seNode;
     
     while(!buffer.empty() || node){
         if(node){
             buffer.push(node);
+            if(node->nodeCharctar == searchChar)
+                return buffer;
             node = node->left;
         }else if(!buffer.empty()){
             node = buffer.top()->right;
@@ -103,12 +102,43 @@ treeNode *searchFather(treeNode *node, char fr, char se){
         }
     }
 
-    return node;
+    printf("\n");
+    return buffer;
+}
+
+template <typename T>
+stack<T> reserve(stack<T> buffer){
+    stack<T> res;
+    while(!buffer.empty()){
+        res.push(buffer.top());
+        buffer.pop();
+    }
+
+    return res;
+}
+
+treeNode *searchFather(treeNode *root, char fr, char se){
+    treeNode *trNode = NULL;
+    stack<treeNode *> frNode = preorderSearch(root, fr);
+    stack<treeNode *> seNode = preorderSearch(root, se);
+
+    frNode = reserve(frNode);
+    seNode = reserve(seNode);
+
+    while(!(frNode.empty() || seNode.empty())){
+        if(frNode.top() == seNode.top()){
+            trNode = frNode.top();
+        }
+        frNode.pop();
+        seNode.pop();
+    }
+
+    return trNode;
 }
 
 int main(int argc, char const *argv[])
 {
-    treeNode *root;
+    treeNode *root, *tempNode;
     char fr, se;
     
     //输入123##4##5##
@@ -123,7 +153,12 @@ int main(int argc, char const *argv[])
     fr = getchar();
     getchar();
     se = getchar();
-    printf("%c\n", searchFather(root, fr, se)->nodeCharctar);
+    tempNode = searchFather(root, fr, se);
+    if(tempNode){
+        printf("%c\n", tempNode->nodeCharctar);
+    }else{
+        printf("NULL\n");
+    }
 
     system("pause");
     return 0;
