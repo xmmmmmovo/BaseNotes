@@ -1,5 +1,5 @@
 /**
- * 单向链表类
+ * 单向链表�?
  * 2018-9-28 author:xmmmmmovo
 */
 #ifndef UNDIRECTIONALLINKEDLIST_H
@@ -16,40 +16,40 @@ class List
 public:
     typedef struct nodeList{
         T data = 0;
-        nodeList *succ = NULL;//后继 如果定义成private会造成析构函数无法运行
+        nodeList *succ = NULL;//后继 如果定义成private会造成析构函数无法运�?
     } node;
 
     List();
     ~List();
-    void begin();//迭代器返回头结点
-    void end();//迭代器返回尾节点
+    void begin();//�?��器返回头结点
+    void end();//�?��器返回尾节点
     void insertInFort(T);//头结点后插入
-    void insertInBack(T);//尾节点插入
+    void insertInBack(T);//尾节点插�?
     void insert(T);//直接在迭代器后方插入
     void insert(T, T);//某个数值后插入
-    void insertPointByPos(int, T);//插入某个位置节点 因函数重载原因改名
-    void deletePoint();//删除迭代器所在节点
-    void deletePoint(T);//删除某个数值节点 因重名原因改名
-    void deletePointByPos(int);//删除某个位置节点 同插入原因改名
+    void insertPointByPos(int, T);//插入某个位置节点 因函数重载原因改�?
+    void deletePoint();//删除�?��器所在节�?
+    void deletePoint(T);//删除某个数值节�? 因重名原因改�?
+    void deletePointByPos(int);//删除某个位置节点 同插入原因改�?
     void printAll();
-    node* getIterator();//迭代器数据接口
+    node* getIterator();//�?��器数�?���?
 
-    //课后习题
-    bool disordered();//判断是否有序
+    //课后习�?
+    bool disordered();//判断�?��有序
     void backInsert(T, T);//前插
-    void traserve();//将单链表转置
+    void traserve();//将单链表�?��
 
 private:
-    node *iterator;//迭代器 每次插入后迭代器指针指向插入位置
-    node *header;//头结点
-    node *trailer;//尾结点
+    node *iterator;//�?���? 每�?插入后迭代器指针指向插入位置
+    node *header;//头结�?
+    node *trailer;//尾结�?
 
-    void insertPoint(node *, T);//将节点后插入操作抽象成函数
+    void insertPoint(node *, T);//将节点后插入操作抽象成函�?
     void delPoint(node *);
     void printError();
 };
 
-//构造单向链表
+//构造单向链�?
 template <class T>
 List<T>::List()
 {
@@ -58,7 +58,7 @@ List<T>::List()
     iterator = header;
 }
 
-//同理 释放内存 防止内存泄漏
+//同理 释放内存 防�?内存泄漏
 template <class T>
 List<T>::~List()
 {
@@ -113,7 +113,7 @@ void List<T>::insert(T needNum, T data){
         tempNode = tempNode->succ;
         if(tempNode->data == needNum){
             insertPoint(tempNode, data);
-            return;//直接返回 不继续循环 缺点：只能插入一次
+            return;//直接返回 不继�?���? 缺点：只能插入一�?
         }
     }
     printError();
@@ -121,7 +121,7 @@ void List<T>::insert(T needNum, T data){
 
 template <class T>
 void List<T>::insertPointByPos(int pos, T data){
-    int count = 0;//计数器
+    int count = 0;//计数�?
     node *tempNode = header;   
     while(tempNode->succ){
         tempNode = tempNode->succ;
@@ -183,7 +183,7 @@ typename List<T>::node* List<T>::getIterator(){
     return iterator;
 }
 
-//迭代器停留于非顺序最后一个值
+//�?��器停留于非顺序最后一�?�?
 template <class T>
 bool List<T>::disordered(){
     begin();
@@ -239,7 +239,7 @@ void List<T>::traserve(){
 template <class T>
 void List<T>::printAll(){
     begin();
-    iterator = iterator->succ;//因为指向的是头结点 所以后移一位
+    iterator = iterator->succ;//因为指向的是头结�? 所以后移一�?
     while(iterator){
         cout << iterator->data << " ";
         iterator = iterator->succ;

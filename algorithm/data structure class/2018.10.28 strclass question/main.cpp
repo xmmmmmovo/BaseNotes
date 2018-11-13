@@ -1,3 +1,6 @@
+/**
+ * 2018-10-28 str作业
+*/
 #include <cstdio>
 #include <cstdlib>
 #include <cmath>
@@ -8,6 +11,7 @@ int strlength(char *str){
     return i;
 }
 
+//2018-11-12 优化算法
 int strcompare(char *str1, char *str2){
     int i = 0, cout1, cout2, lenth1, lenth2;
     if((lenth1 = strlength(str1))>(lenth2 = strlength(str2))){
@@ -17,19 +21,16 @@ int strcompare(char *str1, char *str2){
     }
 
     for(i = 0;i < lenth1;i++){
-        cout1 += (int)str1[i];
-        cout2 += (int)str2[i];
+        if(str1[i] > str2[i])
+            return 1;
+        else if(str1[i] < str2[i])
+            return-1;
     }
 
-    if(cout1 > cout2){
-        return 1;
-    }else if(cout1 == cout2){
-        return 0;
-    }else{
-        return -1;
-    }
+    return 0;
 }
 
+//暴力搜索
 void replace(char *mstr, char *str, char *repstr){
     for(int i = 0;i < strlength(mstr);i++){
         if(mstr[i] == str[i]){
