@@ -87,53 +87,10 @@ char inorder(treeNode *node){
 }
 
 //Ç°ÐòËÑË÷(·ÇµÝ¹é)
-stack<treeNode *> preorderSearch(treeNode *node, char searchChar){
-    stack<treeNode *> buffer;//´æ´¢±éÀú½Úµã
-    
-    while(!buffer.empty() || node){
-        if(node){
-            buffer.push(node);
-            if(node->nodeCharctar == searchChar)
-                return buffer;
-            node = node->left;
-        }else if(!buffer.empty()){
-            node = buffer.top()->right;
-            buffer.pop();
-        }
-    }
-
-    printf("\n");
-    return buffer;
-}
-
-template <typename T>
-stack<T> reserve(stack<T> buffer){
-    stack<T> res;
-    while(!buffer.empty()){
-        res.push(buffer.top());
-        buffer.pop();
-    }
-
-    return res;
+treeNode *preorderSearch(treeNode *node, char searchChar){    
 }
 
 treeNode *searchFather(treeNode *root, char fr, char se){
-    treeNode *trNode = NULL;
-    stack<treeNode *> frNode = preorderSearch(root, fr);
-    stack<treeNode *> seNode = preorderSearch(root, se);
-
-    frNode = reserve(frNode);
-    seNode = reserve(seNode);
-
-    while(!(frNode.empty() || seNode.empty())){
-        if(frNode.top() == seNode.top()){
-            trNode = frNode.top();
-        }
-        frNode.pop();
-        seNode.pop();
-    }
-
-    return trNode;
 }
 
 int main(int argc, char const *argv[])

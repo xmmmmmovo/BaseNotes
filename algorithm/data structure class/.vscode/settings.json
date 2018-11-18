@@ -38,6 +38,7 @@
         "stdlib.h": "c",
         "math.h": "c",
         "stdio.h": "c",
-        "stack": "cpp"
+        "stack": "cpp",
+        "deque": "cpp"
     }
 }
