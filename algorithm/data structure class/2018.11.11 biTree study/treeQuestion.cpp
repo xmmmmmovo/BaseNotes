@@ -1,6 +1,6 @@
 /**
  * 2018-11-11 二叉树课后题目
- * language: C author: xmmmmmovo
+ * language: C/C++ author: xmmmmmovo
 */
 #include <cstdio>
 #include <cstdlib>
@@ -86,11 +86,60 @@ char inorder(treeNode *node){
     return endchar;
 }
 
-//前序搜索(非递归)
-treeNode *preorderSearch(treeNode *node, char searchChar){    
+//后序搜索(非递归)
+stack<treeNode *> postorderSearch(treeNode *node, char searchChar){
+    stack<treeNode *> buffer;
+    stack<bool> tag;
+
+    while(node || !buffer.empty()){
+        if(node){
+            buffer.push(node);
+            tag.push(false);
+            node = node->left;
+        }else{
+            if(tag.top()){
+                tag.pop();
+                node = buffer.top();
+                buffer.pop();
+                if(node->nodeCharctar == searchChar)
+                    return buffer;
+                node = NULL;
+            }else{
+                node = buffer.top();
+                node = node->right;
+                tag.top() = true;
+            }
+        }
+    }
+
+    printf("\n");
+    return buffer;
+}
+
+stack<treeNode *> reserve(stack<treeNode *> buffer){
+    stack <treeNode *> reservenodes;
+    while(!buffer.empty()){
+        reservenodes.push(buffer.top());
+        buffer.pop();
+    }
+    
+    return reservenodes;
 }
 
 treeNode *searchFather(treeNode *root, char fr, char se){
+    stack<treeNode *> frnodes = reserve(postorderSearch(root, fr));
+    stack<treeNode *> senodes = reserve(postorderSearch(root, se));
+    treeNode *node;
+
+    while(!(frnodes.empty() || senodes.empty())){
+        if(frnodes.top() == senodes.top()){
+            node = frnodes.top();
+        }
+        frnodes.pop();
+        senodes.pop();
+    }
+
+    return node;
 }
 
 int main(int argc, char const *argv[])

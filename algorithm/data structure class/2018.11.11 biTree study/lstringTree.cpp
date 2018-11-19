@@ -1,6 +1,7 @@
 /**
  * 中序穿线二叉树
  * language：C++ author：xmmmmmovo
+ * 参考：https://www.cnblogs.com/rocketfan/archive/2009/08/30/1556784.html
 */
 #include <cstdio>
 #include <cstdlib>
@@ -37,61 +38,48 @@ treenode *createTree(){
 void inthreading(treenode *node){
     stack<treenode *> buffer;
     treenode *prev = NULL;//记录前驱节点
-    treenode *tempnode = NULL;
     
     while(node || !buffer.empty()){
         if(node){
             buffer.push(node);
-            node->ltag = node->left?false:true;//如果左节点存在则存放false
-            node->rtag = node->right?false:true;//如果右节点存在则存放false
-            tempnode = node->left;
-            if(prev){
-                if(prev->rtag){
-                    prev->right = node;//
-                }
-                if(node->ltag){
-                    node->left = prev;
-                }
-            }
-            prev = node;
-            node = tempnode;
+            node = node->left;
         }else{
             node = buffer.top();
-            buffer.pop();//现在是buffer顶是上个节点
+            if(!node->left){//左若无节点 进行穿线
+                node->ltag = true;
+                node->left = prev;
+            }
+            if(prev && !prev->right){//先判断是否是第一个节点的右节点 然后判断是否穿线
+                prev->rtag = true;
+                prev->right = node;
+            }
+            prev = node;
+            buffer.pop();
             node = node->right;
         }
     }
 }
 
 //中序遍历中序穿线二叉树
-treenode *insuccnode(treenode *node){
-    treenode *noderight = NULL;//存储测试右节点穿线
-    if(node->rtag){//表明有无右节点
-        return node->right;//返回子树最后的右节点 防止死循环
-    }else{
-        noderight = node->right;
-        while(!noderight->ltag){
-            noderight = noderight->left;
-        }//左子树搜寻
-        return node;
-    }
-}
-
 void inthrtree(treenode *node){
-    while(!node->ltag){
-        node = node->left;
-    }//先找出最左下的节点(第一个节点)
-    do{
+    while(node){
+        while(!node->ltag){//深度搜索到最左下节点
+            node = node->left;
+        }
         printf("%c ", node->data);
-        node = insuccnode(node);//寻找下一个节点
-    }while(node);
+        while(node->rtag){
+            node = node->right;
+            printf("%c ", node->data);
+        }
+        node = node->right;
+    }
 }
 
 int main(int argc, char const *argv[])
 {
     treenode *root;
     
-    //输入123##4##5##
+    //测试数据123##4##5##
     root = createTree();
     inthreading(root);
     inthrtree(root);

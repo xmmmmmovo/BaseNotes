@@ -1,5 +1,5 @@
 /**
- *╡Бйтсцнд╪Ч 
+ *pi 
 */
 #include <cstdio>
 #include <cmath>
