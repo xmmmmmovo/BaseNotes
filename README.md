@@ -20,7 +20,7 @@
 
 ### [C](https://github.com/xmmmmmovo/notes/tree/master/c)
 
-- [大一作业(正在改为c的形式)](https://github.com/xmmmmmovo/notes/tree/master/c/freshman%20homework)
+- [大一作业](https://github.com/xmmmmmovo/notes/tree/master/c/freshman%20homework)
 - [大一实验室C作业](https://github.com/xmmmmmovo/notes/tree/master/c/2017.10.16)
 - [图书管理系统](https://github.com/xmmmmmovo/notes/tree/master/c/2017.10.28)
 
