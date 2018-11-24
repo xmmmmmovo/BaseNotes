@@ -10,12 +10,12 @@ def run_game():
     alien_settings = Settings() # 设置settings对象
     screen = pygame.display.set_mode((alien_settings.screen_width, alien_settings.screen_height)) # 从设置类中获取高度与宽度
 
-    ship = Ship(screen) # ship对象
+    ship = Ship(screen, alien_settings) # ship对象
 
     # 游戏开始主循环
     while True:
         gf.check_events(ship) # 将事件监测抽象封装
-        ship.update()
+        ship.update() # 更新坐标
         gf.update_screen(alien_settings, screen, ship) # 将屏幕更新封装起来
 """
 主函数

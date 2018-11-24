@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b09297a6-cd32-4dfa-987d-8b293bcfb17c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/data structure class/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/2018.11.11 biTree study.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/data structure class/2018.11.11 biTree study.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/2018.11.11 biTree study/treeQuestion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/data structure class/2018.11.11 biTree study/treeQuestion.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/data structure class/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/AlienGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/AlienGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/AlienGame/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/AlienGame/alien_invasion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/AlienGame/game_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/AlienGame/game_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/AlienGame/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/AlienGame/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/AlienGame/ship.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/AlienGame/ship.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,14 +34,16 @@
     <session id="-1763816006">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -62,21 +61,36 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="6" />
+          <entry key="java" value="7" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="7" />
           <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/extend/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding>
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -97,6 +111,8 @@
         <option value="$PROJECT_DIR$/src/classandobject/ClassDemo.java" />
         <option value="$PROJECT_DIR$/src/classandobject/Test.java" />
         <option value="$PROJECT_DIR$/src/classandobject/Student.java" />
+        <option value="$PROJECT_DIR$/src/extern/Employee.java" />
+        <option value="$PROJECT_DIR$/src/extend/Employee.java" />
       </list>
     </option>
   </component>
@@ -126,8 +142,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -135,16 +149,34 @@
               <item name="2018.11.17" type="b2602c69:ProjectViewProjectNode" />
               <item name="2018.11.17" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="2018.11.17" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018.11.17" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="2018.11.17" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2018.11.17" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="extend" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AndroidLabtest\notes\java\2018.11.17\src\extern" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -224,16 +256,18 @@
       <workItem from="1542442677114" duration="166000" />
       <workItem from="1542460924278" duration="63000" />
       <workItem from="1542500589017" duration="8440000" />
+      <workItem from="1543055500166" duration="10000" />
+      <workItem from="1543055770646" duration="337000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10327000" />
+    <option name="totallyTimeSpent" value="10674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26865673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -306,10 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#255#256#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -317,10 +347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#88#89#0" expanded="true" />
-            <element signature="e#126#127#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -328,6 +354,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/extend/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

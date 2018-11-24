@@ -1,6 +1,6 @@
 import sys, pygame
 """
-游戏控制类
+游戏控制文件
 用于抽象封装部分控制函数
 """
 def check_events(ship):
@@ -8,7 +8,7 @@ def check_events(ship):
     for event in pygame.event.get():
         if event.type == pygame.QUIT:  # 检测退出事件
             sys.exit()  # 退出
-        elif event.type == pygame.KEYDOWN:
+        elif event.type == pygame.KEYDOWN: # 检测键盘按下事件
             # 设置按下按键的标识
             if event.key == pygame.K_LEFT:
                 ship.moving_left = True
