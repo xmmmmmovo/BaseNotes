@@ -25,3 +25,6 @@ class Bullet(Sprite): # 继承Sprite类的方法
     def update(self, *args):
         self.y -= self.speed_factor # 更新现有坐标
         self.rect.y = self.y # 更新绘制的坐标
+
+    def draw_bullet(self):
+        pygame.draw.rect(self.screen, self.color, self.rect) # 绘制子弹

@@ -1,9 +1,10 @@
 import sys, pygame
+from bullet import Bullet
 """
 游戏控制文件
 用于抽象封装部分控制函数
 """
-def check_events(ship):
+def check_events(alien_settings, ship, screen, bullets):
     # 监听鼠标和键盘
     for event in pygame.event.get():
         if event.type == pygame.QUIT:  # 检测退出事件
@@ -14,6 +15,9 @@ def check_events(ship):
                 ship.moving_left = True
             elif event.key == pygame.K_RIGHT:
                 ship.moving_right = True
+            elif event.key == pygame.K_SPACE:
+                new_bullet = Bullet(alien_settings, screen, ship)
+                bullets.add(new_bullet)
         elif event.type == pygame.KEYUP:
             # 设置按下按键的标识
             if event.key == pygame.K_LEFT:

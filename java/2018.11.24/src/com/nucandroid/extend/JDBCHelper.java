@@ -33,7 +33,7 @@ public class JDBCHelper {
     public Response save(Object object) {
         String className = object.getClass().getName();
         className = className.substring(className.lastIndexOf(".") + 1, className.length()).toLowerCase();
-        String url = "http://120.77.182.38/javatrain/" + className + "/";
+        String url = "http:///javatrain/" + className + "/";
         FormBody.Builder builder = new FormBody.Builder();
 
         if (object instanceof Employee) {
