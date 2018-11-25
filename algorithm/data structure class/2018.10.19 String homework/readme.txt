@@ -1,2 +1,0 @@
-VectorString.cpp
-ListString.cpp

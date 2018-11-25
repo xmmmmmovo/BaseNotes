@@ -1,6 +1,6 @@
 /**
- * 向量字符串(利用之前写过的vector类(其实是偷懒直接用标准库的了))
- * !待完成 用继承覆写vector类并写出利用vectorString的复制比较连接
+ * 向量字�?�?(利用之前写过的vector�?(其实�?��懒直接用标准库的�?))
+ * !待完�? 用继承�?写vector类并写出利用vectorString的�?制比较连�?
  * 2018-10-21 author:xmmmmmovo
 */
 #include <iostream>
@@ -17,20 +17,20 @@ public:
     ~vectorString();
 
     void strcreate(char *);
-    void strassign(char *);//赋值函数
+    void strassign(char *);//赋值函�?
     int strlength();
     bool strempty();
     void strclear();
-    int strcompare(char *);//可以是普通字符串
-    int strcompare(vectorString &);//可以是对象
+    int strcompare(char *);//�?���?��通字符串
+    int strcompare(vectorString &);//�?���??�?
     void strconcat(char *);//同上
     void strconcat(vectorString &);
-    char* substring(int, int);//子串(只需要一串)
+    char* substring(int, int);//子串(�?��要一�?)
     int index(char *);//查找 返回位置
     int index(vectorString &);
     void strinsert(char *, int);
     void strinsert(vectorString &, int);
-    void strinsert(vectorString &, vectorString &);//根据字符串匹配插入删除
+    void strinsert(vectorString &, vectorString &);//根据字�?串匹配插入删�?
     void strdelete(int, int);
     void replace(char *, char *);
     void replace(vectorString &, vectorString &);
