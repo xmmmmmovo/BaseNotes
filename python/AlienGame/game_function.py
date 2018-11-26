@@ -6,7 +6,7 @@ from bullet import Bullet
 """
 def check_events(alien_settings, ship, screen, bullets):
     # 监听鼠标和键盘
-    for event in pygame.event.get():
+    for event in pygame.event.get(): # 获取所有事件
         if event.type == pygame.QUIT:  # 检测退出事件
             sys.exit()  # 退出
         elif event.type == pygame.KEYDOWN: # 检测键盘按下事件
@@ -15,7 +15,7 @@ def check_events(alien_settings, ship, screen, bullets):
                 ship.moving_left = True
             elif event.key == pygame.K_RIGHT:
                 ship.moving_right = True
-            elif event.key == pygame.K_SPACE:
+            elif event.key == pygame.K_SPACE: # 空格检查
                 new_bullet = Bullet(alien_settings, screen, ship)
                 bullets.add(new_bullet)
         elif event.type == pygame.KEYUP:
