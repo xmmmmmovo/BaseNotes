@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "8.1",
+            "compilerPath": "D:\\anzhuang\\MinGW-w64\\mingw64\\bin\\g++.exe",
+            "intelliSenseMode": "msvc-x64"
+        }
+    ],
+    "version": 4
+}
