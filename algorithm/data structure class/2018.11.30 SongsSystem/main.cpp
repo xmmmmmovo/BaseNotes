@@ -2,12 +2,17 @@
 #include "unidirectionalLinkedlist.h" //单向链表类
 #include <iostream>
 #include <cstdlib>
+#include <cstdio>
 #include <windows.h> // win API头文件
 
 int i = 0, j = 0;//循环变量
 int chooseFr = 0, chooseSe = 0; // 一级菜单选择
+bool ifList = false; // 判断当前是否已经有链表
+List<Singer> singerList; // 歌手信息链表
+
 using namespace std; //std命名空间
 
+//设置背景色和字体颜色
 void initbkftColor(){ 
     system("color 70");
 }
@@ -49,6 +54,28 @@ void init(){
     menusFr(); // 一级菜单
 }
 
+void createList(){
+    int singerNumber;
+    string singerName; 
+    double *singerGrade = new double[10];
+    while(scanf("%d", &singerNumber)){
+        if(singerNumber == 0){
+            break;
+        }
+
+        cin >> singerName;
+        for(i = 0;i < 10;i++){
+            cin >> singerGrade[i];
+        }
+
+        
+
+        singerList.insertInBack(Singer(singerNumber, singerName, singerGrade)); // 插入
+    }
+
+    ifList = true;
+}
+
 void nullWay(){
     system("cls");
     cout << "\b没有这样的功能!\n";
@@ -62,12 +89,26 @@ void nullWay(){
 }
 
 int main(int argc, char const *argv[]){
-    List<Singer> singerList; // 歌手信息链表
+    char ch;
     init();
 
     while(1){
         switch(chooseFr){
             case 1:
+                if(ifList){
+                    cout << "\b已有链表存在! 请问是否覆盖原链表?";
+                    ch = getchar();
+                    if(ch == 'y' || ch == 'Y'){
+                        delete &singerList;
+                        createList();
+                    }else{
+                        system("cls");
+                        menusFr();
+                    }
+                }else{
+                    system("cls"); // 无论干什么先清屏
+                    createList();
+                }
                 break;
             case 2:
                 break;
