@@ -8,7 +8,7 @@
 int i = 0, j = 0;//循环变量
 int chooseFr = 0, chooseSe = 0; // 一级菜单选择
 bool ifList = false; // 判断当前是否已经有链表
-List<Singer> singerList; // 歌手信息链表
+List<Singer> *singerList; // 歌手信息链表
 
 using namespace std; //std命名空间
 
@@ -31,6 +31,10 @@ void menusFr(){
     cout << "\b请输入你需要的功能！"; // \b使输出中文不是乱码
     // system("pause");
     cin >> chooseFr;
+}
+
+void menusSe(){
+    
 }
 
 void headers(){
@@ -58,22 +62,51 @@ void createList(){
     int singerNumber;
     string singerName; 
     double *singerGrade = new double[10];
-    while(scanf("%d", &singerNumber)){
+    singerList = new List<Singer>();
+    cout << "\b请输入歌手编号(0则结束):" << '\n';
+    while(scanf("%d", &singerNumber)){ // 输入编号 0结束
         if(singerNumber == 0){
             break;
         }
 
+        cout << "\b请输入歌手姓名:" << '\n';
         cin >> singerName;
+
+        cout << "\b请输入歌手成绩:" << '\n';
         for(i = 0;i < 10;i++){
             cin >> singerGrade[i];
         }
 
-        
+        singerList->insertInBack(Singer(singerNumber, singerName, singerGrade)); // 插入
 
-        singerList.insertInBack(Singer(singerNumber, singerName, singerGrade)); // 插入
+        cout << "\b请输入歌手编号(0则结束):" << '\n';
     }
 
+    system("cls");
+    menusFr();
     ifList = true;
+}
+
+void showAll(){
+    Singer singer;
+    singerList->begin();
+    // singerList.next();
+
+    while(singerList->next()){
+        singer = singerList->nowNodeData();
+        cout << "\b歌手编号:" << singer.getNumber() 
+        << "\n\b歌手姓名:" << singer.getName() << "\n\b歌手成绩:";
+
+        for(i = 0;i < 10;i++){
+            cout << singer.getGrade(i) << " ";
+        }
+
+        cout << "\n\n";
+    }
+}
+
+void searchSinger(){
+
 }
 
 void nullWay(){
@@ -96,10 +129,12 @@ int main(int argc, char const *argv[]){
         switch(chooseFr){
             case 1:
                 if(ifList){
+                    getchar();
+                    system("cls");
                     cout << "\b已有链表存在! 请问是否覆盖原链表?";
                     ch = getchar();
                     if(ch == 'y' || ch == 'Y'){
-                        delete &singerList;
+                        delete singerList;
                         createList();
                     }else{
                         system("cls");
@@ -111,8 +146,16 @@ int main(int argc, char const *argv[]){
                 }
                 break;
             case 2:
+                system("cls");
+                showAll();
+                system("pause");
+                getchar();
+                system("cls");
+                menusFr();
                 break;
             case 3:
+                system("cls");
+                searchSinger();
                 break;
             case 4:
                 break;

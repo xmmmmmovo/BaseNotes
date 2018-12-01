@@ -22,6 +22,8 @@ public:
     ~List();
     void begin();//迭代器返回头结点
     void end();//迭代器返回尾节点
+    bool next();
+    T nowNodeData();
     void insertInFort(T);//头结点后插入
     void insertInBack(T);//尾节点插入
     void insert(T);//直接在迭代器后方插入
@@ -30,8 +32,6 @@ public:
     void deletePoint();//删除迭代器所在节点
     void deletePoint(T);//删除某个数值节点 因重名原因改名
     void deletePointByPos(int);//删除某个位置节点 同插入原因改名
-    void printAll();
-    node* getIterator();//迭代器数据接口
 
     //课后习题
     bool disordered();//判断是否有序
@@ -78,6 +78,17 @@ void List<T>::begin(){
 template <class T>
 void List<T>::end(){
     iterator = trailer;
+}
+
+template <class T>
+bool List<T>::next(){
+    iterator = iterator->succ;
+    return iterator ? true:false;
+}
+
+template <class T>
+T List<T>::nowNodeData(){
+    return iterator->data;
 }
 
 template <class T>
@@ -177,11 +188,6 @@ void List<T>::deletePointByPos(int pos){
     printError();
 }
 
-template <class T>
-typename List<T>::node* List<T>::getIterator(){
-    return iterator;
-}
-
 //迭代器停留于非顺序最后一个值
 template <class T>
 bool List<T>::disordered(){
@@ -233,18 +239,6 @@ void List<T>::traserve(){
     node *newHeader = new node();
     newHeader->succ = medNode;
     header = newHeader;
-}
-
-template <class T>
-void List<T>::printAll(){
-    begin();
-    iterator = iterator->succ;//因为指向的是头结点 所以后移一位
-    while(iterator){
-        cout << iterator->data << " ";
-        iterator = iterator->succ;
-    }
-    cout << '\n';
-    begin();//复位
 }
 
 template <class T>
