@@ -1,5 +1,5 @@
 /**
- * å•å‘é“¾è¡¨ç±»
+ * µ¥ÏòÁ´±íÀà
 */
 #ifndef UNDIRECTIONALLINKEDLIST_H
 #define UNDIRECTIONALLINKEDLIST_H
@@ -15,49 +15,59 @@ class List
 public:
     typedef struct nodeList{
         T data;
-        nodeList *succ = NULL;//åç»§ å¦‚æœå®šä¹‰æˆprivateä¼šé€ æˆææ„å‡½æ•°æ— æ³•è¿è¡Œ
+        nodeList *succ = NULL;//ºó¼Ì Èç¹û¶¨Òå³Éprivate»áÔì³ÉÎö¹¹º¯ÊıÎŞ·¨ÔËĞĞ
     } node;
 
     List();
     ~List();
-    void begin();//è¿­ä»£å™¨è¿”å›å¤´ç»“ç‚¹
-    void end();//è¿­ä»£å™¨è¿”å›å°¾èŠ‚ç‚¹
-    bool next();
-    T nowNodeData();
-    void insertInFort(T);//å¤´ç»“ç‚¹åæ’å…¥
-    void insertInBack(T);//å°¾èŠ‚ç‚¹æ’å…¥
-    void insert(T);//ç›´æ¥åœ¨è¿­ä»£å™¨åæ–¹æ’å…¥
-    void insert(T, T);//æŸä¸ªæ•°å€¼åæ’å…¥
-    void insertPointByPos(int, T);//æ’å…¥æŸä¸ªä½ç½®èŠ‚ç‚¹ å› å‡½æ•°é‡è½½åŸå› æ”¹å
-    void deletePoint();//åˆ é™¤è¿­ä»£å™¨æ‰€åœ¨èŠ‚ç‚¹
-    void deletePoint(T);//åˆ é™¤æŸä¸ªæ•°å€¼èŠ‚ç‚¹ å› é‡ååŸå› æ”¹å
-    void deletePointByPos(int);//åˆ é™¤æŸä¸ªä½ç½®èŠ‚ç‚¹ åŒæ’å…¥åŸå› æ”¹å
+    void begin();//µü´úÆ÷·µ»ØÍ·½áµã
+    void end();//µü´úÆ÷·µ»ØÎ²½Úµã
+    bool next(); // ºóÒÆµü´úÆ÷
+    T nowNodeData(); // »ñÈ¡µü´úÆ÷data
+    T nextNodeData(); // »ñÈ¡ÏÂÒ»µü´úÆ÷data
+    T beforeNodeData(); // »ñÈ¡ÉÏÒ»¸öµÄ½Úµã
+    T getPosition(int); // »ñÈ¡Ä³½ÚµãÊıÖµ
+    void swapWithBefore();
+    int getLength(); // ·µ»Ø³¤¶È
+    void insertInFort(T);//Í·½áµãºó²åÈë
+    void insertInBack(T);//Î²½Úµã²åÈë
 
-    //è¯¾åä¹ é¢˜
-    bool disordered();//åˆ¤æ–­æ˜¯å¦æœ‰åº
-    void backInsert(T, T);//å‰æ’
-    void traserve();//å°†å•é“¾è¡¨è½¬ç½®
+    // ²åÈëÉ¾³ı·½·¨
+    void insert(T);//Ö±½ÓÔÚµü´úÆ÷ºó·½²åÈë
+    void insert(T, T);//Ä³¸öÊıÖµºó²åÈë
+    void insertPointByPos(int, T);//²åÈëÄ³¸öÎ»ÖÃ½Úµã Òòº¯ÊıÖØÔØÔ­Òò¸ÄÃû
+    void deletePoint();//É¾³ıµü´úÆ÷ËùÔÚ½Úµã
+    void deletePoint(T);//É¾³ıÄ³¸öÊıÖµ½Úµã ÒòÖØÃûÔ­Òò¸ÄÃû
+    void deletePointByPos(int);//É¾³ıÄ³¸öÎ»ÖÃ½Úµã Í¬²åÈëÔ­Òò¸ÄÃû
+
+    //¿ÎºóÏ°Ìâ
+    bool disordered();//ÅĞ¶ÏÊÇ·ñÓĞĞò
+    void backInsert(T, T);//Ç°²å
+    void traserve();//½«µ¥Á´±í×ªÖÃ
 
 private:
-    node *iterator;//è¿­ä»£å™¨ æ¯æ¬¡æ’å…¥åè¿­ä»£å™¨æŒ‡é’ˆæŒ‡å‘æ’å…¥ä½ç½®
-    node *header;//å¤´ç»“ç‚¹
-    node *trailer;//å°¾ç»“ç‚¹
+    node *iterator;//µü´úÆ÷ Ã¿´Î²åÈëºóµü´úÆ÷Ö¸ÕëÖ¸Ïò²åÈëÎ»ÖÃ
+    node *beforeIterator;
+    node *header;//Í·½áµã
+    node *trailer;//Î²½áµã
+    int count = 0;
 
-    void insertPoint(node *, T);//å°†èŠ‚ç‚¹åæ’å…¥æ“ä½œæŠ½è±¡æˆå‡½æ•°
+    void insertPoint(node *, T);//½«½Úµãºó²åÈë²Ù×÷³éÏó³Éº¯Êı
     void delPoint(node *);
     void printError();
 };
 
-//æ„é€ å•å‘é“¾è¡¨
+//¹¹Ôìµ¥ÏòÁ´±í
 template <class T>
 List<T>::List()
 {
     header = new node();
     trailer = header;
     iterator = header;
+    beforeIterator = NULL;
 }
 
-//åŒç† é‡Šæ”¾å†…å­˜ é˜²æ­¢å†…å­˜æ³„æ¼
+//Í¬Àí ÊÍ·ÅÄÚ´æ ·ÀÖ¹ÄÚ´æĞ¹Â©
 template <class T>
 List<T>::~List()
 {
@@ -73,15 +83,18 @@ List<T>::~List()
 template <class T>
 void List<T>::begin(){
     iterator = header;
+    beforeIterator = NULL;
 }
 
 template <class T>
 void List<T>::end(){
     iterator = trailer;
+    beforeIterator = NULL; // Î²²¿Ò²ÏÈÅĞ¶Ï³Énull
 }
 
 template <class T>
 bool List<T>::next(){
+    beforeIterator = iterator;
     iterator = iterator->succ;
     return iterator ? true:false;
 }
@@ -92,6 +105,46 @@ T List<T>::nowNodeData(){
 }
 
 template <class T>
+T List<T>::nextNodeData(){
+    return iterator->succ->data;
+}
+
+template <class T>
+T List<T>::beforeNodeData(){
+    return beforeIterator->data;
+}
+
+template <class T>
+T List<T>::getPosition(int pos){
+    int length = 0;
+    if(pos > count){ // ÅĞ¶ÏÊÇ·ñÔ½½ç
+        printError(); // ¿ÉÄÜ³öÏÖÒ°Ö¸ÕëÎÊÌâ Ôİ²»ÖªµÀ½â¾ö·½°¸
+    }else{
+        begin();
+        iterator = iterator->succ;
+        while(iterator){
+            if(length == pos)
+                return iterator->data;
+            iterator = iterator->succ;
+            length ++;
+        }
+    }
+}
+
+template <class T>
+void List<T>::swapWithBefore(){
+    T temp;
+    temp = iterator->data;
+    iterator->data = beforeIterator->data;
+    beforeIterator->data = temp;
+}
+
+template <class T>
+int List<T>::getLength(){
+    return count;
+}
+
+template <class T>
 void List<T>::insertInFort(T data){
     node *insertNode = new node();
     insertNode->data = data;
@@ -99,6 +152,7 @@ void List<T>::insertInFort(T data){
 
     header->succ = insertNode;
     iterator = insertNode;
+    count++;
 }
 
 template <class T>
@@ -109,6 +163,7 @@ void List<T>::insertInBack(T data){
     trailer->succ = insertNode;
     trailer = insertNode;
     iterator = insertNode;
+    count++;
 }
 
 template <class T>
@@ -123,7 +178,7 @@ void List<T>::insert(T needNum, T data){
         tempNode = tempNode->succ;
         if(tempNode->data == needNum){
             insertPoint(tempNode, data);
-            return;//ç›´æ¥è¿”å› ä¸ç»§ç»­å¾ªç¯ ç¼ºç‚¹ï¼šåªèƒ½æ’å…¥ä¸€æ¬¡
+            return;//Ö±½Ó·µ»Ø ²»¼ÌĞøÑ­»· È±µã£ºÖ»ÄÜ²åÈëÒ»´Î
         }
     }
     printError();
@@ -131,7 +186,7 @@ void List<T>::insert(T needNum, T data){
 
 template <class T>
 void List<T>::insertPointByPos(int pos, T data){
-    int count = 0;//è®¡æ•°å™¨
+    int count = 0;//¼ÆÊıÆ÷
     node *tempNode = header;   
     while(tempNode->succ){
         tempNode = tempNode->succ;
@@ -188,7 +243,7 @@ void List<T>::deletePointByPos(int pos){
     printError();
 }
 
-//è¿­ä»£å™¨åœç•™äºéé¡ºåºæœ€åä¸€ä¸ªå€¼
+//µü´úÆ÷Í£ÁôÓÚ·ÇË³Ğò×îºóÒ»¸öÖµ
 template <class T>
 bool List<T>::disordered(){
     begin();
@@ -203,7 +258,7 @@ bool List<T>::disordered(){
     return false;
 }
 
-//å‰æ’
+//Ç°²å
 template <class T>
 void List<T>::backInsert(T needNum, T data){
     node *tempNode = header;
@@ -214,6 +269,7 @@ void List<T>::backInsert(T needNum, T data){
             insertNode->succ = tempNode->succ;
             tempNode->succ = insertNode;
             tempNode = insertNode->succ;
+            count++;
             return;
         }
         tempNode = tempNode->succ;
@@ -221,7 +277,7 @@ void List<T>::backInsert(T needNum, T data){
     printError();
 }
 
-//é€†åº éé€’å½’è§£æ³•
+//ÄæĞò ·Çµİ¹é½â·¨
 template <class T>
 void List<T>::traserve(){
     node *medNode = header->succ;
@@ -251,6 +307,7 @@ void List<T>::insertPoint(node *insertNode, T data){
     }
     insertNode->succ = newNode;
     iterator = newNode;
+    count++;
 }
 
 template <class T>
@@ -262,6 +319,7 @@ void List<T>::delPoint(node *needDelNode){
     needDelNode->succ = delNode->succ;
     delete delNode;
     iterator = needDelNode;
+    count--;
 }
 
 template <class T>

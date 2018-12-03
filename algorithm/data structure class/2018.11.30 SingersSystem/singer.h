@@ -20,6 +20,7 @@ class Singer
         double getGrade(int);
         double getArg();
         double getSum();
+        void changeGradle(double, double);
 
     private:
         int singerNumber = 0; //歌手编号
@@ -41,6 +42,7 @@ Singer::Singer(int singerNumber, string singerName, double *singerGrade){
     this->singerNumber = singerNumber;
     this->singerName = singerName;
     this->singerGrade = singerGrade;
+    caculateArg();
 }
 
 //析构函数
@@ -101,6 +103,18 @@ void Singer::sortGrade(){
     while(lo < (hi = sort(lo, hi))); // 排序本体
 
     ifSorted = true;
+}
+
+void Singer::changeGradle(double changeBe, double ChangeAf){
+    int i = 0;
+    for(i = 0;i < 10;i++){
+        if(singerGrade[i] == changeBe){
+            singerGrade[i] = ChangeAf;
+        }
+    }
+    
+    ifSorted = false;
+    caculateArg();
 }
 
 #endif // SINGER_H

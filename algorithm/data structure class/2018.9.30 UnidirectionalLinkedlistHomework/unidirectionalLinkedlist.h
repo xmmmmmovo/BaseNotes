@@ -1,7 +1,6 @@
 /**
  * 单向链表类
- * language: c++ author: xmmmmmovo
- * 2018-12-1
+ * 2018-12-3 xmmmmmovo by:c++
 */
 #ifndef UNDIRECTIONALLINKEDLIST_H
 #define UNDIRECTIONALLINKEDLIST_H
@@ -24,10 +23,17 @@ public:
     ~List();
     void begin();//迭代器返回头结点
     void end();//迭代器返回尾节点
-    bool next();
-    bool nowNode();
+    bool next(); // 后移迭代器
+    T nowNodeData(); // 获取迭代器data
+    T nextNodeData(); // 获取下一迭代器data
+    T beforeNodeData(); // 获取上一个的节点
+    T getPosition(int); // 获取某节点数值
+    void swapWithBefore();
+    int getLength(); // 返回长度
     void insertInFort(T);//头结点后插入
     void insertInBack(T);//尾节点插入
+
+    // 插入删除方法
     void insert(T);//直接在迭代器后方插入
     void insert(T, T);//某个数值后插入
     void insertPointByPos(int, T);//插入某个位置节点 因函数重载原因改名
@@ -42,8 +48,10 @@ public:
 
 private:
     node *iterator;//迭代器 每次插入后迭代器指针指向插入位置
+    node *beforeIterator;
     node *header;//头结点
     node *trailer;//尾结点
+    int count = 0;
 
     void insertPoint(node *, T);//将节点后插入操作抽象成函数
     void delPoint(node *);
@@ -57,6 +65,7 @@ List<T>::List()
     header = new node();
     trailer = header;
     iterator = header;
+    beforeIterator = NULL;
 }
 
 //同理 释放内存 防止内存泄漏
@@ -75,21 +84,65 @@ List<T>::~List()
 template <class T>
 void List<T>::begin(){
     iterator = header;
+    beforeIterator = NULL;
 }
 
 template <class T>
 void List<T>::end(){
     iterator = trailer;
+    beforeIterator = NULL; // 尾部也先判断成null
 }
 
 template <class T>
 bool List<T>::next(){
-    return iterator->succ ? true: false;
+    beforeIterator = iterator;
+    iterator = iterator->succ;
+    return iterator ? true:false;
 }
 
 template <class T>
-bool List<T>::nowNode(){
-    return iterator ? true: false;
+T List<T>::nowNodeData(){
+    return iterator->data;
+}
+
+template <class T>
+T List<T>::nextNodeData(){
+    return iterator->succ->data;
+}
+
+template <class T>
+T List<T>::beforeNodeData(){
+    return beforeIterator->data;
+}
+
+template <class T>
+T List<T>::getPosition(int pos){
+    int length = 0;
+    if(pos > count){ // 判断是否越界
+        printError(); // 可能出现野指针问题 暂不知道解决方案
+    }else{
+        begin();
+        iterator = iterator->succ;
+        while(iterator){
+            if(length == pos)
+                return iterator->data;
+            iterator = iterator->succ;
+            length ++;
+        }
+    }
+}
+
+template <class T>
+void List<T>::swapWithBefore(){
+    T temp;
+    temp = iterator->data;
+    iterator->data = beforeIterator->data;
+    beforeIterator->data = temp;
+}
+
+template <class T>
+int List<T>::getLength(){
+    return count;
 }
 
 template <class T>
@@ -100,6 +153,7 @@ void List<T>::insertInFort(T data){
 
     header->succ = insertNode;
     iterator = insertNode;
+    count++;
 }
 
 template <class T>
@@ -110,6 +164,7 @@ void List<T>::insertInBack(T data){
     trailer->succ = insertNode;
     trailer = insertNode;
     iterator = insertNode;
+    count++;
 }
 
 template <class T>
@@ -215,6 +270,7 @@ void List<T>::backInsert(T needNum, T data){
             insertNode->succ = tempNode->succ;
             tempNode->succ = insertNode;
             tempNode = insertNode->succ;
+            count++;
             return;
         }
         tempNode = tempNode->succ;
@@ -252,6 +308,7 @@ void List<T>::insertPoint(node *insertNode, T data){
     }
     insertNode->succ = newNode;
     iterator = newNode;
+    count++;
 }
 
 template <class T>
@@ -263,6 +320,7 @@ void List<T>::delPoint(node *needDelNode){
     needDelNode->succ = delNode->succ;
     delete delNode;
     iterator = needDelNode;
+    count--;
 }
 
 template <class T>
