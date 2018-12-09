@@ -5,6 +5,7 @@
 #include <cstdio>
 #include <ctime> // 时间和随机数头文件
 #include <vector>
+#include <string>
 #include <fstream> // 文件读写流
 #include <iomanip> // io流
 #include <windows.h> // win API头文件
