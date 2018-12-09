@@ -26,7 +26,7 @@ void bubbleSort(int *num,int lo,int hi){
     while(lo < (hi = sort(num, lo, hi))); // 排序本体
 }
 
-// 快速排序
+// 快速排序 未优化
 void qSort(int *num, int lo, int hi){
     if(lo >= hi){
         return; // 若最低位都比最高位高则排序完成
