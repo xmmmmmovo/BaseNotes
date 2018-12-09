@@ -56,11 +56,11 @@
 - 插值查找(loglogn)/二分查找(logn)
 
   ```c++
-  void insertSearch(Rank lo, Rank hi)
+  int insertSearch(Rank lo, Rank hi)
   {
       while(lo < hi)
       {
-          mi = 二分mi/插值mi;
+          mi = 二分mi/插值mi; // 二分(lo+hi)/2
               
           if(e < A[mi])
           {

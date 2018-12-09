@@ -14,11 +14,6 @@ template <class T>
 class List
 {
 public:
-    typedef struct nodeList{
-        T data;
-        nodeList *succ = NULL;//后继 如果定义成private会造成析构函数无法运行
-    } node;
-
     List();
     ~List();
     void begin();//迭代器返回头结点
@@ -47,6 +42,10 @@ public:
     void traserve();//将单链表转置
 
 private:
+    typedef struct nodeList{
+        T data;
+        nodeList *succ = NULL;//后继 如果定义成private会造成析构函数无法运行
+    } node;
     node *iterator;//迭代器 每次插入后迭代器指针指向插入位置
     node *beforeIterator;
     node *header;//头结点
