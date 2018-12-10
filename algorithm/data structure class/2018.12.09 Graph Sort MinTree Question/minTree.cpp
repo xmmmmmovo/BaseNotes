@@ -93,7 +93,7 @@ void prim(){
             }
         }
     } 
-    printf("min is:\n");
+    printf("min tree by prim is:\n");
     for(j = 0; j < graph->nos - 1; j++){
         printf("%c --- %c %d\n", graph->vexs[tree[j].begin], 
         graph->vexs[tree[j].end], tree[j].length);
@@ -102,14 +102,92 @@ void prim(){
     }
 }
 
+// 未优化快排
+void qSort(edge edges[], int lo, int hi){
+    edge x;
+    int i = 0, j = 0, flag = 1;
+    if(lo < hi){
+        i = lo;
+        j = hi;
+        x = edges[i];
+        while(i < j){
+            while(i < j && x.length < edges[j].length)
+                j--;
+            if(i < j)
+                edges[i++] = edges[j];
+            while(i < j && x.length > edges[i].length)
+                i++;
+            if(i < j)
+                edges[j--] = edges[i]; 
+        }
+        edges[i] = x;
+        qSort(edges, lo, i - 1);
+        qSort(edges, i + 1, hi);
+    }
+}
+
+void getEdges(edge *edges){
+    int i = 0, j = 0, k = 0;
+    for(i = 0;i < graph->nos;i++){
+        for(j = 0; j < i; j++){
+            if(graph->edges[i][j] != 0 && graph->edges[i][j] < INFIN){
+                edges[k].begin = i;
+                edges[k].end = j;
+                edges[k++].length = graph->edges[i][j];
+            }
+        }
+    }
+}
+
 void kruskal(){
-    
+    int i = 0, j = 0, k = 0, ltfl = 0;
+    int cnvx[MAX]; // 寄存器
+    edge edges[MAX * MAX]; // 存放所有边
+    edge tree[MAX]; // 存放树信息
+    getEdges(edges);
+    qSort(edges, 0, graph->edgeNum - 1); // 升序排序
+
+    for(i = 0;i < graph->edgeNum;i++){
+        cnvx[i] = i; // 初始化
+    }
+
+    for(i = 0;i < graph->nos - 1;i++){
+        while(cnvx[edges[k].begin] == cnvx[edges[k].end]){
+            k++;
+        }
+        tree[i] = edges[k];
+        ltfl = cnvx[edges[k].end];
+        for(j = 0; j < graph->nos; j++){
+            if(cnvx[j] == ltfl){
+                cnvx[j] = cnvx[edges[k].begin];
+            }
+        }
+        k++;
+    }
+
+    printf("min tree by kruskal is\n");
+    for(j = 0; j < graph->nos - 1; j++){
+        printf("%c --- %c %d\n", graph->vexs[tree[j].begin], 
+        graph->vexs[tree[j].end], tree[j].length);
+    }
+}
+
+// 单源最短路径
+void Dijkstra(){
+}
+
+// 所有顶点对的最短路径
+void Floyd(){
 }
 
 int main(int argc, char const *argv[])
 {
     create(0);
     prim();
+    printf("\n");
+    kruskal();
+    printf("\n");
+
 
     system("pause");   
     return 0;
