@@ -1,19 +1,260 @@
-#include "unidirectionalLinkedlist.h"
 #include <iostream>
 #include <cstdlib>
 #include <cstdio>
 #include <ctime> // 时间和随机数头文件
 #include <vector>
+#include <string>
 #include <fstream> // 文件读写流
 #include <iomanip> // io流
 #include <windows.h> // win API头文件
 
+using namespace std; //std命名空间
+
+class Person
+{
+public:
+    string singerName; //stl里面的string存储姓名
+};
+
+class Singer: public Person
+{
+    public:
+        Singer();
+        Singer(int singerNumber, string singerName, double *singerGrade);
+        ~Singer();
+        void sortGrade();
+        int getNumber();
+        string getName();
+        double getGrade(int);
+        double getArg();
+        double getSum();
+        void changeGradle(int, double);
+
+    private:
+        int singerNumber = 0; //歌手编号
+        bool ifSorted = false; // 判断是否已经排序
+        double *singerFinGrade;
+        double *singerGrade; //用简单的数组存储成绩
+        double arg = 0; // 平均数储存(掐头去尾)
+        double sum = 0; // 成绩总和
+        void caculateArg();
+        int sort(int lo, int hi); // 次排序
+};
+
+Singer::Singer(){
+    singerNumber = 0;
+}
+
+//构造函数
+Singer::Singer(int singerNumber, string singerName, double *singerGrade){
+    this->singerNumber = singerNumber;
+    this->singerName = singerName;
+    this->singerGrade = singerGrade;
+    singerFinGrade = new double[10];
+    for(i = 0;i < 10;i++){
+        singerFinGrade[i] = singerGrade[i];
+    }
+    caculateArg();
+}
+
+//析构函数
+Singer::~Singer(){
+    // delete singerGrade; // 防止内存泄漏
+}
+
+int Singer::getNumber(){ // getter方法
+    return singerNumber;
+}
+
+string Singer::getName(){ // getter方法
+    return singerName;
+}
+
+double Singer::getGrade(int i){ // getter方法
+    return singerFinGrade[i];
+}
+
+double Singer::getArg(){ // getter方法
+    return arg;
+}
+
+void Singer::caculateArg(){
+    int i = 0;
+    if(ifSorted){
+        for(i = 1;i < 9;i++){
+            sum += singerGrade[i];
+        }
+        arg = sum/8;
+    }else{
+        sortGrade();
+        caculateArg();
+    }
+
+}
+
+int Singer::sort(int lo, int hi){
+    int last = lo;
+    double temp;
+
+    while(++lo <= hi){
+        if(singerGrade[lo - 1] > singerGrade[lo]){
+            last = lo;
+
+            temp = singerGrade[lo - 1];
+            singerGrade[lo - 1] = singerGrade[lo];
+            singerGrade[lo] = temp;
+        }
+    }
+
+    return last;
+}
+
+// 成绩内排序 从小到大(小数据所以用了冒泡)
+void Singer::sortGrade(){
+    int lo = 0, hi = 9;
+    while(lo < (hi = sort(lo, hi))); // 排序本体
+
+    ifSorted = true;
+}
+
+void Singer::changeGradle(int pos, double num){
+}
+
+class List: public Singer
+{
+public:
+    List();
+    ~List();
+    void begin();//迭代器返回头结点
+    void end();//迭代器返回尾节点
+    bool next(); // 后移迭代器
+    Singer nowNodeData(); // 获取迭代器data
+    Singer nextNodeData(); // 获取下一迭代器data
+    Singer beforeNodeData(); // 获取上一个的节点
+    Singer getPosition(int); // 获取某节点数值
+    void swapWithBefore();
+    int getLength(); // 返回长度
+    void insertInFort(Singer);//头结点后插入
+    void insertInBack(Singer);//尾节点插入
+
+private:
+    typedef struct nodeList{
+        Singer data;
+        nodeList *succ = NULL;//后继 如果定义成private会造成析构函数无法运行
+    } node;
+    node *iterator;//迭代器 每次插入后迭代器指针指向插入位置
+    node *beforeIterator;
+    node *header;//头结点
+    node *trailer;//尾结点
+    int count = 0;
+
+    void printError();
+};
+
+//构造单向链表
+List::List()
+{
+    header = new node();
+    trailer = header;
+    iterator = header;
+    beforeIterator = NULL;
+}
+
+//同理 释放内存 防止内存泄漏
+List::~List()
+{
+    node *temp;
+    while(header->succ){
+        temp = header;
+        header = header->succ;
+        delete temp;
+    }
+    delete header;
+}
+
+void List::begin(){
+    iterator = header;
+    beforeIterator = NULL;
+}
+
+void List::end(){
+    iterator = trailer;
+    beforeIterator = NULL; // 尾部也先判断成null
+}
+
+bool List::next(){
+    beforeIterator = iterator;
+    iterator = iterator->succ;
+    return iterator ? true:false;
+}
+
+Singer List::nowNodeData(){
+    return iterator->data;
+}
+
+Singer List::nextNodeData(){
+    return iterator->succ->data;
+}
+
+Singer List::beforeNodeData(){
+    return beforeIterator->data;
+}
+
+Singer List::getPosition(int pos){
+    int length = 0;
+    if(pos > count){ // 判断是否越界
+        printError(); // 可能出现野指针问题 暂不知道解决方案
+    }else{
+        begin();
+        iterator = iterator->succ;
+        while(iterator){
+            if(length == pos)
+                return iterator->data;
+            iterator = iterator->succ;
+            length ++;
+        }
+    }
+}
+
+void List::swapWithBefore(){
+    Singer temp;
+    temp = iterator->data;
+    iterator->data = beforeIterator->data;
+    beforeIterator->data = temp;
+}
+
+int List::getLength(){
+    return count;
+}
+
+void List::insertInFort(Singer data){
+    node *insertNode = new node();
+    insertNode->data = data;
+    insertNode->succ = header->succ;
+
+    header->succ = insertNode;
+    iterator = insertNode;
+    count++;
+}
+
+void List::insertInBack(Singer data){
+    node *insertNode = new node();
+    insertNode->data = data;
+
+    trailer->succ = insertNode;
+    trailer = insertNode;
+    iterator = insertNode;
+    count++;
+}
+
+void List::printError(){
+    cout << "can'Singer find num or point\n";
+}
+
 int i = 0, j = 0;//循环变量
-int chooseFr = 0, chooseSe = 0; // 一级菜单选择 二级菜单选择
+int chooseFr = -1, chooseSe = -1; // 一级菜单选择 二级菜单选择
 bool ifList = false; // 判断当前是否已经有链表
 List *singerList; // 歌手信息链表
-
-using namespace std; //std命名空间
 
 //设置背景色和字体颜色
 void initbkftColor(){ 
@@ -45,6 +286,7 @@ void menusSe(){
     cout << "/********* 1. 歌手编号     \n";
     cout << "/********* 2. 姓名     \n";
     cout << "/********* 3. 歌手平均分     \n";
+    cout << "/********* 0. 退出     \n";
     cout << "/************************************/\n\n";
     cout << "\b请输入你需要查询的方法！"; // \b使输出中文不是乱码
     // system("pause");
@@ -95,8 +337,9 @@ void createList(){
         singerList->insertInBack(Singer(singerNumber, singerName, singerGrade)); // 插入
 
         cout << "\n" << "\b请输入歌手编号(0则结束):" << "\n";
+        ifList = true;
     }
-    ifList = true;
+    // ifList = true;
 }
 
 void showSinger(Singer singer){
@@ -189,6 +432,8 @@ vector<Singer> searchSinger(){
             cin >> arg;
             ans = searchSingerByArg(arg);
             break;
+        case 0:
+            break;
     }
 
     return ans;
@@ -196,18 +441,20 @@ vector<Singer> searchSinger(){
 
 void changeGrade(){
     vector<Singer> ans;
-    double changeBe, changeAf;// 更改前后
+    int changeBe = 0;
+    double changeAf = 0;// 更改前后
     ans = searchSinger();
-    cout << "\b请输入需要更改的成绩：\n";
-    cin >> changeBe;
-    cout << "\b请输入你想要更改后的成绩：\n"; 
-    cin >> changeAf;
-    
-    // foreach循环
-    for(Singer singer : ans){
-        singer.changeGradle(changeBe, changeAf);
+    if(!ans.empty()){
+        cout << "\b请输入需要更改的成绩的评委编号：\n";
+        cin >> changeBe;
+        cout << "\b请输入你想要更改后的成绩：\n"; 
+        cin >> changeAf;
+        
+        // foreach循环
+        for(Singer singer : ans){
+            singer.changeGradle(changeBe, changeAf);
+        }
     }
-
 }
 
 // 生成非重复0-9数组
@@ -399,16 +646,28 @@ int main(int argc, char const *argv[]){
                 break;
             case 3:
                 system("cls");
-                if(ifList)
-                    searchSinger();
+                if(ifList){
+                    while(chooseSe){
+                        system("cls");
+                        searchSinger();
+                        system("pause");
+                    }
+                    chooseSe = -1;   
+                }
                 else
                     cout << "\b请先创建链表！";
                 over();
                 break;
             case 4:
                 system("cls");
-                if(ifList)
-                    changeGrade();
+                if(ifList){
+                    while(chooseSe){
+                        system("cls");
+                        changeGrade();
+                        system("pause");
+                    }
+                    chooseSe = -1;                    
+                }
                 else
                     cout << "\b请先创建链表！";
                 over();

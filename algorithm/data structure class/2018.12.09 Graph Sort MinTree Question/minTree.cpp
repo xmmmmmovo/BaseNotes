@@ -6,6 +6,7 @@
 #include <cstdio>
 #include <cmath>
 #include <cstdlib>
+#include <cstdbool>
 
 #define INFIN 5000 // 定义无穷为5000 
 #define MAX 20 // 定义最大节点是20个
@@ -24,7 +25,23 @@ typedef struct
 Mgraph *graph = new Mgraph();
 
 void create(int c){
-    FILE *fp = fopen("./data.txt", "r");
+    /**
+     * 实验用数据
+     * 
+     * 6 10
+     * ABCDEF
+     * 0 1 10
+     * 0 2 12
+     * 0 4 15
+     * 1 2 7
+     * 1 3 5
+     * 1 5 6
+     * 2 4 12
+     * 2 5 8
+     * 3 5 6
+     * 4 5 10
+    */
+    FILE *fp = fopen("./dataw.txt", "r");
     int weight = 0;
 
     if(fp){
@@ -172,22 +189,104 @@ void kruskal(){
     }
 }
 
+typedef int path[MAX];
+typedef int dist[MAX];
+path p;
+dist d;
 // 单源最短路径
-void Dijkstra(){
+void dijkstra(int v0){
+    bool finals[MAX];
+    int i = 0, j = 0, k = 0, v = 0, min = 0, x = 0;
+    // 1.初始化集合S与距离向量d
+    for(v = 0; v < graph->nos; v++){
+        finals[v] = false;
+        d[v] = graph->edges[v0][v];
+        p[v] = (d[v] < INFIN && d[v] != 0 ? v0 : -1); //-1代表无前驱节点
+    }
+    finals[v0] = true;
+    d[v0] = 0; // 初始只有v0一个节点
+    // 2.依次找出n-1个节点加入S中
+    for(i = 0;i < graph->nos - 1;i++){ // 因为v0已经存在了所以-1个节点
+        min = INFIN;
+        for(k = 0; k < graph->nos; k++){
+            if(!finals[k] && d[k] < min){
+                v = k;
+                min = d[k];
+            }
+        }
+        printf("%c --- %d\n", graph->vexs[v], min);
+        if(min == INFIN){
+            return;
+        }
+        finals[v] = true;
+        // 修改S与V-S中各节点的距离
+        for(k = 0; k < graph->nos; k++){
+            if(!finals[k] && (min + graph->edges[v][k] < d[k])){
+                d[k] = min + graph->edges[v][k];
+                p[k] = v;
+            }
+        }
+    }
 }
 
+void print_gpd(path p, dist d){
+    int st[MAX], i = 0, pre = 0, top = -1;
+    for(i = 0;i < graph->nos;i++){
+        printf("\ndistance: %d, path:", d[i]);
+        st[++top] = i;
+        pre = p[i];
+        while(pre != -1){
+            st[++top] = pre;
+            pre = p[pre];
+        }
+        while(top > 0){
+            printf("%d", st[top--]);
+        }
+    }
+}
+
+typedef int dist1[MAX][MAX];
+typedef int path1[MAX][MAX];
+path1 p1;
+dist1 d1;
 // 所有顶点对的最短路径
 void Floyd(){
+    int i = 0, j = 0, k = 0;
+    for(i = 0;i < graph->nos;i++){
+        for(j = 0; j < graph->nos; j++){
+            d1[i][j] = graph->edges[i][j];
+            p1[i][j] = (i != j && d1[i][j] < INFIN ? i : -1);
+        }
+    }
+    for(k = 0; k < graph->nos; k++){
+        for(i = 0;i < graph->nos;i++){
+            if(d1[i][j] > (d1[i][k] + d1[i][j])){
+                d1[i][j] = d1[i][k] + d1[i][j];
+                p1[i][j] = k;
+            }
+        }
+    }
 }
 
 int main(int argc, char const *argv[])
 {
+    int v0 = 0;
+
     create(0);
     prim();
     printf("\n");
     kruskal();
     printf("\n");
-
+    scanf("%d", &v0);
+    dijkstra(v0);
+    print_gpd(p, d);
+    printf("\n");
+    Floyd();
+    for(i = 0; i < graph->nos; i++){
+        printf("%d", i);
+        print_gpd(p1[i], d1[i]);
+        printf("\n");
+    }
 
     system("pause");   
     return 0;
