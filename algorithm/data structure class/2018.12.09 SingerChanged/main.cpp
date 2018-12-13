@@ -47,6 +47,7 @@ Singer::Singer(){
 
 //¹¹Ôìº¯Êý
 Singer::Singer(int singerNumber, string singerName, double *singerGrade){
+    int i = 0;
     this->singerNumber = singerNumber;
     this->singerName = singerName;
     this->singerGrade = singerGrade;
@@ -118,6 +119,13 @@ void Singer::sortGrade(){
 }
 
 void Singer::changeGradle(int pos, double num){
+    double temp = singerFinGrade[pos - 1];
+    singerFinGrade[pos - 1] = num;
+    for(int i = 0;i < 10;i++){
+        if(singerFinGrade[pos - 1] == singerGrade[i]){
+            singerGrade[i] = num;
+        }
+    }
 }
 
 class List: public Singer
