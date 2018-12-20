@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/movie/movie",
+    "pages/cinema/cinema",
+    "pages/find/find",
+    "pages/me/me"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#D53E37",
+    "navigationBarTitleText": "电影",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/movie/movie",
+      "text": "电影",
+      "iconPath": "images/bar/movie.png",
+      "selectedIconPath": "images/bar/movie.png"
+    },{
+      "pagePath": "pages/cinema/cinema",
+      "text": "影院",
+      "iconPath": "images/bar/cinema.png",
+      "selectedIconPath": "images/bar/cinema.png"
+    },{
+      "pagePath": "pages/find/find",
+      "text": "发现",
+      "iconPath": "images/bar/find.png",
+      "selectedIconPath": "images/bar/find.png"
+    },{
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "images/bar/me.png",
+      "selectedIconPath": "images/bar/me.png"
+    }]
+  }
+}

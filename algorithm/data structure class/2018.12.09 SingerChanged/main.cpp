@@ -79,6 +79,10 @@ double Singer::getArg(){ // getter方法
     return arg;
 }
 
+double Singer::getSum(){ // getter方法
+    return sum;
+}
+
 void Singer::caculateArg(){
     int i = 0;
     if(ifSorted){
@@ -358,7 +362,8 @@ void showSinger(Singer singer){
         cout << singer.getGrade(i) << " ";
     }
 
-    cout << "\n\n";
+    cout << "\n\b歌手平均分: " << singer.getSum() << "\n";
+    cout << "\b歌手平均分: " << singer.getArg() << "\n\n";
 }
 
 void showAll(){
