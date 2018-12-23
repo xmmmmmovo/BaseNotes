@@ -35,6 +35,9 @@
     <ClInclude Include="Book.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -45,7 +48,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\libarypic.jpg">
+    <Image Include="res\labBk.jpg">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

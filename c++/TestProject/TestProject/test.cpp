@@ -8,6 +8,10 @@ using namespace std;
 
 int main() {
 	initgraph(640, 480);
-	//printf("ÖÐÎÄ£¡");
-	system("pause");
+	HRGN reg = CreateRectRgn(100, 100, 200, 200);
+	SelectClipRgn(NULL, reg);
+	loadimage(NULL, _T("D:\\AndroidLabtest\\notes\\algorithm\\data structure class\\LibrarySystem\\LibrarySystem\\res\\labBk.jpg"));
+
+	getchar();
+	return 0;
 }

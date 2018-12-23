@@ -155,12 +155,13 @@
     <ClInclude Include="List.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="Vector.h" />
+    <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LibrarySystem.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\libarypic.jpg" />
+    <Image Include="res\labBk.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
