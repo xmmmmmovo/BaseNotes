@@ -48,7 +48,7 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\labBk.jpg">
+    <Image Include="res\bk.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

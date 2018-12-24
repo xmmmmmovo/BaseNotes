@@ -44,34 +44,8 @@ void fillRect(rect rec) {
 初始化
 */
 void initView() {
-	initgraph(1280, 960); // 初始化窗口
-	loadimage(NULL, "IMAGE", "LABBK", 1280, 960, true); // 读取背景
-
-	// 按钮
-	startrec = createButton(200, 500);
-	exitrec = createButton(200, 700);
-	setfillcolor(WHITE);
-	fillRect(startrec);
-	fillRect(exitrec);
-	// 按钮内部字体
-	settextstyle(70, 25, NULL);
-	setbkcolor(WHITE);
-	settextcolor(BLACK);
-	drawtext("进入系统", &startrec, DT_CENTER | DT_VCENTER);
-	drawtext("退出程序", &exitrec, DT_CENTER | DT_VCENTER);
-
-	// 标题
-	rect titlerec;
-	createRect(titlerec, 100, 100, 1000, 250);
-	fillRect(titlerec);
-	settextstyle(130, 50, NULL);
-	drawtext("欢迎来到图书管理系统！", &titlerec, DT_CENTER | DT_VCENTER);
-	// 人员表
-	rect grouprec;
-	createRect(titlerec, 100, 250, 1000, 300);
-	fillRect(titlerec);
-	settextstyle(50, 15, NULL);
-	drawtext("————小队人员：马骕駸 林志鹏 李开宇 申田园", &titlerec, DT_RIGHT);
+	initgraph(750, 446); // 初始化窗口
+	loadimage(NULL, "PNG", "LABBK"); // 读取背景
 }
 
 /**

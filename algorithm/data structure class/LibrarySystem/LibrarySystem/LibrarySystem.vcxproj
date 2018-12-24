@@ -161,7 +161,7 @@
     <ResourceCompile Include="LibrarySystem.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\labBk.jpg" />
+    <Image Include="res\bk.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
