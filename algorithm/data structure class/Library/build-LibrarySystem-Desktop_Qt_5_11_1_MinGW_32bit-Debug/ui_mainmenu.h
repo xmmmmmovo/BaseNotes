@@ -11,8 +11,14 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QTreeWidget>
 #include <QtWidgets/QWidget>
@@ -23,21 +29,62 @@ class Ui_MainMenu
 {
 public:
     QWidget *centralwidget;
-    QTreeWidget *treeWidget;
+    QGridLayout *gridLayout;
+    QTreeWidget *bookTree;
+    QHBoxLayout *horizontalLayout;
+    QLabel *searchText;
+    QLineEdit *searchLineEdit;
+    QComboBox *choseSearchLabel;
+    QSpacerItem *horizontalSpacer;
     QToolBar *toolBar;
 
     void setupUi(QMainWindow *MainMenu)
     {
         if (MainMenu->objectName().isEmpty())
             MainMenu->setObjectName(QStringLiteral("MainMenu"));
-        MainMenu->resize(750, 446);
-        MainMenu->setMinimumSize(QSize(750, 446));
-        MainMenu->setMaximumSize(QSize(750, 446));
+        MainMenu->resize(900, 536);
+        MainMenu->setMinimumSize(QSize(900, 536));
+        MainMenu->setMaximumSize(QSize(900, 536));
         centralwidget = new QWidget(MainMenu);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
-        treeWidget = new QTreeWidget(centralwidget);
-        treeWidget->setObjectName(QStringLiteral("treeWidget"));
-        treeWidget->setGeometry(QRect(40, 20, 256, 192));
+        gridLayout = new QGridLayout(centralwidget);
+        gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        bookTree = new QTreeWidget(centralwidget);
+        QTreeWidgetItem *__qtreewidgetitem = new QTreeWidgetItem();
+        __qtreewidgetitem->setText(0, QStringLiteral("1"));
+        bookTree->setHeaderItem(__qtreewidgetitem);
+        bookTree->setObjectName(QStringLiteral("bookTree"));
+
+        gridLayout->addWidget(bookTree, 1, 0, 3, 1);
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        searchText = new QLabel(centralwidget);
+        searchText->setObjectName(QStringLiteral("searchText"));
+        searchText->setStyleSheet(QString::fromUtf8("font: 75 11pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";"));
+
+        horizontalLayout->addWidget(searchText);
+
+        searchLineEdit = new QLineEdit(centralwidget);
+        searchLineEdit->setObjectName(QStringLiteral("searchLineEdit"));
+
+        horizontalLayout->addWidget(searchLineEdit);
+
+        choseSearchLabel = new QComboBox(centralwidget);
+        choseSearchLabel->addItem(QString());
+        choseSearchLabel->addItem(QString());
+        choseSearchLabel->addItem(QString());
+        choseSearchLabel->setObjectName(QStringLiteral("choseSearchLabel"));
+
+        horizontalLayout->addWidget(choseSearchLabel);
+
+
+        gridLayout->addLayout(horizontalLayout, 1, 1, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer, 2, 1, 1, 1);
+
         MainMenu->setCentralWidget(centralwidget);
         toolBar = new QToolBar(MainMenu);
         toolBar->setObjectName(QStringLiteral("toolBar"));
@@ -51,6 +98,11 @@ public:
     void retranslateUi(QMainWindow *MainMenu)
     {
         MainMenu->setWindowTitle(QApplication::translate("MainMenu", "MainWindow", nullptr));
+        searchText->setText(QApplication::translate("MainMenu", "\346\220\234\347\264\242\345\206\205\345\256\271", nullptr));
+        choseSearchLabel->setItemText(0, QApplication::translate("MainMenu", "\344\271\246\347\261\215\345\220\215\347\247\260", nullptr));
+        choseSearchLabel->setItemText(1, QApplication::translate("MainMenu", "\344\271\246\347\261\215\347\261\273\345\236\213", nullptr));
+        choseSearchLabel->setItemText(2, QApplication::translate("MainMenu", "\344\271\246\347\261\215\347\274\226\345\217\267", nullptr));
+
         toolBar->setWindowTitle(QApplication::translate("MainMenu", "toolBar", nullptr));
     } // retranslateUi
 
