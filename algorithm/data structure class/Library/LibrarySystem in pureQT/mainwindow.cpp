@@ -6,6 +6,8 @@
 #include <QString> // std::string的超集
 #include <QDebug> // 调试用
 
+#include "Hash.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -13,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
     init();
+    initHashTable();
 }
 
 MainWindow::~MainWindow(){

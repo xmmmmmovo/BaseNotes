@@ -7,19 +7,18 @@ shuji hanshu
 using namespace std;
 
 /**
-  shujilei
+  图书结构体
 */
 typedef struct Book {
     long long int bookNumber = 0; // 书籍编号
-    int bookNameNumber = 0; // 同类书籍的唯一编码
-    string bookName = "test"; // 书籍名称
+    string bookName = "null"; // 书籍名称
     int bookStock = 0; //书籍库存
     bool ifRent = false; // 是否出借
     int bookType = -1; // 书籍类型
 }book;
 
 /**
-  chushihua
+  初始化
 */
 book* initBook(int number, string name, int stock, bool rent, int type) {
     book *newBook = (book *)malloc(sizeof(book));

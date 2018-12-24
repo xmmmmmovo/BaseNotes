@@ -1,55 +1,46 @@
 #pragma once // 只被include一次
 /**
-双向链表
+链表
 */
 #include "Book.h"
+#include "Hash.h"
+
 /**
-双向链表节点
+链表节点
 */
 typedef struct Node{
-    book *book = NULL;
+    hashnode *book = NULL;
     struct Node *next = NULL;
-    struct Node *before = NULL;
 }node;
-
-node *header = NULL; // 头结点
-node *iteratorNode = NULL; // 迭代器
-int length = 0;
 
 /**
 初始化链表
 */
-void initList() {
+node *initList() {
+    node *header = NULL; // 头结点
     header = (node *)malloc(sizeof(node));
-    iteratorNode = header;
-    return;
+    return header;
 }
 
 /**
 添加节点
 */
-void addNode(book *newBook) {
-    node *newNode = (node *)malloc(sizeof(node));
-    newNode->book = newBook;
-    iteratorNode->next = newNode;
-    newNode->before = iteratorNode;
-    iteratorNode = newNode;
+void addNode(hashnode *newHashNode , node *header) {
     return;
 }
 
 /**
-删除节点
+删除节点(通过编号)
 */
-void removeNode() {
-    node *temp = header;
-    while (temp){
-        if (temp->next == iteratorNode){
-            free(iteratorNode);
-            iteratorNode = temp;
-            temp->next = NULL;
-            return;
-        }
-        temp = temp->next;
-    }
+void removeNode(node *header, long long int number) {
     return;
+}
+
+/**
+删除节点(通过名称)
+*/
+void removeNode(node *header, string name) {
+}
+
+node *findNode(){
 }

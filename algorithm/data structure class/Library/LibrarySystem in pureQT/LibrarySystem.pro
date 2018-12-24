@@ -36,7 +36,8 @@ HEADERS += \
     Book.h \
     FileBlock.h \
     Hash.h \
-    List.h
+    List.h \
+    Vector.h
 
 FORMS += \
         mainwindow.ui \
