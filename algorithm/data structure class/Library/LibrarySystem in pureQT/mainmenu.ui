@@ -27,16 +27,10 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0" rowspan="3">
-     <widget class="QTreeWidget" name="bookTree">
-      <column>
-       <property name="text">
-        <string notr="true">1</string>
-       </property>
-      </column>
-     </widget>
+    <item row="2" column="1">
+     <widget class="QTextBrowser" name="bookInfo"/>
     </item>
-    <item row="1" column="1">
+    <item row="0" column="1">
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <widget class="QLabel" name="searchText">
@@ -72,15 +66,27 @@
       </item>
      </layout>
     </item>
-    <item row="2" column="1">
-     <spacer name="horizontalSpacer">
+    <item row="0" column="0" rowspan="3">
+     <widget class="QTreeWidget" name="bookTree">
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <spacer name="verticalSpacer">
       <property name="orientation">
-       <enum>Qt::Horizontal</enum>
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
       </property>
       <property name="sizeHint" stdset="0">
        <size>
-        <width>40</width>
-        <height>20</height>
+        <width>20</width>
+        <height>100</height>
        </size>
       </property>
      </spacer>
@@ -97,7 +103,86 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="openBookLib"/>
+   <addaction name="saveAsFile"/>
+   <addaction name="separator"/>
+   <addaction name="addBook"/>
+   <addaction name="deleteAllSameBook"/>
+   <addaction name="deleteThisBook"/>
+   <addaction name="separator"/>
+   <addaction name="lendThisBook"/>
+   <addaction name="backThisBook"/>
   </widget>
+  <action name="openBookLib">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icon/actions/fileopen.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>打开图书系统文件</string>
+   </property>
+  </action>
+  <action name="addBook">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icon/actions/add.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>添加书籍</string>
+   </property>
+  </action>
+  <action name="deleteAllSameBook">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icon/actions/edit-delete.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>删除整类书籍</string>
+   </property>
+  </action>
+  <action name="deleteThisBook">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icon/actions/gtk-remove.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>删除此本书</string>
+   </property>
+  </action>
+  <action name="lendThisBook">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icon/actions/stock_right.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>出借此类书</string>
+   </property>
+  </action>
+  <action name="backThisBook">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icon/actions/object-rotate-left.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>归还此类书</string>
+   </property>
+  </action>
+  <action name="saveAsFile">
+   <property name="icon">
+    <iconset>
+     <normalon>:/icon/actions/filesaveas.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>此系统另存为</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

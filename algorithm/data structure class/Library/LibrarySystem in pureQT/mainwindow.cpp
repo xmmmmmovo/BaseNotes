@@ -40,7 +40,7 @@ void MainWindow::paintEvent(QPaintEvent *event){
 }
 
 void MainWindow::loginPush(){
-    qDebug() << "按到了！";
+//    qDebug() << "按到了！";
     if (ui->usernameLineEdit->text() == userName
             && ui->userpasswordLineEdit->text() == userPassword) {
         emit loginSuccessful(ui->usernameLineEdit->text()); // 登陆成功信号发送

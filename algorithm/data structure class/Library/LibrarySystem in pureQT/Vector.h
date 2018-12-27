@@ -116,6 +116,9 @@ bool Vector<T>::disordered() {
     return false;
 }
 
+/**
+  下面四个函数都是优化快排的内容
+*/
 template <class T>
 void Vector<T>::swap(Rank a, Rank b){
     int temp = sequenceList[a];

@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include <QString>
+#include <QTreeView>
+#include <QTextBrowser>
 
 namespace Ui {
 class MainMenu;
@@ -20,6 +22,8 @@ public:
 private:
     Ui::MainMenu *ui;
     QString userName;
+    QTextBrowser *bookInfo;
+    QTreeView *bookTree;
 
     void init();
     void paintEvent(QPaintEvent *); // 添加背景

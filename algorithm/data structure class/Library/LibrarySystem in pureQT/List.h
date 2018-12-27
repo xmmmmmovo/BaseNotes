@@ -3,13 +3,12 @@
 链表
 */
 #include "Book.h"
-#include "Hash.h"
-
+typedef struct HashNode hashnode; // 声明预防互相包含问题
 /**
 链表节点
 */
 typedef struct Node{
-    hashnode *book = NULL;
+    hashnode *hashNode = NULL;
     struct Node *next = NULL;
 }node;
 
