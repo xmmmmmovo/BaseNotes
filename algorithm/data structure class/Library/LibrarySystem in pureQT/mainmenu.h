@@ -5,7 +5,9 @@
 #include <QString>
 #include <QTreeView>
 #include <QTextBrowser>
-
+/**
+  真正的主窗口
+*/
 namespace Ui {
 class MainMenu;
 }
@@ -18,6 +20,11 @@ public:
     explicit MainMenu(QWidget *parent = 0);
     ~MainMenu();
     void dealLogin(QString); // 处理登录信息
+
+private slots:
+    void on_openBookLib_triggered();
+
+    void on_addBook_triggered();
 
 private:
     Ui::MainMenu *ui;

@@ -4,7 +4,9 @@
 #include "mainmenu.h"
 #include <QMainWindow>
 #include <QString>
-
+/**
+  主窗口（登录窗口）
+*/
 namespace Ui {
 class MainWindow;
 }

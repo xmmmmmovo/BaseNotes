@@ -2,6 +2,9 @@
 #define LABELCLICK_H
 #include <QLabel>
 
+/**
+  这个类覆写了label中的事件函数实现案件监听
+*/
 class LableClick: public QLabel
 {
 

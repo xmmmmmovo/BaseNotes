@@ -8,6 +8,9 @@
 
 #include "Hash.h"
 
+/**
+  主窗口（登录窗口）
+*/
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -33,12 +36,17 @@ void MainWindow::init(){
     userPassword = "123";
 }
 
-// 重载绘制函数 绘制背景
+/**
+  重载绘制函数 绘制背景
+*/
 void MainWindow::paintEvent(QPaintEvent *event){
     QPainter painter(this);
     painter.drawPixmap(0, 0, width(), height(), QPixmap(":/src/loginbk.png"));
 }
 
+/**
+  按下登录按钮
+*/
 void MainWindow::loginPush(){
 //    qDebug() << "按到了！";
     if (ui->usernameLineEdit->text() == userName
@@ -50,6 +58,9 @@ void MainWindow::loginPush(){
     }
 }
 
+/**
+  按下退出按钮
+*/
 void MainWindow::quitPush(){
     this->close();
 }

@@ -33,7 +33,7 @@ void initHashTable(){
   获取哈希地址
 */
 int getHashAddress(book *data){
-    return (data->bookNumber / 100) % 7 * 3 + data->bookType;
+    return ((int)data->bookName[0] / 100) % 7 * 3; // 采取书名唯一标识获取哈希地址
 }
 
 /**
@@ -46,8 +46,5 @@ void insertHashData(book *data){
         HashTable[address]->hashNode = (hashnode *)malloc(sizeof(hashnode));
         HashTable[address]->hashNode->book = data;
     }else {
-        hashnode *newNode = (hashnode *)malloc(sizeof(hashnode));
-        newNode->book = data;
-        addNode(newNode, HashTable[address]);
     }
 }

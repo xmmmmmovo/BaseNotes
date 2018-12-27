@@ -24,22 +24,16 @@ node *initList() {
 /**
 添加节点
 */
-void addNode(hashnode *newHashNode , node *header) {
+void addNode(hashnode *newHashNode , node *nowNode) {
     return;
 }
 
 /**
-删除节点(通过编号)
+  寻找节点
 */
-void removeNode(node *header, long long int number) {
-    return;
-}
-
-/**
-删除节点(通过名称)
-*/
-void removeNode(node *header, string name) {
-}
-
-node *findNode(){
+node *findNode(node *firstNode, string findingName){
+    while (firstNode->hashNode->book->bookName != findingName && firstNode) {
+        firstNode = firstNode->next;
+    }
+    return firstNode;
 }

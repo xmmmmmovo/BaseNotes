@@ -1,6 +1,8 @@
 #include "lableclick.h"
 #include <QMouseEvent>
-
+/**
+  label类的实现文件
+*/
 // mark: public:--------------------------------------------------
 LableClick::LableClick(QWidget *parent) :
     QLabel(parent)
