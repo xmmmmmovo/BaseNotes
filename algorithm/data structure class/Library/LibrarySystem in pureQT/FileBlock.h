@@ -11,7 +11,7 @@ using namespace std;
 乘法加密算法
 比较容易破解与找规律
 */
-string simpleEncoding(string inputText, int code) {
+string simpleEncoding(string inputText, int code) { // 密码123
     string encodeText;
     char *str;
     encodeText.append(ltoa(code, str, 0)); // 添加密码

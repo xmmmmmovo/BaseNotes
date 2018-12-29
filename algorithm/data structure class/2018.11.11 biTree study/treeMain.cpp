@@ -41,7 +41,7 @@ void preorder(treeNode *node){
             printf("%c ", node->nodeCharctar);
             buffer.push(node);
             node = node->left;
-        }else if(!buffer.empty()){
+        }else{
             node = buffer.top()->right;
             buffer.pop();
         }

@@ -55,3 +55,54 @@ void MainMenu::on_addBook_triggered()
 {
 
 }
+
+/**
+  按下 删除整类书籍 按钮反馈
+*/
+void MainMenu::on_deleteAllSameBook_triggered()
+{
+
+}
+
+/**
+  按下 删除此本书 按钮反馈
+*/
+void MainMenu::on_deleteThisBook_triggered()
+{
+
+}
+
+
+/**
+  按下 借出此本书 按钮反馈
+*/
+void MainMenu::on_lendThisBook_triggered()
+{
+
+}
+
+/**
+  按下 归还书籍 按钮反馈
+*/
+void MainMenu::on_backThisBook_triggered()
+{
+
+}
+
+/**
+  按下 系统另存为 按钮反馈
+*/
+void MainMenu::on_saveAsFile_triggered()
+{
+
+}
+
+/**
+  搜索栏改变时反馈
+*/
+void MainMenu::on_searchLineEdit_textChanged(const QString &arg1)
+{
+    if (arg1.isEmpty()) {
+    } else {
+    }
+}

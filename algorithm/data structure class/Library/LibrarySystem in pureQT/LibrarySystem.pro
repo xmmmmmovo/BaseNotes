@@ -27,7 +27,8 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     labelclick.cpp \
-    mainmenu.cpp
+    mainmenu.cpp \
+    bookinfodialog.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -37,11 +38,15 @@ HEADERS += \
     FileBlock.h \
     Hash.h \
     List.h \
-    Vector.h
+    Vector.h \
+    Structs.h \
+    treemodelcus.h \
+    bookinfodialog.h
 
 FORMS += \
         mainwindow.ui \
-    mainmenu.ui
+    mainmenu.ui \
+    bookinfodialog.ui
 
 RESOURCES += \
     icons.qrc

@@ -27,9 +27,6 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="2" column="1">
-     <widget class="QTextBrowser" name="bookInfo"/>
-    </item>
     <item row="0" column="1">
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
@@ -66,15 +63,6 @@
       </item>
      </layout>
     </item>
-    <item row="0" column="0" rowspan="3">
-     <widget class="QTreeWidget" name="bookTree">
-      <column>
-       <property name="text">
-        <string notr="true">1</string>
-       </property>
-      </column>
-     </widget>
-    </item>
     <item row="1" column="1">
      <spacer name="verticalSpacer">
       <property name="orientation">
@@ -90,6 +78,12 @@
        </size>
       </property>
      </spacer>
+    </item>
+    <item row="2" column="1">
+     <widget class="QTextBrowser" name="bookInfo"/>
+    </item>
+    <item row="0" column="0" rowspan="4">
+     <widget class="QTreeView" name="bookTreeView"/>
     </item>
    </layout>
   </widget>

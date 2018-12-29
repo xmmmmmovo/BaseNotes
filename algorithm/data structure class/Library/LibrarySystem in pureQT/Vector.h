@@ -10,6 +10,9 @@
 int i = 0;
 using namespace std;
 
+/**
+  线性表
+*/
 template <class T>
 class Vector {
 public:

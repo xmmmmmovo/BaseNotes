@@ -26,6 +26,18 @@ private slots:
 
     void on_addBook_triggered();
 
+    void on_deleteAllSameBook_triggered();
+
+    void on_deleteThisBook_triggered();
+
+    void on_lendThisBook_triggered();
+
+    void on_backThisBook_triggered();
+
+    void on_saveAsFile_triggered();
+
+    void on_searchLineEdit_textChanged(const QString &arg1);
+
 private:
     Ui::MainMenu *ui;
     QString userName;

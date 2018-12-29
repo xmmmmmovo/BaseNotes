@@ -6,19 +6,18 @@
 #include "Book.h"
 #include "Vector.h"
 #include "List.h"
+#include "Structs.h"
 #include <cstdio>
 #include <QDebug>
+/**
+  哈希表(散列表)
+  优点：查找插入便捷
+  缺点：无法排序
+  冲突解决方案：拉链法
+*/
 using namespace std;
 typedef int KeyType;
-#define Length 100 // 定义100个节点以供分类
-
-typedef struct HashNode
-{
-    book *book = NULL; // 指针类型传输，节省时间
-    bool isNull = true; // 判断此节点是否已经被占用
-    int count = 0; // 记录每本书的数量
-    Vector<long long int> bookNums; // 用于记录所有同类书本的编号
-}hashnode;
+#define Length 26 // 26个字母节点
 
 node **HashTable; // 用于存放哈希节点的数组
 
@@ -33,18 +32,17 @@ void initHashTable(){
   获取哈希地址
 */
 int getHashAddress(book *data){
-    return ((int)data->bookName[0] / 100) % 7 * 3; // 采取书名唯一标识获取哈希地址
+    return (int)data->bookName[0] % 100; // 采取书名唯一标识获取哈希地址
 }
 
 /**
-  插入
+  插入哈希节点
 */
-void insertHashData(book *data){
-    int address = getHashAddress(data);
-    if (HashTable[address]->hashNode->isNull) { // 如果没有节点就说明这个就是第一个节点
-        HashTable[address] = initList();
-        HashTable[address]->hashNode = (hashnode *)malloc(sizeof(hashnode));
-        HashTable[address]->hashNode->book = data;
-    }else {
-    }
+void insertHashData(){
+}
+
+/**
+  删除哈希节点
+*/
+void deleteHashData(){
 }

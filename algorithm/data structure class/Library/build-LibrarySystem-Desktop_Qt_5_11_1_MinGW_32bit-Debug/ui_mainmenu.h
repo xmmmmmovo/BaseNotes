@@ -22,6 +22,7 @@
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QToolBar>
+#include <QtWidgets/QTreeView>
 #include <QtWidgets/QTreeWidget>
 #include <QtWidgets/QWidget>
 
@@ -39,13 +40,14 @@ public:
     QAction *saveAsFile;
     QWidget *centralwidget;
     QGridLayout *gridLayout;
-    QTextBrowser *bookInfo;
     QHBoxLayout *horizontalLayout;
     QLabel *searchText;
     QLineEdit *searchLineEdit;
     QComboBox *choseSearchLabel;
-    QTreeWidget *bookTree;
     QSpacerItem *verticalSpacer;
+    QTreeWidget *bookTree;
+    QTextBrowser *bookInfo;
+    QTreeView *treeView;
     QToolBar *toolBar;
 
     void setupUi(QMainWindow *MainMenu)
@@ -94,11 +96,6 @@ public:
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         gridLayout = new QGridLayout(centralwidget);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        bookInfo = new QTextBrowser(centralwidget);
-        bookInfo->setObjectName(QStringLiteral("bookInfo"));
-
-        gridLayout->addWidget(bookInfo, 2, 1, 1, 1);
-
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         searchText = new QLabel(centralwidget);
@@ -123,6 +120,10 @@ public:
 
         gridLayout->addLayout(horizontalLayout, 0, 1, 1, 1);
 
+        verticalSpacer = new QSpacerItem(20, 100, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        gridLayout->addItem(verticalSpacer, 1, 1, 1, 1);
+
         bookTree = new QTreeWidget(centralwidget);
         QTreeWidgetItem *__qtreewidgetitem = new QTreeWidgetItem();
         __qtreewidgetitem->setText(0, QStringLiteral("1"));
@@ -131,9 +132,15 @@ public:
 
         gridLayout->addWidget(bookTree, 0, 0, 3, 1);
 
-        verticalSpacer = new QSpacerItem(20, 100, QSizePolicy::Minimum, QSizePolicy::Fixed);
+        bookInfo = new QTextBrowser(centralwidget);
+        bookInfo->setObjectName(QStringLiteral("bookInfo"));
 
-        gridLayout->addItem(verticalSpacer, 1, 1, 1, 1);
+        gridLayout->addWidget(bookInfo, 2, 1, 1, 1);
+
+        treeView = new QTreeView(centralwidget);
+        treeView->setObjectName(QStringLiteral("treeView"));
+
+        gridLayout->addWidget(treeView, 3, 0, 1, 1);
 
         MainMenu->setCentralWidget(centralwidget);
         toolBar = new QToolBar(MainMenu);
