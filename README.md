@@ -6,7 +6,7 @@
 - [数据结构课作业](https://github.com/xmmmmmovo/notes/tree/master/algorithm/data%20structure%20class)
 - [一些ACM题目](https://github.com/xmmmmmovo/notes/tree/master/algorithm/before%20acm%20lab)
 - [平日学习](https://github.com/xmmmmmovo/notes/tree/master/algorithm/study%20in%20daily)
-- [数据结构笔记(清华大学)](https://github.com/xmmmmmovo/notes/blob/master/algorithm/notes.md)
+- [数据结构笔记(清华大学网课笔记)](https://github.com/xmmmmmovo/notes/blob/master/algorithm/notes.md)
 
 ### [Android](https://github.com/xmmmmmovo/notes/tree/master/android)
 
@@ -16,7 +16,7 @@
 
 - [QT仓库合集](https://github.com/xmmmmmovo/notes/tree/master/c%2B%2B/Qt)
 - [QT笔记](https://github.com/xmmmmmovo/notes/blob/master/c%2B%2B/Qt/QT%E7%AC%94%E8%AE%B0.md)
-- c++笔记(详情请见博客)
+- [c++日常学习](https://github.com/xmmmmmovo/notes/tree/master/c%2B%2B/c%2B%2BProgect)
 
 ### [C](https://github.com/xmmmmmovo/notes/tree/master/c)
 
@@ -27,4 +27,10 @@
 ### [java](https://github.com/xmmmmmovo/notes/tree/master/java)
 
 ### [python](https://github.com/xmmmmmovo/notes/tree/master/python)
+
+### [web学习](https://github.com/xmmmmmovo/notes/tree/master/web)
+
+### [微信小程序](https://github.com/xmmmmmovo/notes/tree/master/WXML)
+
+
 
