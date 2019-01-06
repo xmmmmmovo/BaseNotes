@@ -121,7 +121,7 @@ void preOrderHuffMan(HUNODE* root)
 {
     if(root)
     {
-        printf("%c  %d  ", root->data.ch, root->data.weights);
+        printf("%c  %d\n", root->data.ch, root->data.weights);
         preOrderHuffMan(root->lchild);
         preOrderHuffMan(root->rchild);
     }

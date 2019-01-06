@@ -1,3 +1,10 @@
+#include <stdio.h> 
+/**
+ * 假定：
+ * childItems: vector --- hashnodes.bookNums
+ * 
+*/
+
 TreeItem::TreeItem(const QList &data, TreeItem *parent)
 {
     parentItem = parent;
@@ -50,14 +57,16 @@ int TreeItem::row() const
 TreeModel::TreeModel(QObject *parent)
     : QAbstractItemModel(parent)
 {
-    QList rootData;
+    QList rootData; // 定义根节点
     rootData << "Title";
     rootItem = new TreeItem(rootData);
 }
-
+/**
+ * 析构函数
+*/
 TreeModel::~TreeModel()
 {
-    delete rootItem;
+    delete rootItem; // rootItem可以利用vector
 }
 
 void TreeModel::setXML(QString xmlFile)
@@ -66,6 +75,9 @@ void TreeModel::setXML(QString xmlFile)
     setupModelData(rootItem);
 }
 
+/**
+ * 计算列数
+*/
 int TreeModel::columnCount(const QModelIndex &parent) const
 {
     if (parent.isValid())
@@ -74,6 +86,9 @@ int TreeModel::columnCount(const QModelIndex &parent) const
         return rootItem->columnCount();
 }
 
+/**
+ * 获取数据函数
+*/
 QVariant TreeModel::data(const QModelIndex &index, int role) const
 {
     if (!index.isValid())
@@ -109,6 +124,9 @@ QVariant TreeModel::data(const QModelIndex &index, int role) const
     }
 }
 
+/**
+ * 允许选中
+*/
 Qt::ItemFlags TreeModel::flags(const QModelIndex &index) const
 {
     if (!index.isValid())
@@ -117,6 +135,9 @@ Qt::ItemFlags TreeModel::flags(const QModelIndex &index) const
     return QAbstractItemModel::flags(index);
 }
 
+/**
+ * 头数据
+*/
 QVariant TreeModel::headerData(int section, Qt::Orientation orientation,
                                int role) const
 {
@@ -126,8 +147,10 @@ QVariant TreeModel::headerData(int section, Qt::Orientation orientation,
     return QVariant();
 }
 
-QModelIndex TreeModel::index(int row, int column, const QModelIndex &parent)
-            const
+/**
+ * 相当于坐标点
+*/
+QModelIndex TreeModel::index(int row, int column, const QModelIndex &parent)const
 {
     if (!hasIndex(row, column, parent))
         return QModelIndex();
@@ -146,6 +169,9 @@ QModelIndex TreeModel::index(int row, int column, const QModelIndex &parent)
         return QModelIndex();
 }
 
+/**
+ * 返回父节点
+*/
 QModelIndex TreeModel::parent(const QModelIndex &index) const
 {
     if (!index.isValid())
@@ -160,6 +186,9 @@ QModelIndex TreeModel::parent(const QModelIndex &index) const
     return createIndex(parentItem->row(), 0, parentItem);
 }
 
+/**
+ * 记录行数
+*/
 int TreeModel::rowCount(const QModelIndex &parent) const
 {
     TreeItem *parentItem;
@@ -174,6 +203,9 @@ int TreeModel::rowCount(const QModelIndex &parent) const
     return parentItem->childCount();
 }
 
+/**
+ * 返回节点(可能是itemdata)
+*/
 TreeItem * TreeModel::item(TreeItem* item, ToolUtil tool)
 {
     TreeItem *treeItem = NULL;
@@ -205,6 +237,9 @@ TreeItem * TreeModel::item(TreeItem* item, ToolUtil tool)
     return treeItem;
 }
 
+/**
+ * 建立model数据
+*/
 void TreeModel::setupModelData(TreeItem *parent)
 {
     QList parents;
