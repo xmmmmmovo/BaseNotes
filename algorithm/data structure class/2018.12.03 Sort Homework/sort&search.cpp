@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// Ã°ÅİÅÅĞò
+// å†’æ³¡æ’åº
 int sort(int *num, int lo, int hi){
     int last = lo;
     int temp;
@@ -23,24 +23,24 @@ int sort(int *num, int lo, int hi){
 }
 
 void bubbleSort(int *num,int lo,int hi){
-    while(lo < (hi = sort(num, lo, hi))); // ÅÅĞò±¾Ìå
+    while(lo < (hi = sort(num, lo, hi))); // æ’åºæœ¬ä½“
 }
 
-// ¿ìËÙÅÅĞò Î´ÓÅ»¯
+// å¿«é€Ÿæ’åº æœªä¼˜åŒ–
 void qSort(int *num, int lo, int hi){
     if(lo >= hi){
-        return; // Èô×îµÍÎ»¶¼±È×î¸ßÎ»¸ßÔòÅÅĞòÍê³É
+        return; // è‹¥æœ€ä½ä½éƒ½æ¯”æœ€é«˜ä½é«˜åˆ™æ’åºå®Œæˆ
     }
 
     int first = lo;
     int last = hi;
-    int key = num[first]; // Ñ¡È¡µÚÒ»¸öÎ´ÅÅĞòÍê³ÉµÄÊı×éÔªËØ×÷Îª»ù×¼µã
+    int key = num[first]; // é€‰å–ç¬¬ä¸€ä¸ªæœªæ’åºå®Œæˆçš„æ•°ç»„å…ƒç´ ä½œä¸ºåŸºå‡†ç‚¹
 
-    while(first < last){ // ÅĞ¶ÏÊÇ·ñ·ûºÏË³Ğò
+    while(first < last){ // åˆ¤æ–­æ˜¯å¦ç¬¦åˆé¡ºåº
         while(first < last && num[last] >= key){
             --last;
         }
-        num[first] = num[last]; // Ñ°ÕÒµÚÒ»¸öĞ¡ÓÚµÄ
+        num[first] = num[last]; // å¯»æ‰¾ç¬¬ä¸€ä¸ªå°äºçš„
         while(first < last && num[first] <= key){
             ++first;
         }
@@ -71,7 +71,7 @@ void qsort7(int x[], int p, int r){
     if (p >= r)
         return;
 
-    // ÔÚÊı×é´óĞ¡Ğ¡ÓÚ7µÄÇé¿öÏÂÊ¹ÓÃ¿ìËÙÅÅĞò
+    // åœ¨æ•°ç»„å¤§å°å°äº7çš„æƒ…å†µä¸‹ä½¿ç”¨å¿«é€Ÿæ’åº
     if (r - p + 1 < 7) {
         for (int i = p; i <= r; i++) {
             for (int j = i; j > p && x[j - 1] > x[j]; j--) {
@@ -81,7 +81,7 @@ void qsort7(int x[], int p, int r){
         return;
     }
 
-    // Ñ¡ÔñÖĞÊı£¬Óëqsort6ÏàÍ¬¡£
+    // é€‰æ‹©ä¸­æ•°ï¼Œä¸qsort6ç›¸åŒã€‚
     int len = r - p + 1;
     int m = p + (len >> 1);
     if (len > 7) {
@@ -98,37 +98,37 @@ void qsort7(int x[], int p, int r){
 
     int v = x[m];
 
-    // a,b½øĞĞ×ó¶ËÉ¨Ãè£¬c,d½øĞĞÓÒ¶ËÉ¨Ãè
+    // a,bè¿›è¡Œå·¦ç«¯æ‰«æï¼Œc,dè¿›è¡Œå³ç«¯æ‰«æ
     int a = p, b = a, c = p + len - 1, d = c;
     while (true) {
-        // ³¢ÊÔÕÒµ½´óÓÚpivotµÄÔªËØ
+        // å°è¯•æ‰¾åˆ°å¤§äºpivotçš„å…ƒç´ 
         while (b <= c && x[b] <= v) {
-            // ÓëpivotÏàÍ¬µÄ½»»»µ½×ó¶Ë
+            // ä¸pivotç›¸åŒçš„äº¤æ¢åˆ°å·¦ç«¯
             if (x[b] == v)
                 swap(x, a++, b);
             b++;
         }
-        // ³¢ÊÔÕÒµ½Ğ¡ÓÚpivotµÄÔªËØ
+        // å°è¯•æ‰¾åˆ°å°äºpivotçš„å…ƒç´ 
         while (c >= b && x[c] >= v) {
-            // ÓëpivotÏàÍ¬µÄ½»»»µ½ÓÒ¶Ë
+            // ä¸pivotç›¸åŒçš„äº¤æ¢åˆ°å³ç«¯
             if (x[c] == v)
                 swap(x, c, d--);
             c--;
         }
         if (b > c)
             break;
-        // ½»»»ÕÒµ½µÄÔªËØ
+        // äº¤æ¢æ‰¾åˆ°çš„å…ƒç´ 
         swap(x, b++, c--);
     }
 
-    // ½«ÏàÍ¬µÄÔªËØ½»»»µ½ÖĞ¼ä
+    // å°†ç›¸åŒçš„å…ƒç´ äº¤æ¢åˆ°ä¸­é—´
     int s, n = p + len;
     s = (a - p > b - a ? b - a : a - p);
     vecswap(x, p, b - s, s);
     s = (d - c > n - d - 1 ? n - d - 1 : d - c);
     vecswap(x, b, n - s, s);
 
-    // µİ¹éµ÷ÓÃ×ÓĞòÁĞ
+    // é€’å½’è°ƒç”¨å­åºåˆ—
     if ((s = b - a) > 1)
         qsort7(x, p, s + p - 1);
     if ((s = d - c) > 1)
@@ -136,11 +136,11 @@ void qsort7(int x[], int p, int r){
 
 }
 
-// ¶ş·ÖËÑË÷
+// äºŒåˆ†æœç´¢
 int biSearch(int lo, int hi,int searchNum, int *num){
     int mi = 0;
     while(lo < hi){
-        mi = (hi + lo)/2; // Ñ¡È¡¶ş·Öµã
+        mi = (hi + lo)/2; // é€‰å–äºŒåˆ†ç‚¹
 
         if(searchNum < num[mi]){
             hi = mi;
@@ -156,18 +156,18 @@ int main(int argc, char const *argv[])
 {
     int i = 0, searchNum = 0;
     int num[] = {1, -1, 0, 12, 11, 34, 22, 1009, 122, -1233, 44, 122, 901, 1}; // length = 14
-    // bubbleSort(num, 0, 13); // Ã°ÅİÅÅĞò(ÒÑÓÅ»¯)
+    // bubbleSort(num, 0, 13); // å†’æ³¡æ’åº(å·²ä¼˜åŒ–)
 
     /*
-    * ´«µİµÄ²ÎÊı
-    * 1 ´ıÅÅĞòÊı×éÊ×µØÖ·
-    * 2 Êı×éÖĞ´ıÅÅĞòÔªËØÊıÁ¿¡¡¡¡
-    * 3 ¸÷ÔªËØµÄÕ¼ÓÃ¿Õ¼ä´óĞ¡
-    * 4 Ö¸Ïòº¯ÊıµÄÖ¸Õë£¬ÓÃÓÚÈ·¶¨ÅÅĞòµÄË³Ğò
+    * ä¼ é€’çš„å‚æ•°
+    * 1 å¾…æ’åºæ•°ç»„é¦–åœ°å€
+    * 2 æ•°ç»„ä¸­å¾…æ’åºå…ƒç´ æ•°é‡ã€€ã€€
+    * 3 å„å…ƒç´ çš„å ç”¨ç©ºé—´å¤§å°
+    * 4 æŒ‡å‘å‡½æ•°çš„æŒ‡é’ˆï¼Œç”¨äºç¡®å®šæ’åºçš„é¡ºåº
     */
-    // qsort();// c++±ê×¼¿âÖĞ¸øµÄ¿ìËÙÅÅĞò·½°¸
+    // qsort();// c++æ ‡å‡†åº“ä¸­ç»™çš„å¿«é€Ÿæ’åºæ–¹æ¡ˆ
 
-    // qSort(num, 0, 13); // ×ÔĞ´µÄ¿ìËÙÅÅĞò
+    // qSort(num, 0, 13); // è‡ªå†™çš„å¿«é€Ÿæ’åº
     qsort7(num, 0, 13);
     for(i = 0;i < 14;i++){
         printf("%d ", num[i]);

@@ -1,5 +1,5 @@
 /**
- * ×îĞ¡Éú³ÉÊ÷
+ * æœ€å°ç”Ÿæˆæ ‘
  * language : c author : xmmmmmovo
  * 2018-12-09
 */
@@ -8,25 +8,25 @@
 #include <cstdlib>
 #include <cstdbool>
 
-#define INFIN 5000 // ¶¨ÒåÎŞÇîÎª5000 
-#define MAX 20 // ¶¨Òå×î´ó½ÚµãÊÇ20¸ö
+#define INFIN 5000 // å®šä¹‰æ— ç©·ä¸º5000 
+#define MAX 20 // å®šä¹‰æœ€å¤§èŠ‚ç‚¹æ˜¯20ä¸ª
 using namespace std;
 
-int i = 0, j = 0, k = 0; // Ñ­»·±äÁ¿
-typedef char vertextype; // ¶¥µãÀàĞÍ
-typedef int edgetype; // È¨ÖµÀàĞÍ
+int i = 0, j = 0, k = 0; // å¾ªç¯å˜é‡
+typedef char vertextype; // é¡¶ç‚¹ç±»å‹
+typedef int edgetype; // æƒå€¼ç±»å‹
 typedef struct
 {
-    vertextype vexs[MAX]; // µã
-    edgetype edges[MAX][MAX]; // ±ß
-    int nos, edgeNum; // ¶¥µã, ±ßÊı
+    vertextype vexs[MAX]; // ç‚¹
+    edgetype edges[MAX][MAX]; // è¾¹
+    int nos, edgeNum; // é¡¶ç‚¹, è¾¹æ•°
 }Mgraph;
 
 Mgraph *graph = new Mgraph();
 
 void create(int c){
     /**
-     * ÊµÑéÓÃÊı¾İ
+     * å®éªŒç”¨æ•°æ®
      * 
      * 6 10
      * ABCDEF
@@ -45,18 +45,18 @@ void create(int c){
     int weight = 0;
 
     if(fp){
-        fscanf(fp, "%d %d", &graph->nos, &graph->edgeNum); // ¶ÁÈ¡µã¸ú±ßµÄÊıÁ¿
+        fscanf(fp, "%d %d", &graph->nos, &graph->edgeNum); // è¯»å–ç‚¹è·Ÿè¾¹çš„æ•°é‡
         for(i = 0;i < graph->nos;i++){
             fscanf(fp, "%1s", &graph->vexs[i]);
         }
 
-        for(i = 0;i < graph->nos;i++){ // ³õÊ¼»¯¾ØÕó
+        for(i = 0;i < graph->nos;i++){ // åˆå§‹åŒ–çŸ©é˜µ
             for(j = 0;j < graph->nos; j++){
                 graph->edges[i][j] = (i == j ? 0 : INFIN);
             }
         }
 
-        for(k = 0;k < graph->edgeNum; k++){ // ½øĞĞÎÄ¼ş¶ÁÈ¡ÊäÈë
+        for(k = 0;k < graph->edgeNum; k++){ // è¿›è¡Œæ–‡ä»¶è¯»å–è¾“å…¥
             fscanf(fp, "%d %d %d", &i, &j, &weight);
             graph->edges[i][j] = weight;
             if(c == 0)
@@ -70,12 +70,12 @@ void create(int c){
 
 typedef struct edgedata
 {
-    int begin, end; // µãĞòºÅ
-    int length; // ±ß³¤
+    int begin, end; // ç‚¹åºå·
+    int length; // è¾¹é•¿
 }edge;
 
 void prim(){
-    edge tree[MAX - 1]; // ÓÃÀ´´æÊ÷
+    edge tree[MAX - 1]; // ç”¨æ¥å­˜æ ‘
     edge x;
     int d, min, j, k, s, v;
 
@@ -88,21 +88,21 @@ void prim(){
     for(k = 0; k < graph->nos - 2; k++){
         min = tree[k].length;
         s = k;
-        for(j = k + 1; j < graph->nos - 1; j++){ // Ñ¡È¡×î¶ÌÂ·¾¶
+        for(j = k + 1; j < graph->nos - 1; j++){ // é€‰å–æœ€çŸ­è·¯å¾„
             if(tree[j].length < min){
                 min = tree[j].length;
                 s = j;
             }
         }
-        v = tree[s].end; // Èëµã¾ÍÊÇ×î¶ÌÂ·¾¶µãµÄÄ©¶Ëµã
+        v = tree[s].end; // å…¥ç‚¹å°±æ˜¯æœ€çŸ­è·¯å¾„ç‚¹çš„æœ«ç«¯ç‚¹
 
-        // ½»»»°Ñ×î¶ÌÂ·¾¶·Åµ½µÚÒ»µãºóÃæ
+        // äº¤æ¢æŠŠæœ€çŸ­è·¯å¾„æ”¾åˆ°ç¬¬ä¸€ç‚¹åé¢
         x = tree[s];
         tree[s] = tree[k];
         tree[k] = x;
 
-        // ½»»»Íêk¾ÍÊÇ×î¶Ì±ß
-        for(j = k + 1; j < graph->nos - 1; j++){ // ¸üĞÂÁ½ÆÜ±ßµÄĞÅÏ¢
+        // äº¤æ¢å®Œkå°±æ˜¯æœ€çŸ­è¾¹
+        for(j = k + 1; j < graph->nos - 1; j++){ // æ›´æ–°ä¸¤æ –è¾¹çš„ä¿¡æ¯
             d = graph->edges[v][tree[j].end];
             if(d < tree[j].length){
                 tree[j].length = d;
@@ -119,7 +119,7 @@ void prim(){
     }
 }
 
-// Î´ÓÅ»¯¿ìÅÅ
+// æœªä¼˜åŒ–å¿«æ’
 void qSort(edge edges[], int lo, int hi){
     edge x;
     int i = 0, j = 0, flag = 1;
@@ -158,14 +158,14 @@ void getEdges(edge *edges){
 
 void kruskal(){
     int i = 0, j = 0, k = 0, ltfl = 0;
-    int cnvx[MAX]; // ¼Ä´æÆ÷
-    edge edges[MAX * MAX]; // ´æ·ÅËùÓĞ±ß
-    edge tree[MAX]; // ´æ·ÅÊ÷ĞÅÏ¢
+    int cnvx[MAX]; // å¯„å­˜å™¨
+    edge edges[MAX * MAX]; // å­˜æ”¾æ‰€æœ‰è¾¹
+    edge tree[MAX]; // å­˜æ”¾æ ‘ä¿¡æ¯
     getEdges(edges);
-    qSort(edges, 0, graph->edgeNum - 1); // ÉıĞòÅÅĞò
+    qSort(edges, 0, graph->edgeNum - 1); // å‡åºæ’åº
 
     for(i = 0;i < graph->edgeNum;i++){
-        cnvx[i] = i; // ³õÊ¼»¯
+        cnvx[i] = i; // åˆå§‹åŒ–
     }
 
     for(i = 0;i < graph->nos - 1;i++){
@@ -193,20 +193,20 @@ typedef int path[MAX];
 typedef int dist[MAX];
 path p;
 dist d;
-// µ¥Ô´×î¶ÌÂ·¾¶
+// å•æºæœ€çŸ­è·¯å¾„
 void dijkstra(int v0){
     bool finals[MAX];
     int i = 0, j = 0, k = 0, v = 0, min = 0, x = 0;
-    // 1.³õÊ¼»¯¼¯ºÏSÓë¾àÀëÏòÁ¿d
+    // 1.åˆå§‹åŒ–é›†åˆSä¸è·ç¦»å‘é‡d
     for(v = 0; v < graph->nos; v++){
         finals[v] = false;
         d[v] = graph->edges[v0][v];
-        p[v] = (d[v] < INFIN && d[v] != 0 ? v0 : -1); //-1´ú±íÎŞÇ°Çı½Úµã
+        p[v] = (d[v] < INFIN && d[v] != 0 ? v0 : -1); //-1ä»£è¡¨æ— å‰é©±èŠ‚ç‚¹
     }
     finals[v0] = true;
-    d[v0] = 0; // ³õÊ¼Ö»ÓĞv0Ò»¸ö½Úµã
-    // 2.ÒÀ´ÎÕÒ³ön-1¸ö½Úµã¼ÓÈëSÖĞ
-    for(i = 0;i < graph->nos - 1;i++){ // ÒòÎªv0ÒÑ¾­´æÔÚÁËËùÒÔ-1¸ö½Úµã
+    d[v0] = 0; // åˆå§‹åªæœ‰v0ä¸€ä¸ªèŠ‚ç‚¹
+    // 2.ä¾æ¬¡æ‰¾å‡ºn-1ä¸ªèŠ‚ç‚¹åŠ å…¥Sä¸­
+    for(i = 0;i < graph->nos - 1;i++){ // å› ä¸ºv0å·²ç»å­˜åœ¨äº†æ‰€ä»¥-1ä¸ªèŠ‚ç‚¹
         min = INFIN;
         for(k = 0; k < graph->nos; k++){
             if(!finals[k] && d[k] < min){
@@ -219,7 +219,7 @@ void dijkstra(int v0){
             return;
         }
         finals[v] = true;
-        // ĞŞ¸ÄSÓëV-SÖĞ¸÷½ÚµãµÄ¾àÀë
+        // ä¿®æ”¹Sä¸V-Sä¸­å„èŠ‚ç‚¹çš„è·ç¦»
         for(k = 0; k < graph->nos; k++){
             if(!finals[k] && (min + graph->edges[v][k] < d[k])){
                 d[k] = min + graph->edges[v][k];
@@ -249,7 +249,7 @@ typedef int dist1[MAX][MAX];
 typedef int path1[MAX][MAX];
 path1 p1;
 dist1 d1;
-// ËùÓĞ¶¥µã¶ÔµÄ×î¶ÌÂ·¾¶
+// æ‰€æœ‰é¡¶ç‚¹å¯¹çš„æœ€çŸ­è·¯å¾„
 void Floyd(){
     int i = 0, j = 0, k = 0;
     for(i = 0;i < graph->nos;i++){

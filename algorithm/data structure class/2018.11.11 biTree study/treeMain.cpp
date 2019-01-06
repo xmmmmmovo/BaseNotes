@@ -1,12 +1,12 @@
 /**
- * 2018-11-11 ¶ş²æÊ÷µÄÉú³ÉºÍ±éÀú(µü´úËã·¨)
+ * 2018-11-11 äºŒå‰æ ‘çš„ç”Ÿæˆå’Œéå†(è¿­ä»£ç®—æ³•)
  * language: C author: xmmmmmovo
 */
 #include <cstdio>
 #include <cstdlib>
 #include <stack>
 
-using namespace std;//stackËùĞèµÄÃüÃû¿Õ¼ä
+using namespace std;//stackæ‰€éœ€çš„å‘½åç©ºé—´
 
 typedef struct treeNode{
     char nodeCharctar;
@@ -15,7 +15,7 @@ typedef struct treeNode{
 }treeNode;
 int i = 0;
 
-//Ç°ĞòÉú³É¶ş²æÊ÷
+//å‰åºç”ŸæˆäºŒå‰æ ‘
 treeNode *createTree(){
     treeNode *node;
     char ch;
@@ -32,9 +32,9 @@ treeNode *createTree(){
     return node;
 }
 
-//Ç°Ğò±éÀú
+//å‰åºéå†
 void preorder(treeNode *node){
-    stack<treeNode *> buffer;//´æ´¢±éÀú½Úµã
+    stack<treeNode *> buffer;//å­˜å‚¨éå†èŠ‚ç‚¹
     
     while(!buffer.empty() || node){
         if(node){
@@ -50,7 +50,7 @@ void preorder(treeNode *node){
     printf("\n");
 }
 
-//ÖĞĞò±éÀú
+//ä¸­åºéå†
 void inorder(treeNode *node){
     stack<treeNode *> buffer;
     
@@ -69,7 +69,7 @@ void inorder(treeNode *node){
     printf("\n");
 }
 
-//ºóĞò±éÀú
+//ååºéå†
 void postorder(treeNode *node){
     stack<treeNode *> buffer;
     stack<bool> tag;
@@ -101,7 +101,7 @@ int main(int argc, char const *argv[])
 {
     treeNode *root;
 
-    //ÊäÈë123##4##5##
+    //è¾“å…¥123##4##5##
     root = createTree();
     preorder(root);
     inorder(root);

@@ -1,7 +1,7 @@
 /*
-ÒòÎªÄ£°åÀà²»ÄÜ·ÖÀë±à„1¤7?
-Ö»ÄÜ½«ÊµÏÖÓë¶¨Òå·ÅÔÚÍ¬Ò»¸öÎÄ¼þÀï
-¹Ê·Å„1¤7?.hÍ·ÎÄ¼þÖÐ
+å› ä¸ºæ¨¡æ¿ç±»ä¸èƒ½åˆ†ç¦»ç¼–ï¿½?
+åªèƒ½å°†å®žçŽ°ä¸Žå®šä¹‰æ”¾åœ¨åŒä¸€ä¸ªæ–‡ä»¶é‡Œ
+æ•…æ”¾ï¿½?.hå¤´æ–‡ä»¶ä¸­
 */
 #ifndef VECTOR_H
 #define VECTOR_H
@@ -17,42 +17,42 @@ using namespace std;
 template <class T>
 class Vector{
     public:
-        Vector();//¹¹Ôìº¯„1¤7?
+        Vector();//æž„é€ å‡½ï¿½?
         Rank size();
         T get(Rank);
-        void put(Rank, T);//Ìæ»»
+        void put(Rank, T);//æ›¿æ¢
         void insert(Rank, T);
-        void append(T);//Ä©Î²Ìí¼Ó
-        void remove(Rank);//É¾³ýÏòÁ¿
-        void remove(Rank, Rank);//º¯ÊýÖØÔØ
-        bool disordered();//ÅÐ¶ÏÊÇ·ñÅÅÁÐÕûÆë 
-        void sort(Rank, Rank);//´ÓÐ¡µ½´óÅÅÐò
-        Rank searchUnsortedList(Rank, Rank, T);//ËÑÑ°
-        Rank searchSortedList(Rank, Rank, T);//ËÑÑ°£¨ÓÐÐòÏò„1¤7?
-        void deduplicate(Rank, Rank);//ÌÞ³ýÖØ¸´ÏòÁ¿
-        void uniquify(Rank, Rank);//ÌÞ³ýÖØ¸´ÔªËØ(ÓÐÐòÏòÁ¿
-        void show(Rank);//ÏÔÊ¾„1¤7?
-        void showAll();//ÏÔÊ¾Ëù„1¤7?
-        //ÓÐÊ±„1¤7?->Ð´±éÀú²¢½øÐÐÏàÍ¬²Ù×÷º¯Êý
+        void append(T);//æœ«å°¾æ·»åŠ 
+        void remove(Rank);//åˆ é™¤å‘é‡
+        void remove(Rank, Rank);//å‡½æ•°é‡è½½
+        bool disordered();//åˆ¤æ–­æ˜¯å¦æŽ’åˆ—æ•´é½ 
+        void sort(Rank, Rank);//ä»Žå°åˆ°å¤§æŽ’åº
+        Rank searchUnsortedList(Rank, Rank, T);//æœå¯»
+        Rank searchSortedList(Rank, Rank, T);//æœå¯»ï¼ˆæœ‰åºå‘ï¿½?
+        void deduplicate(Rank, Rank);//å‰”é™¤é‡å¤å‘é‡
+        void uniquify(Rank, Rank);//å‰”é™¤é‡å¤å…ƒç´ (æœ‰åºå‘é‡
+        void show(Rank);//æ˜¾ç¤ºï¿½?
+        void showAll();//æ˜¾ç¤ºæ‰€ï¿½?
+        //æœ‰æ—¶ï¿½?->å†™éåŽ†å¹¶è¿›è¡Œç›¸åŒæ“ä½œå‡½æ•°
 
     private:
-        T *sequenceList;//ÏòÁ¿£¨Á¬Ðø±í
-        Rank nowSize = 0;//´æ·ÅÊýÖµ³¤„1¤7?
-        Rank maxSize = 16;//×Ü³¤„1¤7?
+        T *sequenceList;//å‘é‡ï¼ˆè¿žç»­è¡¨
+        Rank nowSize = 0;//å­˜æ”¾æ•°å€¼é•¿ï¿½?
+        Rank maxSize = 16;//æ€»é•¿ï¿½?
 
         bool checkLoHi(Rank, Rank);
         void checkIfOut();
         void increaseList();
         void moveBack(Rank);
         void moveForward(Rank);
-        void swap(Rank, Rank);//½»»»ÊýÖµ²Ù„1¤7?
+        void swap(Rank, Rank);//äº¤æ¢æ•°å€¼æ“ï¿½?
         Rank bubbleSort(Rank, Rank);
 };
 
 template <class T>
 Vector<T>::Vector(){
     std::locale::global(std::locale(""));
-    sequenceList = new T[maxSize];//·ÖÅä¿Õ¼ä
+    sequenceList = new T[maxSize];//åˆ†é…ç©ºé—´
 }
 
 template <class T>
@@ -126,15 +126,15 @@ bool Vector<T>::disordered(){
 template <class T>
 void Vector<T>::sort(Rank lo, Rank hi){
     if(checkLoHi(lo--, hi--)){
-        while(lo < (hi = bubbleSort(lo, hi)));//µ±×îºóµÄÄæÐò¶ÔÊÇloµÄÊ±ºòÌø³öÑ­„1¤7?
+        while(lo < (hi = bubbleSort(lo, hi)));//å½“æœ€åŽçš„é€†åºå¯¹æ˜¯loçš„æ—¶å€™è·³å‡ºå¾ªï¿½?
     }else{
         cout << "Out Of List !!";
     }
     
 }
 
-//Ã°ÅÝÅÅÐò
-//ÒÑÓÅ„1¤7? ²»¹ýÊ±¼ä¸´ÔÓ¶È×î²îÒ²Îªo(n^2)
+//å†’æ³¡æŽ’åº
+//å·²ä¼˜ï¿½? ä¸è¿‡æ—¶é—´å¤æ‚åº¦æœ€å·®ä¹Ÿä¸ºo(n^2)
 template <class T>
 Rank Vector<T>::bubbleSort(Rank lo, Rank hi){
     Rank last = lo;
@@ -142,7 +142,7 @@ Rank Vector<T>::bubbleSort(Rank lo, Rank hi){
     while(++lo <= hi){
         if (sequenceList[lo - 1] > sequenceList[lo])
         {
-            last = lo;//×îºó½»»»µÄÄæÐò„1¤7?
+            last = lo;//æœ€åŽäº¤æ¢çš„é€†åºï¿½?
             swap(lo - 1, lo);
         }
     }
@@ -150,7 +150,7 @@ Rank Vector<T>::bubbleSort(Rank lo, Rank hi){
     return last;
 }
 
-//±éÀú²éÕÒ È±µã£ºÖØ¸´Êý×éµÄÊ±ºòÎÞ·¨½øÐÐÑ¡Ôñ
+//éåŽ†æŸ¥æ‰¾ ç¼ºç‚¹ï¼šé‡å¤æ•°ç»„çš„æ—¶å€™æ— æ³•è¿›è¡Œé€‰æ‹©
 template <class T>
 Rank Vector<T>::searchUnsortedList(Rank lo, Rank hi, T num){
     if(checkLoHi(lo--, hi--)){
@@ -168,8 +168,8 @@ Rank Vector<T>::searchUnsortedList(Rank lo, Rank hi, T num){
     return -1;
 }
 
-//ÓÐÐòÏòÁ¿ËÑÑ°
-//¶þ·Ö²éÕÒ
+//æœ‰åºå‘é‡æœå¯»
+//äºŒåˆ†æŸ¥æ‰¾
 template <class T>
 Rank Vector<T>::searchSortedList(Rank lo, Rank hi, T num){
     if(checkLoHi(lo--, hi)){
@@ -185,15 +185,15 @@ Rank Vector<T>::searchSortedList(Rank lo, Rank hi, T num){
             }
         }
 
-        return lo;//·µ»ØÎ»ÖÃ
+        return lo;//è¿”å›žä½ç½®
     }else{
         cout << "Out Of List !!";
     }
 }
 
-//ÎÞÐòÏòÁ¿É¾³ý
-//bugÔ­Òò
-//£¡£¡Î´Íê³É£¡„1¤7?
+//æ— åºå‘é‡åˆ é™¤
+//bugåŽŸå› 
+//ï¼ï¼æœªå®Œæˆï¼ï¿½?
 template <class T>
 void Vector<T>::deduplicate(Rank lo, Rank hi){
     if(checkLoHi(lo--, hi--)){
@@ -208,7 +208,7 @@ void Vector<T>::deduplicate(Rank lo, Rank hi){
 
 }
 
-//ÓÐÐòÏòÁ¿É¾³ýÖØ¸´ÔªËØ
+//æœ‰åºå‘é‡åˆ é™¤é‡å¤å…ƒç´ 
 template <class T>
 void Vector<T>::uniquify(Rank lo, Rank hi){
     Rank j, count;
@@ -283,16 +283,16 @@ void Vector<T>::checkIfOut(){
 template <class T>
 void Vector<T>::increaseList(){
     T* oldList = sequenceList;
-    sequenceList = new T[maxSize <<= 1];//×óÒÆÒ»„1¤7? ÈÝÁ¿¼Ó„1¤7?
+    sequenceList = new T[maxSize <<= 1];//å·¦ç§»ä¸€ï¿½? å®¹é‡åŠ ï¿½?
     for(i = 0;i < nowSize - 1;i++)
     {
         sequenceList[i] = oldList[i];
     }
-    delete []oldList;//ÊÍ·Å¿Õ¼ä ·ÀÖ¹ÄÚ´æÐ¹Â©
+    delete []oldList;//é‡Šæ”¾ç©ºé—´ é˜²æ­¢å†…å­˜æ³„æ¼
 }
 
-//Ö¸Õë½»»»bug´ý½â„1¤7?!!!!
-//ÔÝÊ±Ê¹ÓÃ¶ÔÏó½»»»
+//æŒ‡é’ˆäº¤æ¢bugå¾…è§£ï¿½?!!!!
+//æš‚æ—¶ä½¿ç”¨å¯¹è±¡äº¤æ¢
 template <class T>
 void Vector<T>::swap(Rank a, Rank b){
     T temp;
@@ -301,7 +301,7 @@ void Vector<T>::swap(Rank a, Rank b){
     sequenceList[b] = temp;
 }
 
-//ÅÐ¶ÏÊ±ÀûÓÃÖ÷¹ÛµÄÎ»ÖÃ
+//åˆ¤æ–­æ—¶åˆ©ç”¨ä¸»è§‚çš„ä½ç½®
 template <class T>
 bool Vector<T>::checkLoHi(Rank lo, Rank hi){
     if((lo <= 0) || (hi > nowSize)){

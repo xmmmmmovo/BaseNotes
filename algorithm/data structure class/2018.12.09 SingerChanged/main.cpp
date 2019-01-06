@@ -1,19 +1,19 @@
 #include <iostream>
 #include <cstdlib>
 #include <cstdio>
-#include <ctime> // Ê±¼äºÍËæ»úÊıÍ·ÎÄ¼ş
+#include <ctime> // æ—¶é—´å’Œéšæœºæ•°å¤´æ–‡ä»¶
 #include <vector>
 #include <string>
-#include <fstream> // ÎÄ¼ş¶ÁĞ´Á÷
-#include <iomanip> // ioÁ÷
-#include <windows.h> // win APIÍ·ÎÄ¼ş
+#include <fstream> // æ–‡ä»¶è¯»å†™æµ
+#include <iomanip> // ioæµ
+#include <windows.h> // win APIå¤´æ–‡ä»¶
 
-using namespace std; //stdÃüÃû¿Õ¼ä
+using namespace std; //stdå‘½åç©ºé—´
 
 class Person
 {
 public:
-    string singerName; //stlÀïÃæµÄstring´æ´¢ĞÕÃû
+    string singerName; //stlé‡Œé¢çš„stringå­˜å‚¨å§“å
 };
 
 class Singer: public Person
@@ -31,21 +31,21 @@ class Singer: public Person
         void changeGradle(int, double);
 
     private:
-        int singerNumber = 0; //¸èÊÖ±àºÅ
-        bool ifSorted = false; // ÅĞ¶ÏÊÇ·ñÒÑ¾­ÅÅĞò
+        int singerNumber = 0; //æ­Œæ‰‹ç¼–å·
+        bool ifSorted = false; // åˆ¤æ–­æ˜¯å¦å·²ç»æ’åº
         double *singerFinGrade;
-        double *singerGrade; //ÓÃ¼òµ¥µÄÊı×é´æ´¢³É¼¨
-        double arg = 0; // Æ½¾ùÊı´¢´æ(ÆşÍ·È¥Î²)
-        double sum = 0; // ³É¼¨×ÜºÍ
+        double *singerGrade; //ç”¨ç®€å•çš„æ•°ç»„å­˜å‚¨æˆç»©
+        double arg = 0; // å¹³å‡æ•°å‚¨å­˜(æå¤´å»å°¾)
+        double sum = 0; // æˆç»©æ€»å’Œ
         void caculateArg();
-        int sort(int lo, int hi); // ´ÎÅÅĞò
+        int sort(int lo, int hi); // æ¬¡æ’åº
 };
 
 Singer::Singer(){
     singerNumber = 0;
 }
 
-//¹¹Ôìº¯Êı
+//æ„é€ å‡½æ•°
 Singer::Singer(int singerNumber, string singerName, double *singerGrade){
     int i = 0;
     this->singerNumber = singerNumber;
@@ -58,28 +58,28 @@ Singer::Singer(int singerNumber, string singerName, double *singerGrade){
     caculateArg();
 }
 
-//Îö¹¹º¯Êı
+//ææ„å‡½æ•°
 Singer::~Singer(){
-    // delete singerGrade; // ·ÀÖ¹ÄÚ´æĞ¹Â©
+    // delete singerGrade; // é˜²æ­¢å†…å­˜æ³„æ¼
 }
 
-int Singer::getNumber(){ // getter·½·¨
+int Singer::getNumber(){ // getteræ–¹æ³•
     return singerNumber;
 }
 
-string Singer::getName(){ // getter·½·¨
+string Singer::getName(){ // getteræ–¹æ³•
     return singerName;
 }
 
-double Singer::getGrade(int i){ // getter·½·¨
+double Singer::getGrade(int i){ // getteræ–¹æ³•
     return singerFinGrade[i];
 }
 
-double Singer::getArg(){ // getter·½·¨
+double Singer::getArg(){ // getteræ–¹æ³•
     return arg;
 }
 
-double Singer::getSum(){ // getter·½·¨
+double Singer::getSum(){ // getteræ–¹æ³•
     return sum;
 }
 
@@ -114,10 +114,10 @@ int Singer::sort(int lo, int hi){
     return last;
 }
 
-// ³É¼¨ÄÚÅÅĞò ´ÓĞ¡µ½´ó(Ğ¡Êı¾İËùÒÔÓÃÁËÃ°Åİ)
+// æˆç»©å†…æ’åº ä»å°åˆ°å¤§(å°æ•°æ®æ‰€ä»¥ç”¨äº†å†’æ³¡)
 void Singer::sortGrade(){
     int lo = 0, hi = 9;
-    while(lo < (hi = sort(lo, hi))); // ÅÅĞò±¾Ìå
+    while(lo < (hi = sort(lo, hi))); // æ’åºæœ¬ä½“
 
     ifSorted = true;
 }
@@ -137,33 +137,33 @@ class List: public Singer
 public:
     List();
     ~List();
-    void begin();//µü´úÆ÷·µ»ØÍ·½áµã
-    void end();//µü´úÆ÷·µ»ØÎ²½Úµã
-    bool next(); // ºóÒÆµü´úÆ÷
-    Singer nowNodeData(); // »ñÈ¡µü´úÆ÷data
-    Singer nextNodeData(); // »ñÈ¡ÏÂÒ»µü´úÆ÷data
-    Singer beforeNodeData(); // »ñÈ¡ÉÏÒ»¸öµÄ½Úµã
-    Singer getPosition(int); // »ñÈ¡Ä³½ÚµãÊıÖµ
+    void begin();//è¿­ä»£å™¨è¿”å›å¤´ç»“ç‚¹
+    void end();//è¿­ä»£å™¨è¿”å›å°¾èŠ‚ç‚¹
+    bool next(); // åç§»è¿­ä»£å™¨
+    Singer nowNodeData(); // è·å–è¿­ä»£å™¨data
+    Singer nextNodeData(); // è·å–ä¸‹ä¸€è¿­ä»£å™¨data
+    Singer beforeNodeData(); // è·å–ä¸Šä¸€ä¸ªçš„èŠ‚ç‚¹
+    Singer getPosition(int); // è·å–æŸèŠ‚ç‚¹æ•°å€¼
     void swapWithBefore();
-    int getLength(); // ·µ»Ø³¤¶È
-    void insertInFort(Singer);//Í·½áµãºó²åÈë
-    void insertInBack(Singer);//Î²½Úµã²åÈë
+    int getLength(); // è¿”å›é•¿åº¦
+    void insertInFort(Singer);//å¤´ç»“ç‚¹åæ’å…¥
+    void insertInBack(Singer);//å°¾èŠ‚ç‚¹æ’å…¥
 
 private:
     typedef struct nodeList{
         Singer data;
-        nodeList *succ = NULL;//ºó¼Ì Èç¹û¶¨Òå³Éprivate»áÔì³ÉÎö¹¹º¯ÊıÎŞ·¨ÔËĞĞ
+        nodeList *succ = NULL;//åç»§ å¦‚æœå®šä¹‰æˆprivateä¼šé€ æˆææ„å‡½æ•°æ— æ³•è¿è¡Œ
     } node;
-    node *iterator;//µü´úÆ÷ Ã¿´Î²åÈëºóµü´úÆ÷Ö¸ÕëÖ¸Ïò²åÈëÎ»ÖÃ
+    node *iterator;//è¿­ä»£å™¨ æ¯æ¬¡æ’å…¥åè¿­ä»£å™¨æŒ‡é’ˆæŒ‡å‘æ’å…¥ä½ç½®
     node *beforeIterator;
-    node *header;//Í·½áµã
-    node *trailer;//Î²½áµã
+    node *header;//å¤´ç»“ç‚¹
+    node *trailer;//å°¾ç»“ç‚¹
     int count = 0;
 
     void printError();
 };
 
-//¹¹Ôìµ¥ÏòÁ´±í
+//æ„é€ å•å‘é“¾è¡¨
 List::List()
 {
     header = new node();
@@ -172,7 +172,7 @@ List::List()
     beforeIterator = NULL;
 }
 
-//Í¬Àí ÊÍ·ÅÄÚ´æ ·ÀÖ¹ÄÚ´æĞ¹Â©
+//åŒç† é‡Šæ”¾å†…å­˜ é˜²æ­¢å†…å­˜æ³„æ¼
 List::~List()
 {
     node *temp;
@@ -191,7 +191,7 @@ void List::begin(){
 
 void List::end(){
     iterator = trailer;
-    beforeIterator = NULL; // Î²²¿Ò²ÏÈÅĞ¶Ï³Énull
+    beforeIterator = NULL; // å°¾éƒ¨ä¹Ÿå…ˆåˆ¤æ–­æˆnull
 }
 
 bool List::next(){
@@ -214,8 +214,8 @@ Singer List::beforeNodeData(){
 
 Singer List::getPosition(int pos){
     int length = 0;
-    if(pos > count){ // ÅĞ¶ÏÊÇ·ñÔ½½ç
-        printError(); // ¿ÉÄÜ³öÏÖÒ°Ö¸ÕëÎÊÌâ Ôİ²»ÖªµÀ½â¾ö·½°¸
+    if(pos > count){ // åˆ¤æ–­æ˜¯å¦è¶Šç•Œ
+        printError(); // å¯èƒ½å‡ºç°é‡æŒ‡é’ˆé—®é¢˜ æš‚ä¸çŸ¥é“è§£å†³æ–¹æ¡ˆ
     }else{
         begin();
         iterator = iterator->succ;
@@ -263,44 +263,44 @@ void List::printError(){
     cout << "can'Singer find num or point\n";
 }
 
-int i = 0, j = 0;//Ñ­»·±äÁ¿
-int chooseFr = -1, chooseSe = -1; // Ò»¼¶²Ëµ¥Ñ¡Ôñ ¶ş¼¶²Ëµ¥Ñ¡Ôñ
-bool ifList = false; // ÅĞ¶Ïµ±Ç°ÊÇ·ñÒÑ¾­ÓĞÁ´±í
-List *singerList; // ¸èÊÖĞÅÏ¢Á´±í
+int i = 0, j = 0;//å¾ªç¯å˜é‡
+int chooseFr = -1, chooseSe = -1; // ä¸€çº§èœå•é€‰æ‹© äºŒçº§èœå•é€‰æ‹©
+bool ifList = false; // åˆ¤æ–­å½“å‰æ˜¯å¦å·²ç»æœ‰é“¾è¡¨
+List *singerList; // æ­Œæ‰‹ä¿¡æ¯é“¾è¡¨
 
-//ÉèÖÃ±³¾°É«ºÍ×ÖÌåÑÕÉ«
+//è®¾ç½®èƒŒæ™¯è‰²å’Œå­—ä½“é¢œè‰²
 void initbkftColor(){ 
     system("color 70");
 }
 
-//Ò»¼¶²Ëµ¥
+//ä¸€çº§èœå•
 void menusFr(){
     cout << "/************************************/\n";
-    cout << "/********* 1. Â¼Èë²ÎÈü¸èÊÖĞÅÏ¢     \n";
-    cout << "/********* 2. ÏÔÊ¾ËùÓĞ²ÎÈüÑ¡ÊÖĞÅÏ¢ \n";
-    cout << "/********* 3. ²éÑ¯²ÎÈü¸èÊÖĞÅÏ¢     \n";
-    cout << "/********* 4. ĞŞ¸ÄÆÀÎ¯´ò·Ö         \n";
-    cout << "/********* 5. ²éÑ¯³ö³¡´ÎĞò         \n";
-    cout << "/********* 6. ±ÈÈü½á¹ûÅÅĞò         \n";
-    cout << "/********* 7. ¼ÌĞøÂ¼Èë²ÎÈü¸èÊÖĞÅÏ¢  \n";
-    cout << "/********* 8. ½«±¾´Î¸èÊÖĞÅÏ¢´æÈëÎÄ¼şÖĞ  \n";
-    cout << "/********* 9. ´ÓÎÄ¼şÖĞ¶ÁÈ¡¸èÊÖĞÅÏ¢  \n";
-    cout << "/********* 0. ÍË³öÏµÍ³             \n";
-    cout << "/************************************/\n\n";// Ñ¡×ö, ÎÄ¼ş¶ÁĞ´, ÖĞÎçĞ´
-    cout << "\bÇëÊäÈëÄãĞèÒªµÄ¹¦ÄÜ£¡"; // \bÊ¹Êä³öÖĞÎÄ²»ÊÇÂÒÂë
+    cout << "/********* 1. å½•å…¥å‚èµ›æ­Œæ‰‹ä¿¡æ¯     \n";
+    cout << "/********* 2. æ˜¾ç¤ºæ‰€æœ‰å‚èµ›é€‰æ‰‹ä¿¡æ¯ \n";
+    cout << "/********* 3. æŸ¥è¯¢å‚èµ›æ­Œæ‰‹ä¿¡æ¯     \n";
+    cout << "/********* 4. ä¿®æ”¹è¯„å§”æ‰“åˆ†         \n";
+    cout << "/********* 5. æŸ¥è¯¢å‡ºåœºæ¬¡åº         \n";
+    cout << "/********* 6. æ¯”èµ›ç»“æœæ’åº         \n";
+    cout << "/********* 7. ç»§ç»­å½•å…¥å‚èµ›æ­Œæ‰‹ä¿¡æ¯  \n";
+    cout << "/********* 8. å°†æœ¬æ¬¡æ­Œæ‰‹ä¿¡æ¯å­˜å…¥æ–‡ä»¶ä¸­  \n";
+    cout << "/********* 9. ä»æ–‡ä»¶ä¸­è¯»å–æ­Œæ‰‹ä¿¡æ¯  \n";
+    cout << "/********* 0. é€€å‡ºç³»ç»Ÿ             \n";
+    cout << "/************************************/\n\n";// é€‰åš, æ–‡ä»¶è¯»å†™, ä¸­åˆå†™
+    cout << "\bè¯·è¾“å…¥ä½ éœ€è¦çš„åŠŸèƒ½ï¼"; // \bä½¿è¾“å‡ºä¸­æ–‡ä¸æ˜¯ä¹±ç 
     // system("pause");
     cin >> chooseFr;
 }
 
-//¶ş¼¶²Ëµ¥
+//äºŒçº§èœå•
 void menusSe(){
     cout << "/************************************/\n";
-    cout << "/********* 1. ¸èÊÖ±àºÅ     \n";
-    cout << "/********* 2. ĞÕÃû     \n";
-    cout << "/********* 3. ¸èÊÖÆ½¾ù·Ö     \n";
-    cout << "/********* 0. ÍË³ö     \n";
+    cout << "/********* 1. æ­Œæ‰‹ç¼–å·     \n";
+    cout << "/********* 2. å§“å     \n";
+    cout << "/********* 3. æ­Œæ‰‹å¹³å‡åˆ†     \n";
+    cout << "/********* 0. é€€å‡º     \n";
     cout << "/************************************/\n\n";
-    cout << "\bÇëÊäÈëÄãĞèÒª²éÑ¯µÄ·½·¨£¡"; // \bÊ¹Êä³öÖĞÎÄ²»ÊÇÂÒÂë
+    cout << "\bè¯·è¾“å…¥ä½ éœ€è¦æŸ¥è¯¢çš„æ–¹æ³•ï¼"; // \bä½¿è¾“å‡ºä¸­æ–‡ä¸æ˜¯ä¹±ç 
     // system("pause");
     cin >> chooseSe;
 }
@@ -310,8 +310,8 @@ void headers(){
         cout << "*";
     }
 
-    cout << '\n' << "*   »¶Ó­Ê¹ÓÃ¸èÊÖ±ÈÈü³É¼¨¹ÜÀíÏµÍ³!   *" << '\n';
-    cout << "*   ÕâÀïËæ±ãĞ´ÄãÃÇµÄĞ¡×é¸úÑ§ºÅÉ¶!   *" << '\n';// 
+    cout << '\n' << "*   æ¬¢è¿ä½¿ç”¨æ­Œæ‰‹æ¯”èµ›æˆç»©ç®¡ç†ç³»ç»Ÿ!   *" << '\n';
+    cout << "*   è¿™é‡Œéšä¾¿å†™ä½ ä»¬çš„å°ç»„è·Ÿå­¦å·å•¥!   *" << '\n';// 
 
 	for(i = 1;i < 38;i++){
         cout << "*";
@@ -319,11 +319,11 @@ void headers(){
     cout << '\n';
 }
 
-//³õÊ¼»¯
+//åˆå§‹åŒ–
 void init(){
-    initbkftColor();// ³õÊ¼»¯ÑÕÉ«
-    headers(); // ±íÍ·
-    menusFr(); // Ò»¼¶²Ëµ¥
+    initbkftColor();// åˆå§‹åŒ–é¢œè‰²
+    headers(); // è¡¨å¤´
+    menusFr(); // ä¸€çº§èœå•
 }
 
 void createList(){
@@ -331,39 +331,39 @@ void createList(){
     string singerName; 
     double *singerGrade;
     // singerList = new List<Singer>();
-    cout << "\bÇëÊäÈë¸èÊÖ±àºÅ(0Ôò½áÊø):" << '\n';
-    while(scanf("%d", &singerNumber)){ // ÊäÈë±àºÅ 0½áÊø
+    cout << "\bè¯·è¾“å…¥æ­Œæ‰‹ç¼–å·(0åˆ™ç»“æŸ):" << '\n';
+    while(scanf("%d", &singerNumber)){ // è¾“å…¥ç¼–å· 0ç»“æŸ
         if(singerNumber == 0){
             break;
         }
 
-        cout << "\bÇëÊäÈë¸èÊÖĞÕÃû:" << '\n';
+        cout << "\bè¯·è¾“å…¥æ­Œæ‰‹å§“å:" << '\n';
         cin >> singerName;
 
-        singerGrade = new double[10]; // Ã¿´ÎÖØĞÂ·ÖÅä¿Õ¼ä
-        cout << "\bÇëÊäÈë¸èÊÖ³É¼¨:" << '\n';
+        singerGrade = new double[10]; // æ¯æ¬¡é‡æ–°åˆ†é…ç©ºé—´
+        cout << "\bè¯·è¾“å…¥æ­Œæ‰‹æˆç»©:" << '\n';
         for(i = 0;i < 10;i++){
             cin >> singerGrade[i];
         }
 
-        singerList->insertInBack(Singer(singerNumber, singerName, singerGrade)); // ²åÈë
+        singerList->insertInBack(Singer(singerNumber, singerName, singerGrade)); // æ’å…¥
 
-        cout << "\n" << "\bÇëÊäÈë¸èÊÖ±àºÅ(0Ôò½áÊø):" << "\n";
+        cout << "\n" << "\bè¯·è¾“å…¥æ­Œæ‰‹ç¼–å·(0åˆ™ç»“æŸ):" << "\n";
         ifList = true;
     }
     // ifList = true;
 }
 
 void showSinger(Singer singer){
-    cout << "\b¸èÊÖ±àºÅ:" << singer.getNumber() 
-    << "\n\b¸èÊÖĞÕÃû:" << singer.getName() << "\n\b¸èÊÖ³É¼¨:";
+    cout << "\bæ­Œæ‰‹ç¼–å·:" << singer.getNumber() 
+    << "\n\bæ­Œæ‰‹å§“å:" << singer.getName() << "\n\bæ­Œæ‰‹æˆç»©:";
 
     for(i = 0;i < 10;i++){
         cout << singer.getGrade(i) << " ";
     }
 
-    cout << "\n\b¸èÊÖÆ½¾ù·Ö: " << singer.getSum() << "\n";
-    cout << "\b¸èÊÖÆ½¾ù·Ö: " << singer.getArg() << "\n\n";
+    cout << "\n\bæ­Œæ‰‹å¹³å‡åˆ†: " << singer.getSum() << "\n";
+    cout << "\bæ­Œæ‰‹å¹³å‡åˆ†: " << singer.getArg() << "\n\n";
 }
 
 void showAll(){
@@ -375,8 +375,8 @@ void showAll(){
     }
 }
 
-// ÕâÀïÎªÊ²Ã´²»ÓÃÄ£°åÀà¶ø·Ö³ÉÈı¸ö·½·¨Ğ´
-// Ô­Òò¾ÍÊÇ²»ÖªµÀsingerÀàÖĞÄÄ¸öÆ¥Åä
+// è¿™é‡Œä¸ºä»€ä¹ˆä¸ç”¨æ¨¡æ¿ç±»è€Œåˆ†æˆä¸‰ä¸ªæ–¹æ³•å†™
+// åŸå› å°±æ˜¯ä¸çŸ¥é“singerç±»ä¸­å“ªä¸ªåŒ¹é…
 vector<Singer> searchSingerByNumber(int number){
     Singer singer;
     vector<Singer> ans;
@@ -424,24 +424,24 @@ vector<Singer> searchSingerByArg(double arg){
 
 vector<Singer> searchSinger(){
     vector<Singer> ans;
-    int number; // ¸èÊÖ±àºÅ
-    string name; //¸èÊÖĞÕÃû
-    double arg; // ¸èÊÖ³É¼¨
+    int number; // æ­Œæ‰‹ç¼–å·
+    string name; //æ­Œæ‰‹å§“å
+    double arg; // æ­Œæ‰‹æˆç»©
 
     menusSe();
     switch(chooseSe){
         case 1:
-            cout << "\bÇëÊäÈëÏëÒª²éÑ¯µÄ¸èÊÖ±àºÅ£º" << '\n';
+            cout << "\bè¯·è¾“å…¥æƒ³è¦æŸ¥è¯¢çš„æ­Œæ‰‹ç¼–å·ï¼š" << '\n';
             cin >> number;
             ans = searchSingerByNumber(number);
             break;
         case 2:
-            cout << "\bÇëÊäÈëÏëÒª²éÑ¯µÄ¸èÊÖĞÕÃû£º" << '\n';
+            cout << "\bè¯·è¾“å…¥æƒ³è¦æŸ¥è¯¢çš„æ­Œæ‰‹å§“åï¼š" << '\n';
             cin >> name;
             ans = searchSingerByName(name);
             break;
         case 3:
-            cout << "\bÇëÊäÈëÏëÒª²éÑ¯µÄ¸èÊÖÆ½¾ù³É¼¨£º" << '\n';
+            cout << "\bè¯·è¾“å…¥æƒ³è¦æŸ¥è¯¢çš„æ­Œæ‰‹å¹³å‡æˆç»©ï¼š" << '\n';
             cin >> arg;
             ans = searchSingerByArg(arg);
             break;
@@ -455,23 +455,23 @@ vector<Singer> searchSinger(){
 void changeGrade(){
     vector<Singer> ans;
     int changeBe = 0;
-    double changeAf = 0;// ¸ü¸ÄÇ°ºó
+    double changeAf = 0;// æ›´æ”¹å‰å
     ans = searchSinger();
     if(!ans.empty()){
-        cout << "\bÇëÊäÈëĞèÒª¸ü¸ÄµÄ³É¼¨µÄÆÀÎ¯±àºÅ£º\n";
+        cout << "\bè¯·è¾“å…¥éœ€è¦æ›´æ”¹çš„æˆç»©çš„è¯„å§”ç¼–å·ï¼š\n";
         cin >> changeBe;
-        cout << "\bÇëÊäÈëÄãÏëÒª¸ü¸ÄºóµÄ³É¼¨£º\n"; 
+        cout << "\bè¯·è¾“å…¥ä½ æƒ³è¦æ›´æ”¹åçš„æˆç»©ï¼š\n"; 
         cin >> changeAf;
         
-        // foreachÑ­»·
+        // foreachå¾ªç¯
         for(Singer singer : ans){
             singer.changeGradle(changeBe, changeAf);
         }
     }
 }
 
-// Éú³É·ÇÖØ¸´0-9Êı×é
-// ¿ÉÒÔÔÚ²»¸Ä±äÔ­Ë³ĞòµÄÇé¿öÏÂ½øĞĞËæ»úÑİ³öË³Ğò
+// ç”Ÿæˆéé‡å¤0-9æ•°ç»„
+// å¯ä»¥åœ¨ä¸æ”¹å˜åŸé¡ºåºçš„æƒ…å†µä¸‹è¿›è¡Œéšæœºæ¼”å‡ºé¡ºåº
 vector<int> randVector(int num){
     vector<int> res;
     res.clear();
@@ -509,11 +509,11 @@ void sortList(){
         return;
     }
     singerList->begin();
-    bool isChanged = true; // ÅĞ¶ÏÊÇ·ñ½øĞĞ½»»»
+    bool isChanged = true; // åˆ¤æ–­æ˜¯å¦è¿›è¡Œäº¤æ¢
     while(isChanged){
         singerList->begin();
         singerList->next();
-        isChanged = false; // ÏÈ¶¨ÒåÎªÃ»½»»»
+        isChanged = false; // å…ˆå®šä¹‰ä¸ºæ²¡äº¤æ¢
         while(singerList->next()){
             if(singerList->nowNodeData().getArg() < singerList->beforeNodeData().getArg()){
                 singerList->swapWithBefore();
@@ -524,29 +524,29 @@ void sortList(){
 }
 
 void sortSingerList(){
-    sortList(); // ÅÅĞòÖ÷º¯Êı
+    sortList(); // æ’åºä¸»å‡½æ•°
     showAll();
 }
 
 void nullWay(){
     system("cls");
-    cout << "\bÃ»ÓĞÕâÑùµÄ¹¦ÄÜ!\n";
-    cout << "\bÃ»ÓĞÕâÑùµÄ¹¦ÄÜ!\n";
-    cout << "\bÃ»ÓĞÕâÑùµÄ¹¦ÄÜ!\n";
+    cout << "\bæ²¡æœ‰è¿™æ ·çš„åŠŸèƒ½!\n";
+    cout << "\bæ²¡æœ‰è¿™æ ·çš„åŠŸèƒ½!\n";
+    cout << "\bæ²¡æœ‰è¿™æ ·çš„åŠŸèƒ½!\n";
     system("pause");
-    getchar(); // ½â¾ö³Ô×Ö·ûÎÊÌâ
+    getchar(); // è§£å†³åƒå­—ç¬¦é—®é¢˜
     system("cls");
     // system("pause");
 }
 
 void appendSinger(){
-    cout << "\bÏÖÔÚ½øĞĞÌí¼Ó²Ù×÷\n";
+    cout << "\bç°åœ¨è¿›è¡Œæ·»åŠ æ“ä½œ\n";
     createList();
 }
 
 void writeInFile(){
     string filename;
-    cout << "\bÇëÊäÈëÎÄ¼şÃû£º\n";
+    cout << "\bè¯·è¾“å…¥æ–‡ä»¶åï¼š\n";
     cin >> filename;
     ofstream fout;
     fout.open(filename + ".txt");
@@ -560,11 +560,11 @@ void writeInFile(){
             }
             fout << "\n";
         }
-        cout << "\bÄúÒÑ³É¹¦´æµ½ÎÄ¼şµ±ÖĞ£¡";
+        cout << "\bæ‚¨å·²æˆåŠŸå­˜åˆ°æ–‡ä»¶å½“ä¸­ï¼";
     }else{
-        cout << "\bÎÄ¼şĞ´ÈëÊ§°Ü£¡ÇëÖØÊÔ£¡";
+        cout << "\bæ–‡ä»¶å†™å…¥å¤±è´¥ï¼è¯·é‡è¯•ï¼";
     }
-    fout.close(); //¹Ø±ÕÎÄ¼şÊäÈëÁ÷
+    fout.close(); //å…³é—­æ–‡ä»¶è¾“å…¥æµ
 }
 
 void readFile(){
@@ -574,7 +574,7 @@ void readFile(){
     double *singerGrade;
 
     ifstream fin;
-    cout << "\bÇëÊäÈëÎÄ¼şÃû£º\n";
+    cout << "\bè¯·è¾“å…¥æ–‡ä»¶åï¼š\n";
     cin >> filename;
     fin.open(filename + ".txt");
 
@@ -589,9 +589,9 @@ void readFile(){
             singerList->insertInBack(Singer(singerNumber, singerName, singerGrade));
         }
         ifList = true;
-        cout << "\bÎÄ¼ş¶ÁÈ¡Íê±Ï£¡";
+        cout << "\bæ–‡ä»¶è¯»å–å®Œæ¯•ï¼";
     }else{
-        cout << "\bÎÄ¼ş´ò¿ªÊ§°Ü£¡Çë¼ì²éÊÇ·ñÓĞ±¾ÎÄ¼ş£¡";
+        cout << "\bæ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼è¯·æ£€æŸ¥æ˜¯å¦æœ‰æœ¬æ–‡ä»¶ï¼";
     }
 
     fin.close();
@@ -602,7 +602,7 @@ void readFromFile(){
     system("cls");
     if(ifList){
         getchar();
-        cout << "\bÒÑÓĞÁ´±í´æÔÚ! ÇëÎÊÊÇ·ñ¸²¸ÇÔ­Á´±í?";
+        cout << "\bå·²æœ‰é“¾è¡¨å­˜åœ¨! è¯·é—®æ˜¯å¦è¦†ç›–åŸé“¾è¡¨?";
         ch = getchar();
         if(ch == 'y' || ch == 'Y'){
             delete singerList;
@@ -632,7 +632,7 @@ int main(int argc, char const *argv[]){
                 if(ifList){
                     getchar();
                     system("cls");
-                    cout << "\bÒÑÓĞÁ´±í´æÔÚ! ÇëÎÊÊÇ·ñ¸²¸ÇÔ­Á´±í?";
+                    cout << "\bå·²æœ‰é“¾è¡¨å­˜åœ¨! è¯·é—®æ˜¯å¦è¦†ç›–åŸé“¾è¡¨?";
                     ch = getchar();
                     if(ch == 'y' || ch == 'Y'){
                         delete singerList;
@@ -643,7 +643,7 @@ int main(int argc, char const *argv[]){
                         over();
                     }
                 }else{
-                    system("cls"); // ÎŞÂÛ¸ÉÊ²Ã´ÏÈÇåÆÁ
+                    system("cls"); // æ— è®ºå¹²ä»€ä¹ˆå…ˆæ¸…å±
                     singerList = new List();
                     createList();
                     over();
@@ -654,7 +654,7 @@ int main(int argc, char const *argv[]){
                 if(ifList)
                     showAll();
                 else
-                    cout << "\bÇëÏÈ´´½¨Á´±í£¡";
+                    cout << "\bè¯·å…ˆåˆ›å»ºé“¾è¡¨ï¼";
                 over();
                 break;
             case 3:
@@ -668,7 +668,7 @@ int main(int argc, char const *argv[]){
                     chooseSe = -1;   
                 }
                 else
-                    cout << "\bÇëÏÈ´´½¨Á´±í£¡";
+                    cout << "\bè¯·å…ˆåˆ›å»ºé“¾è¡¨ï¼";
                 over();
                 break;
             case 4:
@@ -682,7 +682,7 @@ int main(int argc, char const *argv[]){
                     chooseSe = -1;                    
                 }
                 else
-                    cout << "\bÇëÏÈ´´½¨Á´±í£¡";
+                    cout << "\bè¯·å…ˆåˆ›å»ºé“¾è¡¨ï¼";
                 over();
                 break;
             case 5:
@@ -690,7 +690,7 @@ int main(int argc, char const *argv[]){
                 if(ifList)
                     appearanceList();
                 else
-                    cout << "\bÇëÏÈ´´½¨Á´±í£¡";
+                    cout << "\bè¯·å…ˆåˆ›å»ºé“¾è¡¨ï¼";
                 over();
                 break;
             case 6:
@@ -698,7 +698,7 @@ int main(int argc, char const *argv[]){
                 if(ifList)
                     sortSingerList();
                 else
-                    cout << "\bÇëÏÈ´´½¨Á´±í£¡";
+                    cout << "\bè¯·å…ˆåˆ›å»ºé“¾è¡¨ï¼";
                 over();
                 break;
             case 7:
@@ -706,7 +706,7 @@ int main(int argc, char const *argv[]){
                 if(ifList)
                     appendSinger();
                 else
-                    cout << "\bÇëÏÈ´´½¨Á´±í£¡";
+                    cout << "\bè¯·å…ˆåˆ›å»ºé“¾è¡¨ï¼";
                 over();
                 break;
             case 8:
@@ -714,7 +714,7 @@ int main(int argc, char const *argv[]){
                 if(ifList)
                     writeInFile();
                 else
-                    cout << "\bÇëÏÈ´´½¨Á´±í£¡";
+                    cout << "\bè¯·å…ˆåˆ›å»ºé“¾è¡¨ï¼";
                 over();
                 break;
             case 9:
@@ -722,10 +722,10 @@ int main(int argc, char const *argv[]){
                 over();
                 break;
             case 0:
-                return 0; // ÍË³ö³ÌĞò
+                return 0; // é€€å‡ºç¨‹åº
                 break;
             default:
-                nullWay(); // ÆäËû
+                nullWay(); // å…¶ä»–
                 menusFr();
                 break;
         }

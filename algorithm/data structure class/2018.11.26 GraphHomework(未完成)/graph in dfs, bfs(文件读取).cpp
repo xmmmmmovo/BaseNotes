@@ -1,48 +1,48 @@
 /**
- * Í¼µÄÉú³ÉºÍ±éÀú
+ * å›¾çš„ç”Ÿæˆå’Œéå†
  * */
 #include <stdio.h>
 #include <malloc.h>
 #include <stdlib.h>
 //#define m 20
-typedef struct node{     //±ß½áµã
-      int adjvex; //ĞòºÅ              
-      struct node *next; //Ö¸Ïò±ßÏÂÒ»¸ö½Úµã
+typedef struct node{     //è¾¹ç»“ç‚¹
+      int adjvex; //åºå·              
+      struct node *next; //æŒ‡å‘è¾¹ä¸‹ä¸€ä¸ªèŠ‚ç‚¹
 }edgenode;
-typedef struct vnode{       //Í·½áµã 
+typedef struct vnode{       //å¤´ç»“ç‚¹ 
       char vertex;   
       edgenode *firstedge; 
 }vertexnode;
 typedef struct{   
-       vertexnode adjlist[20]; /*´æ·ÅÍ·½áµãµÄË³Ğò±í*/
+       vertexnode adjlist[20]; /*å­˜æ”¾å¤´ç»“ç‚¹çš„é¡ºåºè¡¨*/
        int n,e;  
 }adjgraph;
 
 int visited[20];
 
-//±íµÄ´´½¨
+//è¡¨çš„åˆ›å»º
 void creatgraph(adjgraph *g, FILE *fp, int c){
-    int i, j, k; //Ñ­»·±äÁ¿
-    edgenode *s, *s2; //Á¬½ÓÓÃ½Úµã
-    fscanf(fp, "%d %d", &g->n, &g->e); // n¶¥µãÊı, e±ßÊı
+    int i, j, k; //å¾ªç¯å˜é‡
+    edgenode *s, *s2; //è¿æ¥ç”¨èŠ‚ç‚¹
+    fscanf(fp, "%d %d", &g->n, &g->e); // né¡¶ç‚¹æ•°, eè¾¹æ•°
 
-    //Â¼ÈëµãĞÅÏ¢
+    //å½•å…¥ç‚¹ä¿¡æ¯
     for(i = 0;i < g->n; i++){
-        fscanf(fp, "%1s", &g->adjlist[i].vertex); //%1sÏàµ±ÓÚ%c
-        g->adjlist[i].firstedge = NULL; //±ß±íÖÃÎª¿Õ
+        fscanf(fp, "%1s", &g->adjlist[i].vertex); //%1sç›¸å½“äº%c
+        g->adjlist[i].firstedge = NULL; //è¾¹è¡¨ç½®ä¸ºç©º
     }
 
-    //Â¼Èë±ßĞÅÏ¢
+    //å½•å…¥è¾¹ä¿¡æ¯
     for(k=0; k<g->e; k++){
         fscanf(fp, "%d %d", &i, &j);
-        s = (edgenode *)malloc(sizeof(edgenode)); //·ÖÅä½ÚµãÁ´Ê½¿Õ¼ä
+        s = (edgenode *)malloc(sizeof(edgenode)); //åˆ†é…èŠ‚ç‚¹é“¾å¼ç©ºé—´
         s->adjvex = j;
         s->next = g->adjlist[i].firstedge;
         g->adjlist[i].firstedge = s;
 
-        if(c == 0){ //ÒòÎªÊÇÎŞÏòÍ¼ ËùÒÔĞèÒª½øĞĞÄæÏòÁ¬½Ó
+        if(c == 0){ //å› ä¸ºæ˜¯æ— å‘å›¾ æ‰€ä»¥éœ€è¦è¿›è¡Œé€†å‘è¿æ¥
             // s = (edgenode *)malloc(sizeof(edgenode));   
-            // s->adjvex = i; //¸ÕºÃÓëÉÏÃæµÄi j·´¹ıÀ´
+            // s->adjvex = i; //åˆšå¥½ä¸ä¸Šé¢çš„i jåè¿‡æ¥
             // s->next = g->adjlist[j].firstedge;
             // g->adjlist[i].firstedge = s;      
             s2 = (edgenode*)malloc(sizeof(edgenode));
@@ -53,7 +53,7 @@ void creatgraph(adjgraph *g, FILE *fp, int c){
     }		
 }
 
-//Éî¶ÈÓÅÏÈ±éÀú
+//æ·±åº¦ä¼˜å…ˆéå†
 void dfs(adjgraph g,int i)
 {
     edgenode *p;
@@ -67,18 +67,18 @@ void dfs(adjgraph g,int i)
         p=p->next;
     }		
 } 
-//Éî¶ÈÓÅÏÈ±éÀú in
+//æ·±åº¦ä¼˜å…ˆéå† in
 void previsited(adjgraph g) 
 {
     int i;
     for(i=0;i<g.n;i++)
-        visited[i]=0; //¾ùÉèÖÃ³ÉÎ´±éÀú	
+        visited[i]=0; //å‡è®¾ç½®æˆæœªéå†	
     for(i=0;i<g.n;i++)	
-        if(!visited[i]) //Èç¹ûÎ´±éÀú Ôò±éÀú	
+        if(!visited[i]) //å¦‚æœæœªéå† åˆ™éå†	
             dfs(g,i);
 }
 
-//¹ã¶ÈÓÅÏÈËÑË÷
+//å¹¿åº¦ä¼˜å…ˆæœç´¢
 void bfs(adjgraph g,int i) 
 {
     int j;	
@@ -106,7 +106,7 @@ void bfs(adjgraph g,int i)
         }         
     }		
 }
-//¹ã¶ÈÓÅÏÈËÑË÷ in 
+//å¹¿åº¦ä¼˜å…ˆæœç´¢ in 
 void prebfs(adjgraph g)
 {
     int i;
@@ -128,7 +128,7 @@ int main()
 {
     FILE *fp;
     /**
-     * ¸ø³ö²âÊÔÎÄ±¾Êı¾İ£¨ÊéÉÏ²âÊÔÓÃÊı¾İ
+     * ç»™å‡ºæµ‹è¯•æ–‡æœ¬æ•°æ®ï¼ˆä¹¦ä¸Šæµ‹è¯•ç”¨æ•°æ®
      * 6 7
      * 012345
      * 0 1
@@ -139,17 +139,17 @@ int main()
      * 3 4
      * 4 5
     */
-    fp = fopen("./data.txt", "r");//Ïà¶ÔÂ·¾¶ ´ú±íµ±Ç°ÎÄ¼ş¼Ğ£¨Ïà½ÏÓÚ±¾ÎÄ¼ş
+    fp = fopen("./data.txt", "r");//ç›¸å¯¹è·¯å¾„ ä»£è¡¨å½“å‰æ–‡ä»¶å¤¹ï¼ˆç›¸è¾ƒäºæœ¬æ–‡ä»¶
     if(fp){
         adjgraph g;
-        creatgraph(&g, fp, 0);//0ÔòÊÇÎŞÏòÍ¼
+        creatgraph(&g, fp, 0);//0åˆ™æ˜¯æ— å‘å›¾
         fclose(fp);
 
-        printf("Éî¶ÈÓÅÏÈ±éÀú½á¹û£º");
+        printf("æ·±åº¦ä¼˜å…ˆéå†ç»“æœï¼š");
         previsited(g) ;
         printf("\n");
 
-        printf("¹ã¶ÈÓÅÏÈ±éÀú½á¹û£º");
+        printf("å¹¿åº¦ä¼˜å…ˆéå†ç»“æœï¼š");
         prebfs(g);	
     }else{
         printf("file error!\n");

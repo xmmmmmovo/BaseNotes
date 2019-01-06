@@ -1,6 +1,4 @@
 /**
- * 向量字�?�?(利用之前写过的vector�?(其实�?��懒直接用标准库的�?))
- * !待完�? 用继承�?写vector类并写出利用vectorString的�?制比较连�?
  * 2018-10-21 author:xmmmmmovo
 */
 #include <iostream>
@@ -17,20 +15,20 @@ public:
     ~vectorString();
 
     void strcreate(char *);
-    void strassign(char *);//赋值函�?
+    void strassign(char *);
     int strlength();
     bool strempty();
     void strclear();
-    int strcompare(char *);//�?���?��通字符串
-    int strcompare(vectorString &);//�?���??�?
-    void strconcat(char *);//同上
+    int strcompare(char *);
+    int strcompare(vectorString &);
+    void strconcat(char *);
     void strconcat(vectorString &);
-    char* substring(int, int);//子串(�?��要一�?)
-    int index(char *);//查找 返回位置
+    char* substring(int, int);
+    int index(char *);
     int index(vectorString &);
     void strinsert(char *, int);
     void strinsert(vectorString &, int);
-    void strinsert(vectorString &, vectorString &);//根据字�?串匹配插入删�?
+    void strinsert(vectorString &, vectorString &);
     void strdelete(int, int);
     void replace(char *, char *);
     void replace(vectorString &, vectorString &);
@@ -44,7 +42,6 @@ vectorString::vectorString(){
 }
 
 vectorString::~vectorString(){
-    //销毁字符串 释放空间
     delete &string;
 }
 
@@ -107,7 +104,7 @@ void vectorString::strconcat(char *str){
 }
 
 char* vectorString::substring(int pos, int length){
-    char *str = (char *)malloc(sizeof(char) * 20);//new 操作符不识别 改为malloc写法
+    char *str = (char *)malloc(sizeof(char) * 20);
     for(int i = pos - 1, j = 0;(i < length) && (i<strlength()) ;i++, j++)
     {
         str[j] = string[i];

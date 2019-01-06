@@ -1,5 +1,5 @@
 /**
- * Í¼µÄÉú³ÉÓë±éÀú
+ * å›¾çš„ç”Ÿæˆä¸éå†
  * language: C + STL author: xmmmmmovo
 */
 #include <cstdio>

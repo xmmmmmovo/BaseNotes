@@ -1,5 +1,5 @@
 /**
- * 2018-10-28 str作业
+ * 2018-10-28 str浣滀笟
 */
 #include <cstdio>
 #include <cstdlib>
@@ -11,7 +11,7 @@ int strlength(char *str){
     return i;
 }
 
-//2018-11-12 优化算法
+//2018-11-12 浼樺寲绠楁硶
 int strcompare(char *str1, char *str2){
     int i = 0, cout1, cout2, lenth1, lenth2;
     if((lenth1 = strlength(str1))>(lenth2 = strlength(str2))){
@@ -30,7 +30,7 @@ int strcompare(char *str1, char *str2){
     return 0;
 }
 
-//暴力搜索
+//鏆村姏鎼滅储
 void replace(char *mstr, char *str, char *repstr){
     for(int i = 0;i < strlength(mstr);i++){
         if(mstr[i] == str[i]){

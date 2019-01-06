@@ -11,16 +11,16 @@ template <class T>
 class Stack{
     public:
         Stack();
-        bool empty(); //测试堆栈是否为空。
-        T pop(); //移除堆栈顶部的对象，并作为此函数的值返回该对象。
-        T push(T);//把项压入堆栈顶部。
+        bool empty(); //测试堆栈是否为空〄1�7
+        T pop(); //移除堆栈顶部的对象，并作为此函数的��返回该对象〄1�7
+        T push(T);//把项压入堆栈顶部〄1�7
         int size();//长度返回
         T top();//返回栈顶元素
     
     private:
         T *stack;
-        Rank nowSize = -1;//存放数值长度/末尾元素的位置
-        Rank maxSize = 16;//总长度
+        Rank nowSize = -1;//存放数��长庄1�7/末尾元素的位罄1�7
+        Rank maxSize = 16;//总长庄1�7
 
         void checkIfOut();
         void increaseList();
@@ -77,7 +77,7 @@ void Stack<T>::checkIfOut(){
 template <class T>
 void Stack<T>::increaseList(){
     T* oldList = stack;
-    stack = new T[maxSize <<= 1];//左移一位 容量加倍
+    stack = new T[maxSize <<= 1];//左移丢�佄1�7 容量加��1�7
     for(int i = 0;i < nowSize - 1;i++)
     {
         stack[i] = oldList[i];

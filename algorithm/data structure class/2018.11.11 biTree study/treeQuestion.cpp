@@ -1,5 +1,5 @@
 /**
- * 2018-11-11 ¶ş²æÊ÷¿ÎºóÌâÄ¿
+ * 2018-11-11 äºŒå‰æ ‘è¯¾åé¢˜ç›®
  * language: C/C++ author: xmmmmmovo
 */
 #include <cstdio>
@@ -7,7 +7,7 @@
 #include <cmath>
 #include <stack>
 
-using namespace std;//stackËùĞèµÄÃüÃû¿Õ¼ä
+using namespace std;//stackæ‰€éœ€çš„å‘½åç©ºé—´
 
 typedef struct treeNode{
     char nodeCharctar;
@@ -16,7 +16,7 @@ typedef struct treeNode{
 }treeNode;
 int i = 0;
 
-//Ç°ĞòÉú³É¶ş²æÊ÷
+//å‰åºç”ŸæˆäºŒå‰æ ‘
 treeNode *createTree(){
     treeNode *node;
     char ch;
@@ -33,9 +33,9 @@ treeNode *createTree(){
     return node;
 }
 
-//Ç°Ğò±éÀú(·Çµİ¹é)
+//å‰åºéå†(éé€’å½’)
 void preorder(treeNode *node){
-    stack<treeNode *> buffer;//´æ´¢±éÀú½Úµã
+    stack<treeNode *> buffer;//å­˜å‚¨éå†èŠ‚ç‚¹
     
     while(!buffer.empty() || node){
         if(node){
@@ -53,7 +53,7 @@ void preorder(treeNode *node){
     printf("\n");
 }
 
-//Ç°Ğò±éÀú(µİ¹é)
+//å‰åºéå†(é€’å½’)
 void preorder2(treeNode *node){
     if(node){
         printf("%c ", node->nodeCharctar);
@@ -64,7 +64,7 @@ void preorder2(treeNode *node){
     }
 }
 
-//ÖĞĞò±éÀú
+//ä¸­åºéå†
 char inorder(treeNode *node){
     stack<treeNode *> buffer;
     char endchar;
@@ -86,7 +86,7 @@ char inorder(treeNode *node){
     return endchar;
 }
 
-//ºóĞòËÑË÷(·Çµİ¹é)
+//ååºæœç´¢(éé€’å½’)
 stack<treeNode *> postorderSearch(treeNode *node, char searchChar){
     stack<treeNode *> buffer;
     stack<bool> tag;
@@ -147,7 +147,7 @@ int main(int argc, char const *argv[])
     treeNode *root, *tempNode;
     char fr, se;
     
-    //ÊäÈë123##4##5##
+    //è¾“å…¥123##4##5##
     root = createTree();
     getchar();
     preorder(root);

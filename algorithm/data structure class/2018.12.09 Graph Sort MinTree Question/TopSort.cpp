@@ -1,25 +1,25 @@
 #include <cstdio>
 #include <cstdlib>
-#define M 30  /*Ô¤¶¨ÒåÍ¼µÄ×î´ó¶¥µãÊı*/
+#define M 30  /*é¢„å®šä¹‰å›¾çš„æœ€å¤§é¡¶ç‚¹æ•°*/
 
-//ÍØÆËÅÅĞò
-typedef struct node {  //±ß½áµãÀàĞÍ¶¨Òå
+//æ‹“æ‰‘æ’åº
+typedef struct node {  //è¾¹ç»“ç‚¹ç±»å‹å®šä¹‰
     int adjvex;
     struct node *next;
 }edgenode;
 
-typedef struct de {  //´ı¶¨µãÈë¶ÈµÄÍ·½Úµã¶¨Òå 
+typedef struct de {  //å¾…å®šç‚¹å…¥åº¦çš„å¤´èŠ‚ç‚¹å®šä¹‰ 
     edgenode* FirstEdge;
     char vertex;
-    int id;  //¶¥µãµÄÈë¶ÈÓò 
+    int id;  //é¡¶ç‚¹çš„å…¥åº¦åŸŸ 
 }vertexnode;
 
-typedef struct {   //AOVÍøµÄÁÚ½Ó±í½á¹¹ 
+typedef struct {   //AOVç½‘çš„é‚»æ¥è¡¨ç»“æ„ 
     vertexnode adjlist[M];
     int n, e;
 }AovGraph;
 
-//ÀàËÆÓÚÁÚ½Ó±íµÄ³£¼û·½Ê½£¬²»Í¬µÄÊÇÔÚÕâÀï´ÓÎÄ¼ş¶à¶ÁÈëÁËÒ»¸ö¶¥µãµÄÈë¶ÈÓò 
+//ç±»ä¼¼äºé‚»æ¥è¡¨çš„å¸¸è§æ–¹å¼ï¼Œä¸åŒçš„æ˜¯åœ¨è¿™é‡Œä»æ–‡ä»¶å¤šè¯»å…¥äº†ä¸€ä¸ªé¡¶ç‚¹çš„å…¥åº¦åŸŸ 
 void createTop(AovGraph *g, char *filename, int c)
 {
     int i, j, k;
@@ -41,7 +41,7 @@ void createTop(AovGraph *g, char *filename, int c)
             s->adjvex = j;
             s->next = g->adjlist[i].FirstEdge;
             g->adjlist[i].FirstEdge = s;
-            if (c == 0)  //ÎŞÏòÍ¼ 
+            if (c == 0)  //æ— å‘å›¾ 
             {
                 s = (edgenode *)malloc(sizeof(edgenode));
                 s->adjvex = i;
@@ -49,24 +49,24 @@ void createTop(AovGraph *g, char *filename, int c)
                 g->adjlist[i].FirstEdge = s;
             }
         }
-        fclose(fp);  //¹Ø±ÕÎÄ¼şÁ÷ 
+        fclose(fp);  //å…³é—­æ–‡ä»¶æµ 
     }
     else
     {
         g->n = 0;
-        printf("ÎÄ¼ş´ò¿ªÊ§°Ü£¡\n");
+        printf("æ–‡ä»¶æ‰“å¼€å¤±è´¥ï¼\n");
     }
 }
-//ÍØÆËÅÅĞòµÄËã·¨ 
+//æ‹“æ‰‘æ’åºçš„ç®—æ³• 
 int TopSort(AovGraph g)
 {
     int k = 0, i, j, v, flag[M];
-    int queue[M];  //¶¨Òå¶ÓÁĞ 
+    int queue[M];  //å®šä¹‰é˜Ÿåˆ— 
     int front, rear;
     edgenode *p;
-    front = rear = 0;  //³õÊ¼»¯¶ÓÁĞ 
+    front = rear = 0;  //åˆå§‹åŒ–é˜Ÿåˆ— 
     for (i = 0; i < g.n; i++) 
-        flag[i] = 0;     //·ÃÎÊ±ê¼Ç³õÊ¼»¯ 
+        flag[i] = 0;     //è®¿é—®æ ‡è®°åˆå§‹åŒ– 
     for (i = 0; i < g.n; i++)
     {
         if (g.adjlist[i].id == 0 && flag[i] == 0)
@@ -76,29 +76,29 @@ int TopSort(AovGraph g)
         }
     }
     printf("\nAOV sort is :\n");
-    while (front < rear)  // Èç¹ûµ±Ç°¶ÓÁĞ²»Îª¿Õ 
+    while (front < rear)  // å¦‚æœå½“å‰é˜Ÿåˆ—ä¸ä¸ºç©º 
     {
-        v = queue[front++];  //¶ÓÁĞÊ×Î»ÔªËØ³öÁĞ 
+        v = queue[front++];  //é˜Ÿåˆ—é¦–ä½å…ƒç´ å‡ºåˆ— 
         printf("%c ", g.adjlist[v].vertex);
-        k++;  //¼ÆÊıÆ÷¼Ó1 
+        k++;  //è®¡æ•°å™¨åŠ 1 
         p = g.adjlist[v].FirstEdge;
-        while (p)  //½«ËùÓĞÓÚvÁÚ½ÓµÄ¶¥µãµÄÈë¶È¼õ1 
+        while (p)  //å°†æ‰€æœ‰äºvé‚»æ¥çš„é¡¶ç‚¹çš„å…¥åº¦å‡1 
         {
             j = p->adjvex;
-            if (--g.adjlist[j].id == 0 && flag[j] == 0)  //Èç¹ûÈë¶ÈÎª0Ôò½«½ø¶Ó 
+            if (--g.adjlist[j].id == 0 && flag[j] == 0)  //å¦‚æœå…¥åº¦ä¸º0åˆ™å°†è¿›é˜Ÿ 
             {
                 queue[rear++] = j;
-                flag[j] = 1; //±ê¼ÇÒÑ¾­±»·ÃÎÊ¹ı
+                flag[j] = 1; //æ ‡è®°å·²ç»è¢«è®¿é—®è¿‡
             }
             p = p->next;
         }
     }
-    return k;  //·µ»ØÊä³öµÄ½áµã¸öÊı 
+    return k;  //è¿”å›è¾“å‡ºçš„ç»“ç‚¹ä¸ªæ•° 
 }
 int main(int argc, char const *argv[])
 {
     /**
-     * ÊµÑéÓÃÊı¾İ
+     * å®éªŒç”¨æ•°æ®
      * 
      * 6 10
      * ABCDEF

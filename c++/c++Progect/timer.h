@@ -1,12 +1,12 @@
+/**
+ * 计时器类(c++11标准)
+ * From: CSDN Author: 原我归来是少年
+ * Url: https://blog.csdn.net/dumpdoctorwang/article/details/81781227?tdsourcetag=s_pctim_aiomsg
+ * 但是个人感觉时间测得有点不准
+*/
 #include <iostream>
 #include <string>
 #include <chrono>
-#include <windows.h>
-#include <ctime>
-
-using namespace std;
-
-
 
 class Timer {
 public:
@@ -83,14 +83,3 @@ private:
     std::chrono::steady_clock::time_point _end_time;
     std::string _name;
 };
-
-
-int main(int argc, char const *argv[])
-{
-    Timer timer;
-    std::cout << "Hello, World!" << std::endl;
-    std::cout<<timer.elapsed()<<std::endl;
-    timer.restart();
-    system("pause");
-    return 0;
-}

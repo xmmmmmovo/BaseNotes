@@ -1,7 +1,7 @@
 /**
- * ÖĞĞò´©Ïß¶ş²æÊ÷
- * language£ºC++ author£ºxmmmmmovo
- * ²Î¿¼£ºhttps://www.cnblogs.com/rocketfan/archive/2009/08/30/1556784.html
+ * ä¸­åºç©¿çº¿äºŒå‰æ ‘
+ * languageï¼šC++ authorï¼šxmmmmmovo
+ * å‚è€ƒï¼šhttps://www.cnblogs.com/rocketfan/archive/2009/08/30/1556784.html
 */
 #include <cstdio>
 #include <cstdlib>
@@ -13,11 +13,11 @@ using namespace std;
 typedef struct treeNode
 {
     char data;
-    bool ltag = false, rtag = false;//ÌáÊ¾×óÓÒ½ÚµãÊÇ·ñ´æÔÚ
+    bool ltag = false, rtag = false;//æç¤ºå·¦å³èŠ‚ç‚¹æ˜¯å¦å­˜åœ¨
     struct treeNode *left = NULL, *right = NULL;
 }treenode;
 
-//Ç°ĞòÉú³ÉÊ÷
+//å‰åºç”Ÿæˆæ ‘
 treenode *createTree(){
     treenode *node;
     char ch;
@@ -25,7 +25,7 @@ treenode *createTree(){
     if((ch = getchar()) == '#'){
         node =  NULL;
     }else{
-        node = new treenode();//·ÖÅä¿Õ¼ä
+        node = new treenode();//åˆ†é…ç©ºé—´
         node->data = ch;
         node->left = createTree();
         node->right = createTree();
@@ -34,10 +34,10 @@ treenode *createTree(){
     return node;
 }
 
-//ÖĞĞòÏßË÷»¯(·Çµİ¹éËã·¨)
+//ä¸­åºçº¿ç´¢åŒ–(éé€’å½’ç®—æ³•)
 void inthreading(treenode *node){
     stack<treenode *> buffer;
-    treenode *prev = NULL;//¼ÇÂ¼Ç°Çı½Úµã
+    treenode *prev = NULL;//è®°å½•å‰é©±èŠ‚ç‚¹
     
     while(node || !buffer.empty()){
         if(node){
@@ -45,11 +45,11 @@ void inthreading(treenode *node){
             node = node->left;
         }else{
             node = buffer.top();
-            if(!node->left){//×óÈôÎŞ½Úµã ½øĞĞ´©Ïß
+            if(!node->left){//å·¦è‹¥æ— èŠ‚ç‚¹ è¿›è¡Œç©¿çº¿
                 node->ltag = true;
                 node->left = prev;
             }
-            if(prev && !prev->right){//ÏÈÅĞ¶ÏÊÇ·ñÊÇµÚÒ»¸ö½ÚµãµÄÓÒ½Úµã È»ºóÅĞ¶ÏÊÇ·ñ´©Ïß
+            if(prev && !prev->right){//å…ˆåˆ¤æ–­æ˜¯å¦æ˜¯ç¬¬ä¸€ä¸ªèŠ‚ç‚¹çš„å³èŠ‚ç‚¹ ç„¶ååˆ¤æ–­æ˜¯å¦ç©¿çº¿
                 prev->rtag = true;
                 prev->right = node;
             }
@@ -60,10 +60,10 @@ void inthreading(treenode *node){
     }
 }
 
-//ÖĞĞò±éÀúÖĞĞò´©Ïß¶ş²æÊ÷
+//ä¸­åºéå†ä¸­åºç©¿çº¿äºŒå‰æ ‘
 void inthrtree(treenode *node){
     while(node){
-        while(!node->ltag){//Éî¶ÈËÑË÷µ½×î×óÏÂ½Úµã
+        while(!node->ltag){//æ·±åº¦æœç´¢åˆ°æœ€å·¦ä¸‹èŠ‚ç‚¹
             node = node->left;
         }
         printf("%c ", node->data);
@@ -79,7 +79,7 @@ int main(int argc, char const *argv[])
 {
     treenode *root;
     
-    //²âÊÔÊı¾İ123##4##5##
+    //æµ‹è¯•æ•°æ®123##4##5##
     root = createTree();
     inthreading(root);
     inthrtree(root);
