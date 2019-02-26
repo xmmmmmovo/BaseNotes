@@ -228,19 +228,19 @@ Clock(): Clock(0, 0, 0) { }
   
   class Point {
       //Point类定义
-  public:
-  Point(int xx = 0, int yy = 0) {
-  x = xx;
-  y = yy;
-      
-  }
+      public:
+      Point(int xx = 0, int yy = 0) {
+          x = xx;
+          y = yy;
   
-  Point(Point &p);
-      
-  int getX() { return x; }
-  int getY() { return y; }
-  private:
-  int x, y;
+      }
+  
+      Point(Point &p);
+  
+      int getX() { return x; }
+      int getY() { return y; }
+      private:
+      int x, y;
       
   };
   
@@ -368,7 +368,6 @@ Clock(): Clock(0, 0, 0) { }
   };
   
   /*
-  
   上面的是错误程序
   */
   ```
