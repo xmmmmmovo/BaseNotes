@@ -3,15 +3,7 @@
  * generation time: 2019/02/27
  * filename: test.cpp
 */
-#include<iostream>
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
-#include<string.h>
-#include<algorithm>
-#include<map>
-#include<vector>
-#include<queue>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -20,7 +12,7 @@ int main(){
 #else
     freopen("1.txt", "r", stdin);
 #endif
-    
+    cout << "HelloWorld!\n";
 
     system("pause");
     return 0;
