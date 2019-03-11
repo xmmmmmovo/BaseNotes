@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.m": "matlab",
         "array": "cpp",
         "*.tcc": "cpp",
         "cctype": "cpp",
@@ -52,7 +53,35 @@
         "string_view": "cpp",
         "algorithm": "cpp",
         "map": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "atomic": "cpp",
+        "bitset": "cpp",
+        "cfenv": "cpp",
+        "charconv": "cpp",
+        "chrono": "cpp",
+        "cinttypes": "cpp",
+        "codecvt": "cpp",
+        "complex": "cpp",
+        "condition_variable": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "cstdarg": "cpp",
+        "ctime": "cpp",
+        "cuchar": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "unordered_set": "cpp",
+        "future": "cpp",
+        "iomanip": "cpp",
+        "memory": "cpp",
+        "mutex": "cpp",
+        "ratio": "cpp",
+        "scoped_allocator": "cpp",
+        "shared_mutex": "cpp",
+        "thread": "cpp",
+        "typeindex": "cpp",
+        "valarray": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Enabled"
+    "C_Cpp.errorSquiggles": "Enabled",
+    "python.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe"
 }
