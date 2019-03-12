@@ -1,6 +1,8 @@
 # 笔记
 
-## tinghuaOJ
+## TinghuaOJ
+
+- 非常难受的OJ，不仅不支持C++11，还不支持STL用起来头大
 
 ### tutorial
 
@@ -10,3 +12,23 @@
 
 > scanf("%lf %c %lf", &num1, &op , &num2);
 > 这一句就直接把num1与num2中间空格全部无视，直接读取operator
+
+- 可能大部分OJ不支持c++11
+- 缓冲区
+  - [缓冲区的知识](http://www.cnblogs.com/pricks/p/3821832.html)
+  - [流与缓冲区](http://www.cnblogs.com/chunlanse2014/articles/4420525.html)
+  - [setvbuf()函数](http://c.biancheng.net/cpp/html/268.html)
+  - 输入是文本流
+  - 不同硬件会被映射成一个文件
+  - [C动态分配内存1](https://www.cnblogs.com/chunlanse2014/articles/4421942.html)
+  - [C动态分配内存2](https://www.cnblogs.com/chunlanse2014/articles/4422153.html)
+
+## BlueBrige2019
+
+- 全局变量数组会被初始化为0(GCC)
+- 日期计算星期几
+
+> w = (d + 2 * m + 3 * (m + 1) / 5 + y + y / 4 - y / 100 + y / 400) % 7
+> 每年1，2月为上一年的13，14月，除法均为整除
+
+

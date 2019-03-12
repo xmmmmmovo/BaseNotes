@@ -7,11 +7,9 @@
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
-// #include <algorithm>
 #include <string>
 #include <vector>
 
-#define STR_M 4096
 using namespace std;
 
 int main(int argc, char const *argv[])
@@ -23,18 +21,20 @@ int main(int argc, char const *argv[])
     int temp = 0;
 
     for(auto& ch : str){
-        count[(int)(ch > 'Z' ? ch - 'A' : ch - 'a')]++;
-    }
-
-    // size_t 数组下标类型
-    for(size_t i = 0; i < count.size(); i++){
-        temp = count[i];
-        if (!temp) {
-            printf("\n");
+        if (ch > 'A' && ch < 'Z') {
+            count[(int)ch - 'A']++;
+        }else if(ch > 'a' && ch < 'z'){
+            count[(int)ch - 'a']++;   
         }
     }
-    
 
-    system("pause");
+    for(size_t i = 0; i < count.size(); i++){
+        temp = count[i];
+        if (temp) {
+            printf("%c: %d\n", i + 'A', temp);
+        }
+    }
+
+    // system("pause");
     return 0;
 }
