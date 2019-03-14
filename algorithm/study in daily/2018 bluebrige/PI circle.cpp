@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
 {
     int r;
 
-    double PI = atan(1.0) * 4;//¸ß¾«¶ÈPI
+    double PI = atan(1.0) * 4;//ç²¾å‡†PI
     
     scanf("%d", &r);
     printf("%.7lf", PI * r * r);
