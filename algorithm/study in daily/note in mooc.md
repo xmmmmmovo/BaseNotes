@@ -225,7 +225,5 @@ template <typename T> void List<T>::init(){
 
 ## 代码习惯
 
-
-
 - 尽量用小于号
 - 注重稳定性
