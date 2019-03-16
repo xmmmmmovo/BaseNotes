@@ -4,16 +4,15 @@
  * filename: test.cpp
  * language & build version : C++ 11
 */
-#include <bits/stdc++.h>
+#include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <algorithm>
 
 using namespace std;
 
-int main(){
-#ifdef ONLINE_JUDGE
-#else
-    freopen("1.txt", "r", stdin);
-#endif
-    
+int main(int argc, char const *argv[])
+{
 
     system("pause");
     return 0;

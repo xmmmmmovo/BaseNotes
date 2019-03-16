@@ -1,6 +1,4 @@
 ﻿排名    题号       AC数        题名                                                                            
-4       2001       76411      计算两点间的距离                                                    
-5       1002       72961      A + B Problem II                                            
 6       2000       70571      ASCII码排序                                                    
 7       1090       68181      A+B for Input-Output Practice (II)                          
 8       2003       66871      求绝对值                                                        
@@ -5029,7 +5027,7 @@
 5031    4797       1          Graph Reconstruction                                        
 5032    5342       1          Dynamic Cactus                                              
 5033    5911       1          Hanzo vs. Genji                                             
-5034    6009       1           Lazors                                                     
+5034    6009       1          Lazors                                                     
 5035    1340       0          Cog-Wheels                                                  
 5036    1459       0          Calendar                                                    
 5037    1464       0          Telephone Numbers                                           
@@ -5080,4 +5078,4 @@
 5082    4860       0          新海岛计划                                                       
 5083    5940       0          Hazy String                                                 
 5084    5947       0          Fxx and factory                                             
-5085    6013       0          Lotus and Thermodynamics                                    
+5085    6013       0          Lotus and Thermodynamics
