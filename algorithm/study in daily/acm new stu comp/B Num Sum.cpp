@@ -1,7 +1,7 @@
 /**
  * author: xmmmmmovo
  * generation time: 2019/03/15
- * filename: Num Sum.cpp
+ * filename: B Num Sum.cpp
  * language & build version : C++ 11
 */
 #include <iostream>

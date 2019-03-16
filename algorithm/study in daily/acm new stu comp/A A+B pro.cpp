@@ -1,7 +1,7 @@
 /**
  * author: xmmmmmovo
  * generation time: 2019/03/14
- * filename: A+B pro.cpp
+ * filename: A A+B pro.cpp
  * language & build version : C++ 11
 */
 #include <iostream>
