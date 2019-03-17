@@ -15,18 +15,20 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     int ans = 0, t = 0;
-    double s = 0, u = 0, v = 0;
+    double s = 0, u = 0, v = 0, temp = 0;
 
     scanf("%d", &t);
     while(t--){
         scanf("%lf %lf", &s, &u);
 
-        v = 1/(tan((atan(1/s) - atan(1/u))));
+        temp = atan(1/s) - atan(1/u);
+        temp = tan(temp);
+        v = 1.0/temp;
 
         ans = (int)(v * u - s * u - s * v);
         printf("%d\n", ans);
     }
 
-    // system("pause");
+    system("pause");
     return 0;
 }
