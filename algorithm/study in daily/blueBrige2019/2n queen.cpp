@@ -11,7 +11,11 @@
 
 using namespace std;
 
-int chess[10][10], bqueen[10], wqueen[8]; 
+int chess[10][10], bqueen[10], wqueen[8];
+
+void queen(){
+
+}
 
 int main(){
     int n = 0;
@@ -23,6 +27,8 @@ int main(){
             scanf("%d", &chess[i][j]);
         }
     }
+
+    queen();
 
     system("pause");
     return 0;

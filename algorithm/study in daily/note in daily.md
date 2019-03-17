@@ -49,6 +49,19 @@
 
 ### 蓝桥杯题库
 
+- 输出到int中
+
+> istringstream is("12");
+> int isINT;
+> is >> isINT;
+
+- 输出到string中
+
+> ostringstream os;
+> int osINT;
+> os << osINT;
+> cout << os.str() << endl;
+
 ## VOJ
 
 ### 纳新题目

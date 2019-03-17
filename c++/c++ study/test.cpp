@@ -1,3 +1,9 @@
+/**
+ * author: xmmmmmovo
+ * generation time: 2019/03/17
+ * filename: test.cpp
+ * language & build version : C++ 11
+*/
 #include <cstdio>
 #include <cmath>
 #include <iostream>

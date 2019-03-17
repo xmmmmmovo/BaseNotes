@@ -1,3 +1,9 @@
+/**
+ * author: xmmmmmovo
+ * generation time: 2019/03/17
+ * filename: __VA_ARGS_.hpp
+ * language & build version : C++ 11
+*/
 #include <cstdio>
 #include <cmath>
 #include <iostream>
