@@ -559,7 +559,6 @@
 567     4010       2501       Query on The Trees                                          
 568     1422       2496       重温世界杯                                                       
 569     4287       2494       Intelligent IME                                             
-570     2552       2490       三足鼎立                                                        
 571     3530       2489       Subsequence                                                 
 572     4442       2486       Physical Examination                                        
 573     1530       2484       Maximum Clique                                              

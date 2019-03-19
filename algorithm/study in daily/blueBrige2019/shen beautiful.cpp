@@ -20,13 +20,12 @@ int main(int argc, char const *argv[])
 
     int a[n][m];
 
+    // 读入画作
     for(int i = 0; i < n; i++){
         for(int j = 0; j < m; j++){
             scanf("%d", &a[n][m]);
         }
     }
-
-    
 
     system("pause");
     return 0;
