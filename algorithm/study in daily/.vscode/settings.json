@@ -80,7 +80,8 @@
         "shared_mutex": "cpp",
         "thread": "cpp",
         "typeindex": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "regex": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled",
     "python.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe"

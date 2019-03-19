@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b784921-adfb-4339-8a53-e1918fa98e0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/acm new stu comp/F 3 foots.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/acm new stu comp/F 3 foots.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/blueBrige2019/shen beautiful.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/blueBrige2019/shen beautiful.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/hdoj按AC数题目排名(给大一萌新按顺序刷题用).txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/hdoj按AC数题目排名(给大一萌新按顺序刷题用).txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/note in daily.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/note in daily.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/mooc in xuetangx/Range(未完成).cpp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/homework_check_program.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="448">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/git diff achieve.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -44,6 +50,7 @@
       <list>
         <option value="$PROJECT_DIR$/homework_check_program.py" />
         <option value="$PROJECT_DIR$/classmate.txt" />
+        <option value="$PROJECT_DIR$/git diff achieve.py" />
       </list>
     </option>
   </component>
@@ -61,6 +68,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -72,12 +80,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -137,17 +144,18 @@
       <updated>1552916759759</updated>
       <workItem from="1552916762066" duration="4054000" />
       <workItem from="1552958884956" duration="693000" />
+      <workItem from="1552997588891" duration="1313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4747000" />
+    <option name="totallyTimeSpent" value="6060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -190,8 +198,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/homework_check_program.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="448">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/git diff achieve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
