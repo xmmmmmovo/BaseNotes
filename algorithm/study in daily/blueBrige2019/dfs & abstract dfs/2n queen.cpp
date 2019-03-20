@@ -14,7 +14,6 @@ using namespace std;
 int chess[10][10], bqueen[10], wqueen[8];
 
 void queen(){
-
 }
 
 int main(){

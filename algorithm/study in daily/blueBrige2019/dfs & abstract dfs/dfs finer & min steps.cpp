@@ -1,3 +1,9 @@
+/**
+ * author: xmmmmmovo
+ * generation time: 2019/03/20
+ * filename: dfs finer & min steps.cpp
+ * language & build version : C++ 11
+*/
 #include <cstdio>
 #include <iostream>
 #include <algorithm>
