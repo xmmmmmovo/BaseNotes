@@ -19,6 +19,8 @@ int fun(){
         if (data == 'x') {
             x ++;
         } else if (data == '|') {
+            // 在这里转移到了y变量上
+            // 就是说以后如果继续累加x变量便可以计算右边的字符数了
             y = max(x, y);
             x = 0;
         } else if (data == '(') {

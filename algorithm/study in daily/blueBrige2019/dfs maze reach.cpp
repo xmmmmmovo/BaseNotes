@@ -16,7 +16,7 @@ string maze[110];
 bool vis[110][110];
 
 bool in(int x, int y){
-    return x >= 0 && x < n && y >= 0 && y < n;
+    return x >= 0 && x < n && y >= 0 && y < m;
 }
 
 bool dfs(int x, int y){
@@ -26,8 +26,8 @@ bool dfs(int x, int y){
 
     vis[x][y] = 1;
     maze[x][y] = 'm';
+    
     int dx = x, dy = y + 1;
-
     if (in(dx, dy) && maze[dx][dy] != '*' && !vis[dx][dy]) {
         if (dfs(dx, dy)) {
             return true;
