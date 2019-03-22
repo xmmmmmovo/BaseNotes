@@ -81,7 +81,8 @@
         "thread": "cpp",
         "typeindex": "cpp",
         "valarray": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "memory_resource": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled",
     "python.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe"
