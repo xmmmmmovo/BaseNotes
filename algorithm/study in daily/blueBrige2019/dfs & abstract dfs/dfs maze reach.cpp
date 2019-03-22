@@ -85,7 +85,6 @@ int main(int argc, char const *argv[])
         cout << "can't reach!";
     }
     
-    
     system("pause");
     return 0;
 }
