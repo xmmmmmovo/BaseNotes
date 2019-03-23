@@ -1,4 +1,4 @@
-﻿排名    题号       AC数        题名                                                                            
+??排名    题号       AC数        题名                                                                            
 8       2003       66871      求绝对值                                                        
 9       2002       65835      计算球体积                                                       
 10      2004       65406      成绩转换                                                        
@@ -527,7 +527,7 @@
 535     1423       2717       Greatest Common Increasing Subsequence                      
 536     3853       2715       LOOPS                                                       
 537     4310       2714       Hero                                                        
-538     4500       2712       小Q系列故事――�潘康哪嫦�                                              
+538     4500       2712       小Q系列故事――?潘康哪嫦?                                              
 539     2604       2701       Queuing                                                     
 540     3001       2692       Travelling                                                  
 541     2767       2690       Proving Equivalences                                        
@@ -3759,7 +3759,7 @@
 3768    3865       109        A Hard Journey                                              
 3769    5096       109        ACM Rank                                                    
 3770    1684       108        Projects                                                    
-3771    3150       108        Robot Roll Call �C Cambot…Servo…Gypsy…Croooow               
+3771    3150       108        Robot Roll Call ?C Cambot…Servo…Gypsy…Croooow               
 3772    3286       108        Interior Points of Lattice Polygons                         
 3773    3824       108        Saving the Princess                                         
 3774    5005       108        Compromise                                                  

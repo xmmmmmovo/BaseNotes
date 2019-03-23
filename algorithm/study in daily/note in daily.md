@@ -54,6 +54,11 @@
 - 不要忘了左移右移，(1LL << n)这个是1 * 2 ^ n的意思，用于整型，LL代表longlong
 - 注意细节T_T
 
+- DP
+    - 最优化原理
+    - 无后效性
+    - 有点像贪心。。。。。
+
 ### 计蒜客模拟赛
 
 ### 蓝桥杯题库
@@ -70,6 +75,12 @@
 > int osINT;
 > os << osINT;
 > cout << os.str() << endl;
+
+- 另一种方式
+
+> sstrram s;
+> ss << num;
+> ss >> str;
 
 ## VOJ
 

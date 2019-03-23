@@ -8,6 +8,8 @@
 #include <cstdio>
 #include <cstdlib>
 #include <algorithm>
+#include <string>
+#include <sstream>
 
 using namespace std;
 
