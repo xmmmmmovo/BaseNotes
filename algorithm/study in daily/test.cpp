@@ -15,6 +15,15 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
+    int sum = 0, temp = 0, n = 370;
+
+    while (n) {
+        temp = n % 10;
+        sum += temp * temp * temp;
+        n /= 10;
+    }
+
+    printf("%d", sum == n);
 
     system("pause");
     return 0;
