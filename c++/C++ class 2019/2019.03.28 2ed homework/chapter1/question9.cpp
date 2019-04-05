@@ -4,21 +4,18 @@
 
 using namespace std;
 
-void checks(int &x, int &y) {
+void sorts(int &x, int &y, int &z) {
     if (x < y) {
         swap(x, y);
     }
-}
 
-void sorts(int &x, int &y, int &z) {
-    int maxnum = max(x, max(y, z));
-
-    if (y == maxnum) {
-        swap(x, y);
-    } else if (z == maxnum) {
+    if (x < z) {
         swap(x, z);
     }
-    checks(y, z);
+
+    if (y < z) {
+        swap(y, z);
+    }
 }
 
 int main() {
@@ -27,5 +24,6 @@ int main() {
     sorts(x, y, z);
     printf("%d %d %d\n", x, y, z);
 
+    system("pause");
     return 0;
 }

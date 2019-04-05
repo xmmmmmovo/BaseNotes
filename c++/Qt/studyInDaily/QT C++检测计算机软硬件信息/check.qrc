@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="back">images/bck.png</file>
+        <file alias="checked">images/checked.png</file>
+        <file alias="checkedDisable">images/checkedDisable.png</file>
+        <file alias="checking">images/checking.png</file>
+        <file alias="close">images/close.png</file>
+        <file alias="close1">images/close1.png</file>
+        <file alias="faile">images/faile.png</file>
+        <file alias="min">images/min.png</file>
+        <file alias="min1">images/min1.png</file>
+        <file alias="pass">images/pass.png</file>
+        <file alias="unchecked">images/unchecked.png</file>
+        <file alias="uncheckedDisable">images/uncheckedDisable.png</file>
+        <file alias="warning">images/warning.png</file>
+        <file alias="welcome">images/welcom.png</file>
+        <file alias="logo">images/logo.png</file>
+        <file alias="title">images/title.png</file>
+    </qresource>
+</RCC>

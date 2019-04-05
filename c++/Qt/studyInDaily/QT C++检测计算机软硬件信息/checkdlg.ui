@@ -1,0 +1,1439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CheckDlg</class>
+ <widget class="QDialog" name="CheckDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>580</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>580</width>
+    <height>380</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>640</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>99999</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/title);</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>9</number>
+      </property>
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>710</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="minBtn">
+        <property name="minimumSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	border-image: url(:/images/min);
+}
+
+QPushButton:hover
+{
+	
+	border-image: url(:/images/min1);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="minimumSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>28</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	border-image: url(:/images/close);
+}
+
+QPushButton:hover
+{
+border-image: url(:/images/close1);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page_3">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>180</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <item>
+          <spacer name="horizontalSpacer_13">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="startCheckBtn">
+           <property name="minimumSize">
+            <size>
+             <width>160</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>160</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+	font-size:18px;
+    font-family:&quot;Microsoft YaHei&quot;;
+    color:#FFFFFF;
+	background-color:#007ED7;
+}
+
+QPushButton:hover
+{
+	background-color:#1a8bdb;
+}</string>
+           </property>
+           <property name="text">
+            <string>开始检测</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_14">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/images/back);</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="spacing">
+          <number>6</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <property name="leftMargin">
+            <number>20</number>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_12">
+             <item>
+              <widget class="QLabel" name="checkingLabel">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	font-size:20px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+               </property>
+               <property name="text">
+                <string>正在进行检测：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="checkingValueLabel">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	font-size:20px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+               </property>
+               <property name="text">
+                <string>cpu处理器</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="finishedLabel">
+             <property name="styleSheet">
+              <string notr="true">QLabel
+{
+	font-size:28px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+background-color:rgba(255,255,255,5%);
+}	</string>
+             </property>
+             <property name="text">
+              <string>检测完成！</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <property name="leftMargin">
+            <number>20</number>
+           </property>
+           <property name="rightMargin">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QProgressBar" name="progressBar">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>6</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>6</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QProgressBar::chunk 
+{
+        background-color:#2b99ff;
+}
+QProgressBar
+{
+	border:none;
+	border-radius: 3px;   
+	background:#102b59;
+	color:#ffffff;
+	max-height:6px;
+}
+
+</string>
+             </property>
+             <property name="value">
+              <number>24</number>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+             </property>
+             <property name="textVisible">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgba(255,255,255,10%);
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_18">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="leftMargin">
+             <number>20</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="styleSheet">
+               <string notr="true">QLabel
+{
+	font-size:18px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+	background:transparent;
+}	</string>
+              </property>
+              <property name="text">
+               <string>基本信息</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_9">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>663</width>
+                <height>17</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="baseMsgGrp">
+           <property name="styleSheet">
+            <string notr="true">background:transparent;</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <property name="spacing">
+             <number>6</number>
+            </property>
+            <property name="leftMargin">
+             <number>20</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="computerLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string>电脑名称：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="computerValueLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_19">
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="cpuLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string>处 理 器 ：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="cpuValueLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_15">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_15">
+              <item>
+               <widget class="QLabel" name="dCardLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string>显      卡：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="dCardValueLabel">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_11">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <item>
+               <widget class="QLabel" name="memLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string>内      存：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="memValueLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QLabel" name="OsLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string>操作系统：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="osValueLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_16">
+              <item>
+               <widget class="QLabel" name="screenLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string>显 示 器 ：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="screenValueLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_12">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <widget class="QLabel" name="diskLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string>磁盘空间：</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="diskValueLabel">
+                <property name="styleSheet">
+                 <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+}	</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <property name="spacing">
+            <number>9</number>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="ClickableLabel" name="allLabel">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+	background:transparent;
+}
+QLabel::hover
+{
+	color:#0095ff;
+}</string>
+               </property>
+               <property name="text">
+                <string>全部：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ClickableLabel" name="allValueLabel">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+	background:transparent;
+}
+QLabel::hover
+{
+	color:#999;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="ClickableLabel" name="passLabel">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+	background:transparent;
+}	
+QLabel::hover
+{
+	color:#0f8c3e;
+}</string>
+               </property>
+               <property name="text">
+                <string>通过：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ClickableLabel" name="passValueLabel">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#00BE2D;
+	background:transparent;
+}
+QLabel::hover
+{
+	color:#0f8c3e;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="ClickableLabel" name="warningLabel">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+	background:transparent;
+}	
+QLabel::hover
+{
+	color:#d0821d;
+}</string>
+               </property>
+               <property name="text">
+                <string>警告：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ClickableLabel" name="warningValueLabel">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFD200;
+	background:transparent;
+}
+
+QLabel::hover
+{
+	color:#d0821d;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="ClickableLabel" name="faileLabel">
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+	background:transparent;
+}	
+QLabel::hover
+{
+	color:#d5242d;
+}</string>
+               </property>
+               <property name="text">
+                <string>未通过：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ClickableLabel" name="faileValueLabel">
+               <property name="minimumSize">
+                <size>
+                 <width>30</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FF454F;
+	background:transparent;
+}
+QLabel::hover
+{
+	color:#d5242d;
+}</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QTableWidget" name="tableWidget">
+           <property name="styleSheet">
+            <string notr="true">QHeaderView
+{
+	background:transparent;
+}
+QHeaderView::section
+{
+	font-size:18px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#FFFFFF;
+
+	background:rgba(255,255,255,10%);
+	border:none;
+	text-align:left;
+
+	min-height:32px;
+	max-height:32px;
+	border-left:1px solid red;
+}
+
+QTableWidget
+{
+	background:transparent;
+	border:none;
+}
+
+QScrollBar::handle:vertical
+ {
+	background: rgba(255,255,255,20%);
+	border: 0px solid grey;
+	border-radius:3px;
+	width: 8px;
+}
+QScrollBar::vertical 
+{
+	border-width:1px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 10%);
+	width: 8px;
+	margin:0px 0px 0px 0px;
+	border-radius:3px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+{
+	background:rgba(255,255,255,10%);
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical
+{
+	background:transparent;
+}
+
+</string>
+           </property>
+           <property name="verticalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+           <property name="sizeAdjustPolicy">
+            <enum>QAbstractScrollArea::AdjustIgnored</enum>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::ExtendedSelection</enum>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectRows</enum>
+           </property>
+           <property name="showGrid">
+            <bool>false</bool>
+           </property>
+           <property name="gridStyle">
+            <enum>Qt::SolidLine</enum>
+           </property>
+           <property name="sortingEnabled">
+            <bool>false</bool>
+           </property>
+           <property name="rowCount">
+            <number>6</number>
+           </property>
+           <property name="columnCount">
+            <number>4</number>
+           </property>
+           <attribute name="horizontalHeaderCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>66</number>
+           </attribute>
+           <attribute name="horizontalHeaderHighlightSections">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>0</number>
+           </attribute>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <row/>
+           <column>
+            <property name="text">
+             <string/>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>检查项</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string/>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>状态</string>
+            </property>
+           </column>
+           <item row="0" column="2">
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QPushButton" name="saveBtn">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+	font-size:14px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#0095ff;
+	
+	border:none;
+
+	background:transparent;
+
+	border-bottom:1px solid #0095ff;
+}
+
+QPushButton:disabled
+{
+	color:rgba(255,255,255,20%);
+	
+}
+QPushButton:hover
+{
+	color:#00bbff;
+}</string>
+             </property>
+             <property name="text">
+              <string>保存报告到本地</string>
+             </property>
+             <property name="checkable">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="uploadCheckBox">
+             <property name="styleSheet">
+              <string notr="true">QCheckBox
+{
+	font-size:14px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#ffffff;
+	
+	border:none;
+
+	background:transparent;
+
+}
+
+QCheckBox:disabled
+{
+	color:rgba(255,255,255,20%);
+	
+}
+
+QCheckBox::indicator:checked
+{
+	image: url(:/images/checked);
+}
+
+QCheckBox::indicator:unchecked
+{
+	image: url(:/images/unchecked);
+}
+
+
+</string>
+             </property>
+             <property name="text">
+              <string>上传检测报告</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="closeBtn">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>80</width>
+               <height>32</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+	font-size:16px;
+  	font-family:&quot;Microsoft YaHei&quot;;
+  	color:#ffffff;
+
+	border-radius:3px;
+	background:#007ed7;
+}
+
+QPushButton:hover
+{
+	background:#1a8bdb;
+}</string>
+             </property>
+             <property name="text">
+              <string>关闭</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ClickableLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">clickablelabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>minBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckDlg</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>533</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>794</x>
+     <y>98</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>CheckDlg</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>570</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>799</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.m": "matlab",
         "array": "cpp",
         "*.tcc": "cpp",
         "cctype": "cpp",
@@ -50,7 +51,8 @@
         "xutility": "cpp",
         "optional": "cpp",
         "string_view": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "ctime": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }

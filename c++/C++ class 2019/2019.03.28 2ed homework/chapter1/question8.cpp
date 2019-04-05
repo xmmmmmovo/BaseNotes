@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdio>
+#include <cstdlib>
 #include <algorithm>
 
 using namespace std;
@@ -16,7 +17,8 @@ int main() {
 
     scanf("%d %d", &x, &y);
     maxchose(x, y);
-    printf("%d %d", x, y);
+    printf("%d %d\n", x, y);
 
+    system("pause");
     return 0;
 }

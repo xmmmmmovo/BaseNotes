@@ -21,5 +21,6 @@ int main() {
     ans = linemax(x, y, z);
     printf("%d\n", ans);
 
+    system("pause");
     return 0;
 }
