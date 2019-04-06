@@ -95,3 +95,87 @@
 - 一定要考虑清楚，像是盐水，水滴什么的毫升数有可能是`有小数的`
 - map真好用, 大数据小数据分开考虑
 - 精度问题：涉及到小数计算一律使用`%n.mlf`进行输出(就算是整型也用`%.lf`输出)
+
+### 日常
+
+#### 快速幂
+
+- 普通快速幂
+
+```c++
+int poww(int a, int b) {
+    int ans = 1, base = a;
+    while (b != 0) {
+        if (b & 1 != 0)
+            ans *= base;
+            base *= base;
+            b >>= 1;
+    }
+    return ans;
+}
+```
+
+- 斐波那契数列快速幂模板
+
+```c++
+#include<iostream>
+#include<cstdio>
+#include<cstring>
+#include<cmath>
+#include<algorithm>
+using namespace std;
+const int mod = 10000;
+const int maxn = 35;
+int N;
+struct Matrix {
+    int mat[maxn][maxn];
+    int x, y;
+    Matrix() {
+        memset(mat, 0, sizeof(mat));
+        for (int i = 1; i <= maxn - 5; i++) mat[i][i] = 1;
+    }
+};
+inline void mat_mul(Matrix a, Matrix b, Matrix &c) {
+    memset(c.mat, 0, sizeof(c.mat));
+    c.x = a.x; c.y = b.y;
+    for (int i = 1; i <= c.x; i++) {
+        for (int j = 1; j <= c.y; j++) {
+            for (int k = 1; k <= a.y; k++) {
+                c.mat[i][j] += (a.mat[i][k] * b.mat[k][j]) % mod;
+                c.mat[i][j] %= mod;
+            }
+        }
+    }
+    return ;
+}
+inline void mat_pow(Matrix &a, int z) {
+    Matrix ans, base = a;
+    ans.x = a.x; ans.y = a.y;
+    while (z) {
+        if (z & 1 == 1) mat_mul(ans, base, ans);
+        mat_mul(base, base, base);
+        z >>= 1;
+    }
+    a = ans;
+}
+int main() {
+    while (cin >> N) {
+        switch (N) {
+            case -1: return 0;
+            case 0: cout << "0" << endl; continue;
+            case 1: cout << "1" << endl; continue;
+            case 2: cout << "1" << endl; continue;
+        }
+        Matrix A, B;
+        A.x = 2; A.y = 2;
+        A.mat[1][1] = 1; A.mat[1][2] = 1;
+        A.mat[2][1] = 1; A.mat[2][2] = 0;
+        B.x = 2; B.y = 1;
+        B.mat[1][1] = 1; B.mat[2][1] = 1;
+        mat_pow(A, N - 1);
+        mat_mul(A, B, B);
+        cout << B.mat[1][1] << endl;
+    }
+    return 0;
+}
+```
