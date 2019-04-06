@@ -1,0 +1,34 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Client<SocketDemo-2.3>",
+            "request": "launch",
+            "mainClass": "Client",
+            "projectName": "SocketDemo-2.3"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Server<SocketDemo-2.3>",
+            "request": "launch",
+            "mainClass": "Server",
+            "projectName": "SocketDemo-2.3"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DemoApplication",
+            "request": "launch",
+            "mainClass": "com.xmmmmmovo.demo.DemoApplication"
+        }
+    ]
+}
