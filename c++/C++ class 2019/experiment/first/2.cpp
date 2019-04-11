@@ -41,5 +41,6 @@ int main(void) {
 
     printf("%.2lf\n", ans);
 
+    system("pause");
     return 0;
 }

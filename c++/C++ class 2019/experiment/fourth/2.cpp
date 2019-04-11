@@ -13,30 +13,39 @@ private:
     const string goodsName;
 
 public:
-    Goods(string name, int num) : goodsName(name){
-        goodsNum = num;
-    }
+    Goods(string name, int num);
 
-    void addGoods(int num) {
-        goodsNum += num;
-    }
+    void addGoods(int num);
 
-    void removeGoods(int num) {
-        if (goodsNum - num < 0) {
-            cout << "没有这么多库存！" << endl;
-            return;
-        }
-        goodsNum -= num;
-    }
+    void removeGoods(int num);
 
     void info() {
         cout << "货物名：" << goodsName << " " << "货物库存：" << goodsNum << " " << endl;
     }
 
-    int getGoodsNum() {
-        return goodsNum;
-    }
+    int getGoodsNum();
 };
+int Goods::goodsNum;
+
+Goods::Goods(string name, int num) : goodsName(name){
+    goodsNum = num;
+}
+
+void Goods::addGoods(int num) {
+    goodsNum += num;
+}
+
+void Goods::removeGoods(int num) {
+    if (goodsNum - num < 0) {
+        cout << "没有这么多库存！" << endl;
+        return;
+    }
+    goodsNum -= num;
+}
+
+int Goods::getGoodsNum() {
+    return goodsNum;
+}
 
 int main() {
     string nameIn;
@@ -55,5 +64,6 @@ int main() {
         good.info();
     }
 
+    system("pause");
     return 0;
 }

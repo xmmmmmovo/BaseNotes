@@ -18,5 +18,6 @@ int main(void) {
     }
     printf("%d\n", sum);
 
+    system("pause");
     return 0;
 }

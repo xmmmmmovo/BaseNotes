@@ -28,16 +28,17 @@ double max1(double a, double b, double c) {
 int main(void) {
     double c = 0, f = 0;
     scanf("%lf", &f);
-    printf("%lf\n", ftoc(f));
+    printf("%.2lf\n", ftoc(f));
 
     printf("%d\n", max1(-6));
-    printf("%lf\n", max1(-6.0));
+    printf("%.2lf\n", max1(-6.0));
     printf("%d\n", max1(-6, 123));
-    printf("%lf\n", max1(-6.0, 0.001));
+    printf("%.2lf\n", max1(-6.0, 0.001));
 
     double x = 0, y = 0;
     scanf("%lf %lf", &x, &y);
-    printf("%lf\n", pow(x, y));
+    printf("%.2lf\n", pow(x, y));
 
+    system("pause");
     return 0;
 }

@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b784921-adfb-4339-8a53-e1918fa98e0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/blueBrige2019/dfs maze reach.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/blueBrige2019/dfs maze reach.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/blueBrige2019/zhengze.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/blueBrige2019/zhengze.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/note in daily.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/note in daily.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git diff achieve.py" beforeDir="false" afterPath="$PROJECT_DIR$/git diff achieve.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../java/web/SpringBoot study 04.06 jQuery&amp;AngularJs/src/main/java/com/xmmmmovo/demo/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/web/SpringBoot study 04.06 MVC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/web/SpringBoot study 04.06 MVC/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/git diff achieve.py" beforeDir="false" afterPath="$PROJECT_DIR$/git_diff_achieve.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +17,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/dailyStudya$homework_check_program.coverage" NAME="homework_check_program Coverage Results" MODIFIED="1552958965383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dailyStudya$read_cail_2018.coverage" NAME="read_cail_2018 Coverage Results" MODIFIED="1554628788591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -31,26 +34,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/homework_check_program.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/git diff achieve.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="9" selection-start-column="9" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -68,6 +52,7 @@
         <option value="$PROJECT_DIR$/homework_check_program.py" />
         <option value="$PROJECT_DIR$/classmate.txt" />
         <option value="$PROJECT_DIR$/git diff achieve.py" />
+        <option value="$PROJECT_DIR$/read_cail_2018.py" />
       </list>
     </option>
   </component>
@@ -85,7 +70,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,6 +81,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.read_cail_2018">
     <configuration name="homework_check_program" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dailyStudya" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,8 +129,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="read_cail_2018" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dailyStudya" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/read_cail_2018.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.read_cail_2018" />
         <item itemvalue="Python.homework_check_program" />
       </list>
     </recent_temporary>
@@ -163,22 +171,22 @@
       <workItem from="1552916762066" duration="4054000" />
       <workItem from="1552958884956" duration="693000" />
       <workItem from="1552997588891" duration="2018000" />
+      <workItem from="1554628397813" duration="433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6765000" />
+    <option name="totallyTimeSpent" value="7198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26030368" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46045503" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -214,17 +222,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homework_check_program.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/git diff achieve.py">
+    <entry file="file://$PROJECT_DIR$/git_diff_achieve.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_cail_2018.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homework_check_program.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>

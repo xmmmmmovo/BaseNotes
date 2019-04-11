@@ -63,5 +63,6 @@ int main() {
     td.AddOneDay();
     td.display();
 
+    system("pause");
     return 0;
 }

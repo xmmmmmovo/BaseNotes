@@ -34,7 +34,7 @@
 - QT
   - [QT仓库合集](https://github.com/xmmmmmovo/notes/tree/master/c%2B%2B/Qt)
   - [QT笔记](https://github.com/xmmmmmovo/notes/blob/master/c%2B%2B/Qt/QT%E7%AC%94%E8%AE%B0.md)
-- [c++日常学习](https://github.com/xmmmmmovo/notes/tree/master/c%2B%2B/c%2B%2BProgect)
+- [C++日常学习](https://github.com/xmmmmmovo/notes/tree/master/c%2B%2B/c%2B%2BProgect)
 - [C++课下作业](https://github.com/xmmmmmovo/notes/tree/master/c%2B%2B/C%2B%2B%20class%202019)
 
 ### [C](https://github.com/xmmmmmovo/notes/tree/master/c)
