@@ -8,11 +8,20 @@
 #include <cmath>
 #include <iostream>
 
-int main(int argc, char **argv)
+int getNumber() {
+    static int a = 0;
+    return a++;
+}
 
+int main(int argc, char **argv)
 {
-    int printf = -1;
-    std::cout << printf << '\n';
+    int t = 5;
+
+    while (t--) {
+        getNumber();
+    }
+    
+    std::cout << getNumber() << t << std::endl;
 
     system("pause");
     return 0;

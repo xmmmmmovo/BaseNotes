@@ -1,11 +1,12 @@
+import com.huaban.analysis.jieba.JiebaSegmenter;
+
 import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) {
-        BigDecimal b1 = new BigDecimal("1.0");
-        BigDecimal b2 = new BigDecimal("3.0");
-
-//        b1.setScale(100000);
-        System.out.println(b1.divide(b2, 1000, BigDecimal.ROUND_HALF_UP).toString());
+//        String test = "今天我吃了一碗肥肠面，里面有大便";
+        String test = "select * from user";
+        JiebaSegmenter jiebaSegmenter = new JiebaSegmenter();
+        System.out.println(jiebaSegmenter.process(test, JiebaSegmenter.SegMode.SEARCH));
     }
 }
