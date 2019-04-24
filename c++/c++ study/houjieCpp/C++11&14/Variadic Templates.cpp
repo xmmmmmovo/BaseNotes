@@ -37,6 +37,6 @@ int main(int argc, char const *argv[]) {
 
     print("114536", "test", "123123");
 
-    system("pause");
+    // system("pause");
     return 0;
 }

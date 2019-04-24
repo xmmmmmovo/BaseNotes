@@ -1,27 +1,18 @@
 /**
  * author: xmmmmmovo
- * generation time: 2019/03/17
+ * generation time: 2019/04/22
  * filename: test.cpp
  * language & build version : C++ 11
 */
-#include <cstdio>
-#include <cmath>
 #include <iostream>
+#include <cstdio>
+#include <cstdlib>
+#include <algorithm>
+#include <string>
 
-int getNumber() {
-    static int a = 0;
-    return a++;
-}
+using namespace std;
 
-int main(int argc, char **argv)
-{
-    int t = 5;
-
-    while (t--) {
-        getNumber();
-    }
-    
-    std::cout << getNumber() << t << std::endl;
+int main(int argc, char const *argv[]) {
 
     system("pause");
     return 0;
