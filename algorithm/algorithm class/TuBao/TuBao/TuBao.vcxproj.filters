@@ -11,7 +11,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="TuBaoMain.cpp">
+    <ClCompile Include="tu_bao_main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
