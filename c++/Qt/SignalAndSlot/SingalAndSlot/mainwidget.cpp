@@ -77,17 +77,17 @@ MainWidget::MainWidget(QWidget *parent)
      * QT配合信号使用 非常方便
     */
     QPushButton *b5 = new QPushButton(this);
-    b5->setText("lambda表达式");
-    b5->move(150, 150);
-    connect(b5, &QPushButton::clicked,
-            //= :把外部局部变量，类中所有成员以值传递
-            //this :类中所有成员以值的传递方式
-            //& : 把外部所有局部变量，引用的方式传递
-            //同java 内部类变量只读
-            [=](bool isCheck){
-        b5->setText("变化");
-        qDebug() << isCheck;
-    });
+//    b5->setText("lambda表达式");
+//    b5->move(150, 150);
+//    connect(b5, &QPushButton::clicked,
+//            //= :把外部局部变量，类中所有成员以值传递
+//            //this :类中所有成员以值的传递方式
+//            //& : 把外部所有局部变量，引用的方式传递
+//            //同java 内部类变量只读
+//            [=](bool isCheck){
+//        b5->setText("变化");
+//        qDebug() << isCheck;
+//    });
 
     resize(400, 400);
 }
