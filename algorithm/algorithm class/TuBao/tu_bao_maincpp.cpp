@@ -12,7 +12,6 @@
 #define WINDOW_NAME "凸包解决方案"
 
 using namespace std;
-
 /**
  * 用于取随机数
  * 这种方案只能用于取整数随机
@@ -31,57 +30,63 @@ vector<int> RandomNums(const int& min, const int& max, const int& nums) {
 	return temp;
 }
 
-bool cmp(cv::Point &p1, cv::Point &p2) {
-	if (p1.x < p2.x) {
-		return 1;
-	} else if (p1.x > p2.x) {
-		return 0;
-	} else {
-		return p1.y < p2.y ? 1 : 0;
-	}
-}
-
 /**
  * 下面的是第一种穷举法
  * 时间为O(n^3)
  */
 void algorithm1(vector<cv::Point>& points, cv::Mat& show_img) {
-	vector<cv::Point> ans;
+	cv::Mat fin_mat = show_img.clone(); // 复制
 	size_t size = points.size();
-	int minus = 0;
+	vector<pair<int, int>> pairs; // 标定起始点
+	int a = 0, b = 0, c = 0, sign1 = 0, sign2 = 0;
 
 	for (size_t i = 0; i < size; ++i) {
 		for (size_t j = i + 1; j < size; ++j) {
-			for (size_t k = 0; k < size; ++k) {
-				minus = 0;
-				int x1 = points[i].x;
-				int y1 = points[i].y;
-				int x2 = points[j].x;
-				int y2 = points[j].y;
-				int x3 = points[k].x;
-				int y3 = points[k].y;
+			a = points[j].y - points[i].y;
+			b = points[i].x - points[j].x;
+			c = (points[i].x * points[j].y) - (points[i].y * points[j].x);
+			sign1 = 0;
+			sign2 = 0;
 
-				if ((x1 * y2 + x3 * y1 + x2 * y3
-					- x3 * y2 - x2 * y1 - x1 * y3) < 0) {
-					minus++;
+			for (size_t k = 0; k < size; ++k) {
+				if ((k == j) || (k == i)) {
+					continue;
+				}
+				int temp = a * points[k].x + b * points[k].y;
+				if (temp == c) {
+					sign1++;
+					sign2++;
+				}
+				if (temp > c) {
+					sign1++;
+				}
+				if (temp < c) {
+					sign2++;
 				}
 			}
 
-			if (minus == 0 || minus == size - 1) {
-				ans.push_back(points[i]);
-				ans.push_back(points[j]);
-				break;
+			if (sign1 == (size - 2) || sign2 == (size - 2)) {
+				pairs.push_back(make_pair(i, j));
+			}
+
+			cv::line(show_img, points[i], points[j],
+				cv::Scalar(255, 0, 0), 2, CV_AA);
+			cv::imshow(WINDOW_NAME, show_img);
+			char c = cvWaitKey(100);
+			if (c == 'q') {
+				exit(0);
 			}
 		}
+		show_img = fin_mat.clone();
 	}
 
-	cout << ans;
-
-	for (int i = 0; i < ans.size(); i+=2) {
-		cv::line(show_img, ans[i], ans[i + 1], 
+	for (int i = 0; i < pairs.size(); i++) {
+		cv::line(show_img, points[pairs[i].first], points[pairs[i].second],
 			cv::Scalar(0, 0, 255), 2, CV_AA);
+		cvWaitKey(500);
+		cv::imshow(WINDOW_NAME, show_img);
 	}
-	cv::imshow(WINDOW_NAME, show_img);
+	// cv::imshow(WINDOW_NAME, show_img);
 
 	return;
 }
@@ -91,16 +96,29 @@ void algorithm1(vector<cv::Point>& points, cv::Mat& show_img) {
  * 时间为O(n^2)
  */
 void algorithm2(vector<cv::Point>& points, cv::Mat& show_img) {
-	auto p_tu = min_element(points.begin(), points.end(), cmp);
+	// lambda表达式
+	auto p_tu = min_element(points.begin(), points.end(),
+		[](cv::Point &p1, cv::Point &p2) {
+		if (p1.x < p2.x) {
+			return 1;
+		}
+		else if (p1.x > p2.x) {
+			return 0;
+		}
+		else {
+			return p1.y < p2.y ? 1 : 0;
+		}
+	});
+
 	auto p_temp = p_tu;
-	
+
 	do {
 		for (auto &point : points) {
 			if (point == *p_temp) {
 			}
 		}
 	} while (p_temp != p_tu);
-	
+
 	return;
 }
 
@@ -115,13 +133,13 @@ void ConvexHull(vector<cv::Point>& points, cv::Mat& show_img) {
 		cv::circle(show_img, point, 2, cv::Scalar(0, 255, 255), -1, CV_AA);
 	}
 
+	// 显示点
 	cv::imshow(WINDOW_NAME, show_img);
 
-	// cv::Mat mat = show_img.clone();
-	// cv::line(show_img, points[0], points[1], cv::Scalar(0, 0, 255), 2, CV_AA);
-	// cv::imshow(WINDOW_NAME, show_img);
-
+	// 主算法
 	algorithm1(points, show_img);
+
+	// algorithm2(points, show_img);
 
 	return;
 }
@@ -130,7 +148,7 @@ void ConvexHull(vector<cv::Point>& points, cv::Mat& show_img) {
 int main(void) {
 	// 凸包包含点
 	vector<cv::Point> points;
-	const int nums = 5;
+	const int nums = 20;
 
 	cv::Size img_size(800, 640);
 	cv::Mat show_img(img_size, CV_8UC3, cv::Scalar(0, 0, 0));
@@ -145,6 +163,8 @@ int main(void) {
 	}
 	// 输出随机点
 	cout << points << endl;
+
+	// 凸包主函数
 	ConvexHull(points, show_img);
 
 	// 等待结束按键
