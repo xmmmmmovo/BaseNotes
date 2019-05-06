@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TuBao", "..\TuBao\TuBao.vcxproj", "{23F869E8-9457-4FE5-B1D1-9FB0EE137135}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZuiJinDui", "ZuiJinDui\ZuiJinDui.vcxproj", "{F0378576-BD3A-47C3-A23E-3A910817E156}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TuBao", "TuBao\TuBao.vcxproj", "{23F869E8-9457-4FE5-B1D1-9FB0EE137135}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +15,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F0378576-BD3A-47C3-A23E-3A910817E156}.Debug|x64.ActiveCfg = Debug|x64
+		{F0378576-BD3A-47C3-A23E-3A910817E156}.Debug|x64.Build.0 = Debug|x64
+		{F0378576-BD3A-47C3-A23E-3A910817E156}.Debug|x86.ActiveCfg = Debug|Win32
+		{F0378576-BD3A-47C3-A23E-3A910817E156}.Debug|x86.Build.0 = Debug|Win32
+		{F0378576-BD3A-47C3-A23E-3A910817E156}.Release|x64.ActiveCfg = Release|x64
+		{F0378576-BD3A-47C3-A23E-3A910817E156}.Release|x64.Build.0 = Release|x64
+		{F0378576-BD3A-47C3-A23E-3A910817E156}.Release|x86.ActiveCfg = Release|Win32
+		{F0378576-BD3A-47C3-A23E-3A910817E156}.Release|x86.Build.0 = Release|Win32
 		{23F869E8-9457-4FE5-B1D1-9FB0EE137135}.Debug|x64.ActiveCfg = Debug|x64
 		{23F869E8-9457-4FE5-B1D1-9FB0EE137135}.Debug|x64.Build.0 = Debug|x64
 		{23F869E8-9457-4FE5-B1D1-9FB0EE137135}.Debug|x86.ActiveCfg = Debug|Win32

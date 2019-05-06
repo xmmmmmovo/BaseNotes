@@ -8,6 +8,8 @@
 #include <ctime>
 // opencv头文件
 #include <opencv2/opencv.hpp>
+// 随机引擎头文件
+#include <random>
 
 #define WINDOW_NAME "凸包解决方案"
 
@@ -23,8 +25,12 @@ vector<int> RandomNums(const int& min, const int& max, const int& nums) {
 		temp.push_back(i + 1);
 	}
 
+	// 采用64位梅林算法进行随机数引擎播种q
+	random_device rd;
+	mt19937_64 g(rd());
+
 	// 将数组散列化
-	random_shuffle(temp.begin(), temp.end());
+	shuffle(temp.begin(), temp.end(), g);
 	temp.resize(nums); // 限制返回数组
 
 	return temp;
@@ -42,12 +48,13 @@ void algorithm1(vector<cv::Point>& points, cv::Mat& show_img) {
 
 	for (size_t i = 0; i < size; ++i) {
 		for (size_t j = i + 1; j < size; ++j) {
+
 			a = points[j].y - points[i].y;
 			b = points[i].x - points[j].x;
 			c = (points[i].x * points[j].y) - (points[i].y * points[j].x);
 			sign1 = 0;
 			sign2 = 0;
-
+			
 			for (size_t k = 0; k < size; ++k) {
 				if ((k == j) || (k == i)) {
 					continue;
@@ -92,32 +99,9 @@ void algorithm1(vector<cv::Point>& points, cv::Mat& show_img) {
 }
 
 /**
- * 下面的是第二种穷举法
- * 时间为O(n^2)
+ * 下面的是QuickHull(未完成)
  */
 void algorithm2(vector<cv::Point>& points, cv::Mat& show_img) {
-	// lambda表达式
-	auto p_tu = min_element(points.begin(), points.end(),
-		[](cv::Point &p1, cv::Point &p2) {
-		if (p1.x < p2.x) {
-			return 1;
-		}
-		else if (p1.x > p2.x) {
-			return 0;
-		}
-		else {
-			return p1.y < p2.y ? 1 : 0;
-		}
-	});
-
-	auto p_temp = p_tu;
-
-	do {
-		for (auto &point : points) {
-			if (point == *p_temp) {
-			}
-		}
-	} while (p_temp != p_tu);
 
 	return;
 }
@@ -136,9 +120,10 @@ void ConvexHull(vector<cv::Point>& points, cv::Mat& show_img) {
 	// 显示点
 	cv::imshow(WINDOW_NAME, show_img);
 
-	// 主算法
+	// 算法1
 	algorithm1(points, show_img);
 
+	// 算法2
 	// algorithm2(points, show_img);
 
 	return;

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tu_bao_maincpp.cpp">
+    <ClCompile Include="zui_jin_dui.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
