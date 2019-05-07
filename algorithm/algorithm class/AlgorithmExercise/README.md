@@ -3,4 +3,4 @@
 ### 库需求
 
 - STL(C++11 Standard)
-- OpenCV(3.4)
+- OpenCV(version 3.4)
