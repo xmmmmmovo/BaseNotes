@@ -79,7 +79,7 @@ void algorithm1(vector<cv::Point>& points, cv::Mat& show_img) {
 			cv::line(show_img, points[i], points[j],
 				cv::Scalar(255, 0, 0), 2, CV_AA);
 			cv::imshow(WINDOW_NAME, show_img);
-			char c = cvWaitKey(100);
+			char c = cvWaitKey(50);
 			if (c == 'q') {
 				exit(0);
 			}

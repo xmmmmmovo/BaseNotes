@@ -7,8 +7,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZuiJinDui", "ZuiJinDui\ZuiJ
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TuBao", "TuBao\TuBao.vcxproj", "{23F869E8-9457-4FE5-B1D1-9FB0EE137135}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MissionAssign", "MissionAssign\MissionAssign.vcxproj", "{72CCCA7F-B124-4E75-B241-ED1711B7B99E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -33,14 +31,6 @@ Global
 		{23F869E8-9457-4FE5-B1D1-9FB0EE137135}.Release|x64.Build.0 = Release|x64
 		{23F869E8-9457-4FE5-B1D1-9FB0EE137135}.Release|x86.ActiveCfg = Release|Win32
 		{23F869E8-9457-4FE5-B1D1-9FB0EE137135}.Release|x86.Build.0 = Release|Win32
-		{72CCCA7F-B124-4E75-B241-ED1711B7B99E}.Debug|x64.ActiveCfg = Debug|x64
-		{72CCCA7F-B124-4E75-B241-ED1711B7B99E}.Debug|x64.Build.0 = Debug|x64
-		{72CCCA7F-B124-4E75-B241-ED1711B7B99E}.Debug|x86.ActiveCfg = Debug|Win32
-		{72CCCA7F-B124-4E75-B241-ED1711B7B99E}.Debug|x86.Build.0 = Debug|Win32
-		{72CCCA7F-B124-4E75-B241-ED1711B7B99E}.Release|x64.ActiveCfg = Release|x64
-		{72CCCA7F-B124-4E75-B241-ED1711B7B99E}.Release|x64.Build.0 = Release|x64
-		{72CCCA7F-B124-4E75-B241-ED1711B7B99E}.Release|x86.ActiveCfg = Release|Win32
-		{72CCCA7F-B124-4E75-B241-ED1711B7B99E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
