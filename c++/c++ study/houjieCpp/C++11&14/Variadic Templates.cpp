@@ -34,7 +34,6 @@ int main(int argc, char const *argv[]) {
      * 可以接受任意个数参数
      * 在C++11中作为包
     */
-
     print("114536", "test", "123123");
 
     // system("pause");

@@ -165,9 +165,9 @@ p_ans CacuMinPoints(vector<cv::Point> &points, cv::Mat show_image, int mid_width
 		ans = d2;
 	}
 
+	// 算是半个回调
 	cv::line(show_image, ans.p1, ans.p2
 		, cv::Scalar(255, 255, 255), 2, CV_AA);
-	// 算是半个回调
 	cv::imshow(MAIN_WINDOW_NAME, show_image);
 
 	return merge(points, dis, mid, show_image, mid_width, ans);
@@ -204,8 +204,8 @@ int main(int argc, char* argv[]) {
 	});
 	cout << points << endl;
 
+	// 绘制点
 	for (auto& point : points) {
-		// 绘制点
 		cv::circle(show_img, point, 2, cv::Scalar(0, 255, 255), -1, CV_AA);
 	}
 
