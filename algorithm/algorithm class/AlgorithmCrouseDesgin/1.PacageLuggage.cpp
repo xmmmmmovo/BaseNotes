@@ -27,14 +27,9 @@ typedef struct PC{
 /**
  * 所有物件
 */
-package_content objs[6]{
-    package_content("laptop", 4, 7),
-    package_content("camera", 2, 10),
-    package_content("xbox", 6, 6),
-    package_content("grinder", 4, 7),
-    package_content("dumbbell", 2, 5),
-    package_content("encyclopedia", 10, 4)
-};
+int count = 0;
+int dp[10000][10000]; // dp数组开大点
+vector<package_content> pcs;
 
 /**
  * 运算符重载 方便输出
@@ -43,16 +38,29 @@ ostream& operator<< (ostream &o, const package_content &con) {
     return o << con.content_name << " " << con.content_volume << " " << con.content_value << endl;
 }
 
+int solve() {
+}
+
 /**
  * 主函数
 */
 int main(int argc, char const *argv[]) {
+    // 重定向
+    freopen("1.txt", "r", stdin);
+    freopen("2.txt", "w", stdout);
     int N = 0;
     cin >> N;
 
     while (N--) {
-        int w = 0; // 能够放进去的物品总体积
-        
+        string name;
+        int cvo = 0, cva = 0;
+        int num = 0, w = 0; // 能够放进去的物品总体积
+        cin >> num >> w;
+        for (int i = 0; i < num; i++) {
+            cin >> name >> num >> w;
+            pcs.push_back(package_content(name, cvo, cva));
+        }
+        solve();
     }
 
     system("pause");

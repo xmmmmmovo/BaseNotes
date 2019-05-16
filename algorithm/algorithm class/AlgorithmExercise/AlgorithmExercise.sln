@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TuBao", "TuBao\TuBao.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestUsing", "TestUsing\TestUsing.vcxproj", "{BEAF3579-B2C1-4F28-8A56-A961A49A6DE9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JuZhenLianCheng", "JuZhenLianCheng\JuZhenLianCheng.vcxproj", "{A589E9A7-7699-47F3-8216-7C94DE91BD5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{BEAF3579-B2C1-4F28-8A56-A961A49A6DE9}.Release|x64.Build.0 = Release|x64
 		{BEAF3579-B2C1-4F28-8A56-A961A49A6DE9}.Release|x86.ActiveCfg = Release|Win32
 		{BEAF3579-B2C1-4F28-8A56-A961A49A6DE9}.Release|x86.Build.0 = Release|Win32
+		{A589E9A7-7699-47F3-8216-7C94DE91BD5D}.Debug|x64.ActiveCfg = Debug|x64
+		{A589E9A7-7699-47F3-8216-7C94DE91BD5D}.Debug|x64.Build.0 = Debug|x64
+		{A589E9A7-7699-47F3-8216-7C94DE91BD5D}.Debug|x86.ActiveCfg = Debug|Win32
+		{A589E9A7-7699-47F3-8216-7C94DE91BD5D}.Debug|x86.Build.0 = Debug|Win32
+		{A589E9A7-7699-47F3-8216-7C94DE91BD5D}.Release|x64.ActiveCfg = Release|x64
+		{A589E9A7-7699-47F3-8216-7C94DE91BD5D}.Release|x64.Build.0 = Release|x64
+		{A589E9A7-7699-47F3-8216-7C94DE91BD5D}.Release|x86.ActiveCfg = Release|Win32
+		{A589E9A7-7699-47F3-8216-7C94DE91BD5D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
