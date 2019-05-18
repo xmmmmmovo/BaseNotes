@@ -87,6 +87,10 @@ int main()
     a[3] = "A4";
     a[4] = "A5";
     a[5] = "A6";
+
+	for (int i = 0; i < 10; i++) {
+		printf("%d ", p[i]);
+	}
     
     ret = matrix_chain(p,n,min_part,min_point);
     printf("Minest times:%d.\n",ret);
