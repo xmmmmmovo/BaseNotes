@@ -14,7 +14,6 @@
 - [平日学习](https://github.com/xmmmmmovo/notes/tree/master/algorithm/study%20in%20daily)
     - [网课笔记](https://github.com/xmmmmmovo/notes/blob/master/algorithm/study%20in%20daily/note%20in%20mooc.md)
     - [日常刷题笔记](https://github.com/xmmmmmovo/notes/blob/master/algorithm/study%20in%20daily/note%20in%20daily.md)
-    - [STL笔记](https://github.com/xmmmmmovo/notes/blob/master/algorithm/study%20in%20daily/algorithm.md)
     - [HDU刷题](https://github.com/xmmmmmovo/notes/tree/master/algorithm/study%20in%20daily/HDU%20OJ)
     - [大一算法相关](https://github.com/xmmmmmovo/notes/tree/master/algorithm/study%20in%20daily/freshman%20algorithm)
         - [新生赛](https://github.com/xmmmmmovo/notes/tree/master/algorithm/study%20in%20daily/freshman%20algorithm/2017%20freshman%20competition)
@@ -24,6 +23,9 @@
         - [蓝桥杯模拟赛](https://github.com/xmmmmmovo/notes/tree/master/algorithm/study%20in%20daily/sophomore%20algorithm/bb2019sim)
         - [蓝桥杯](https://github.com/xmmmmmovo/notes/tree/master/algorithm/study%20in%20daily/sophomore%20algorithm/blueBrige2019)
         - [MOOC](https://github.com/xmmmmmovo/notes/tree/master/algorithm/study%20in%20daily/sophomore%20algorithm/tutorial)
+- [算法课](https://github.com/xmmmmmovo/BaseNotes/tree/master/algorithm/algorithm%20class)
+    - [算法实验](https://github.com/xmmmmmovo/BaseNotes/tree/master/algorithm/algorithm%20class/AlgorithmExercise)
+- [leetcode](https://github.com/xmmmmmovo/BaseNotes/tree/master/algorithm/leetcode)
 
 ### [Android](https://github.com/xmmmmmovo/notes/tree/master/android)
 
