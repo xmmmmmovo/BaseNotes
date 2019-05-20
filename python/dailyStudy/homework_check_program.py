@@ -2,8 +2,8 @@ import os
 
 if __name__ == '__main__':
     # 文件地址
-    file_path = "D:\\anzhuang\\tencentdata\\137959742\\FileRecv\\C++Homework2018.03 First"
-    classmates_filename = "classmate.txt"
+    file_path = "D:\\anzhuang\\tencentdata\\137959742\FileRecv\\17070242算法\\第二次实验"
+    classmates_filename = "classmate_nonspace.txt"
 
     classmates_file = open(classmates_filename, encoding='UTF-8')
 

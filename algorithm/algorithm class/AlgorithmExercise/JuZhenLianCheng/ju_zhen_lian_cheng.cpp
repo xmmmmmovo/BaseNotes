@@ -117,18 +117,26 @@ void Print(int n) {
 }
 
 int main(int argc, char* argv[]) {
-	int n = 6, ret = 0;
+	int n = 5, ret = 0;
 
-	cout << "矩阵数量：" << endl;
-	cin >> n;
+	// system("color 08");
+	// cout << "矩阵数量：" << endl;
+	// cin >> n;
 
 	// 这里是随机矩阵和固定矩阵名
 	for (int i = 0; i < n + 1; ++i) {
-		p.push_back(rand() % 450);
+		// p.push_back(rand() % 450);
 		a.push_back("M" + to_string(i));
 	}
+	p.push_back(30);
+	p.push_back(35);
+	p.push_back(15);
+	p.push_back(5);
+	p.push_back(20);
+	p.push_back(25);
 
 	Print(n);
+
 	PrintMatrix(n);
 
 	ret = matrix_chain(n);

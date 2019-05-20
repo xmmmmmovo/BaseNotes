@@ -7,10 +7,6 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
-            "args": [
-                "114514",
-                "xmmmmovo"
-            ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
