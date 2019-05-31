@@ -50,15 +50,15 @@ void People::ChangeAddress(string newAddress) {
 }
 
 void People::display() {
-    cout << "å§“åï¼š" << name << endl;
-    cout << "å‡ºç”Ÿæ—¥æœŸï¼š";
+    cout << "ÐÕÃû£º" << name << endl;
+    cout << "³öÉúÈÕÆÚ£º";
     birthday.display();
-    cout << "èº«é«˜ï¼š" << height << endl;
-    cout << "ä½å€ï¼š" << address << endl;
+    cout << "Éí¸ß£º" << height << endl;
+    cout << "×¡Ö·£º" << address << endl;
 }
 
 int main(int argc, char const *argv[]) {
-    People pep("çŽ‹å¤§é”¤", date(2013, 12, 9), 178, "å¡”å…‹æ‹‰çŽ›å¹²æ²™æ¼ ");
+    People pep("Íõ´ó´¸", date(2013, 12, 9), 178, "Ëþ¿ËÀ­Âê¸ÉÉ³Ä®");
     pep.display();
 
     system("pause");

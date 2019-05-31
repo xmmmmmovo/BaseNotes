@@ -53,6 +53,5 @@
         "string_view": "cpp",
         "algorithm": "cpp",
         "ctime": "cpp"
-    },
-    "C_Cpp.errorSquiggles": "Enabled"
+    }
 }

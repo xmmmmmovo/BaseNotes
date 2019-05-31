@@ -9,7 +9,7 @@
             ],
             "windowsSdkVersion": "8.1",
             "compilerPath": "C:\\Program Files\\mingw-w64\\mingw64x\\mingw64\\bin\\g++.exe",
-            "intelliSenseMode": "msvc-x64"
+            "intelliSenseMode": "gcc-x64"
         }
     ],
     "version": 4
