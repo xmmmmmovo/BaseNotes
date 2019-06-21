@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b784921-adfb-4339-8a53-e1918fa98e0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/AlgorithmExercise.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/AlgorithmExercise.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/C++ class 2019/experiment/sixth/2.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_check_program.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework_check_program.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/MiGong/maze_main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/MiGong/maze_main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mysqltest&amp;chineseLawSpider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mysqltest&amp;chineseLawSpider/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +16,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/dailyStudya$homework_check_program.coverage" NAME="homework_check_program Coverage Results" MODIFIED="1552958965383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dailyStudya$server_test.coverage" NAME="server_test Coverage Results" MODIFIED="1555583693001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/dailyStudy$homework_check_program.coverage" NAME="homework_check_program Coverage Results" MODIFIED="1559357926284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dailyStudy$test.coverage" NAME="test Coverage Results" MODIFIED="1559978199642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dailyStudy$homework_check_program.coverage" NAME="homework_check_program Coverage Results" MODIFIED="1559742332261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dailyStudya$read_cail_2018.coverage" NAME="read_cail_2018 Coverage Results" MODIFIED="1554628788591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -54,6 +56,7 @@
         <option value="$PROJECT_DIR$/server_test.py" />
         <option value="$PROJECT_DIR$/classmate_nonspace.txt" />
         <option value="$PROJECT_DIR$/homework_check_program.py" />
+        <option value="$PROJECT_DIR$/test.py" />
       </list>
     </option>
   </component>
@@ -77,7 +80,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -85,10 +87,16 @@
               <item name="dailyStudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="dailyStudy" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dailyStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dailyStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="pic" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -99,6 +107,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AndroidLabtest\notes\python\dailyStudy\pic" />
       <recent name="D:\AndroidLabtest\notes\python\dailyStudy" />
       <recent name="D:\AndroidLabtest\notes\python\dailyStudya" />
     </key>
@@ -115,7 +124,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.test">
     <configuration name="homework_check_program" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dailyStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,8 +147,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dailyStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.homework_check_program" />
       </list>
     </recent_temporary>
@@ -162,22 +194,25 @@
       <workItem from="1558262356684" duration="121000" />
       <workItem from="1558262503907" duration="2318000" />
       <workItem from="1559357869154" duration="918000" />
+      <workItem from="1559742300493" duration="45000" />
+      <workItem from="1559977164379" duration="1264000" />
+      <workItem from="1560497684889" duration="1112000" />
+      <workItem from="1560502235034" duration="1196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11763000" />
+    <option name="totallyTimeSpent" value="15380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19189766" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22125813" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2505423" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -227,15 +262,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -250,10 +276,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/PIL/Image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15715">
+          <caret line="2651" selection-start-line="2651" selection-end-line="2651" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="65" column="18" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/homework_check_program.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>

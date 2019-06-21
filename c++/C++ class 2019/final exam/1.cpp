@@ -8,33 +8,18 @@
 #include <cstdio>
 #include <cstdlib>
 #include <algorithm>
+#include <cmath>
 
 using namespace std;
 
-class Point
+class Position
 {
 private:
     int x, y;
 
 public:
-    Point(int xx = 0, int yy = 0)
+    Position(int xx = 0, int yy = 0)
      : x(xx), y(yy) {}
-
-    Point & operator ++(int) {
-        this->x++;
-        this->y++;
-        return *this;
-    }
-
-    Point & operator--(int) {
-        this->x--;
-        this->y--;
-        return *this;
-    }
-
-    void print_xy() {
-        cout << "now point is( " << x << ", " << y << ")" << endl;
-    }
 
     void set_x(int xx) {
         x = xx;
@@ -51,16 +36,25 @@ public:
     int get_y() {
         return y;
     }
+
+    double distance(Position p) {
+        double dis = 0;
+        dis = sqrt((double)((p.x - x) * (p.x - x) + (p.y - y) * (p.y - y)));
+        return dis;
+    }
 };
 
 int main(int argc, char const *argv[]) {
-    Point p1(1, 1);
-    p1.print_xy();
-    p1--;
-    p1.print_xy();
-    p1++;
-    p1++;
-    p1.print_xy();
+    Position p1(1, 1);
+    Position p2(2, 2);
+
+    cout << "x is " << p1.get_x() << " y is " << p1.get_y() << endl;
+
+    p1.set_x(3);
+    p1.set_y(3);
+    cout << "x is " << p1.get_x() << " y is " << p1.get_y() << endl;
+
+    cout << "distance is:" << p1.distance(p2) << endl;
 
     system("pause");
     return 0;

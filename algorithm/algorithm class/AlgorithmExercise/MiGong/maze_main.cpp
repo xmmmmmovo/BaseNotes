@@ -342,11 +342,11 @@ int main(int argc, char* argv[]) {
 	// 首先先生成迷宫
 	create_maze();
 	show_maze();
-	// auto_rounte();
-	if (human_rounte()) {
-		system("cls");
-		cout << "success!!!" << endl;
-	}
+	auto_rounte();
+	// if (human_rounte()) {
+	// 	system("cls");
+	// 	cout << "success!!!" << endl;
+	// }
 
 
 	// 因为命令提示框跟窗体是分离控制的
