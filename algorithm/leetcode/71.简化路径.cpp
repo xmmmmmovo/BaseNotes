@@ -11,7 +11,27 @@ using namespace std;
 class Solution {
 public:
     string simplifyPath(string path) {
-        
+        string ans;
+        stack<char> buf;
+
+        for (auto &ch : path) {
+            switch (ch)
+            {
+            case '/':
+                if (buf.empty()) {
+                    ans.push_back(ch);
+                }
+                break;
+            case '.':
+                if (buf.top() == '/') {
+
+                }
+                break;
+            default:
+                buf.push(ch);
+                break;
+            }
+        }
     }
 };
 

@@ -1,3 +1,5 @@
+package Experment.first;
+
 import java.util.Scanner;
 
 /**

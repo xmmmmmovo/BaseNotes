@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b690f500-fa74-4372-94f7-9a708bf16084" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/MiGong/maze_main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/MiGong/maze_main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/TestUsing/test_main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/TestUsing/test_main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/leetcode/71.简化路径.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/leetcode/71.简化路径.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/C++ class 2019/experiment/seventh/1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/C++ class 2019/experiment/seventh/1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/test.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../c++/c++ study/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/c++ study/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Experment/first/Gift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Experment/first/Gift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Experment/first/NineCaculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Experment/first/NineCaculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Experment/first/RunNian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Experment/first/RunNian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Experment/first/TwoVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Experment/first/TwoVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Experment/second/ex2/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Experment/second/ex2/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/SocketDemo-2.3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../web/SocketDemo-2.3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../python/dailyStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/dailyStudy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/dailyStudy/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/dailyStudy/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/mysqltest&amp;chineseLawSpider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/mysqltest&amp;chineseLawSpider/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Experment/second/ex2/Square.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="646">
+              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
               <folding>
                 <element signature="e#128#129#0" expanded="true" />
                 <element signature="e#154#155#0" expanded="true" />
@@ -34,14 +40,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Experment/second/ex2/Triangle.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Experment/second/ex3/MyException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+            <state relative-caret-position="190">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
-                <element signature="e#262#263#0" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#115#116#0" expanded="true" />
+                <element signature="e#145#146#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Experment/second/ex2/Shape.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="114">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -76,19 +82,25 @@
         <option value="$PROJECT_DIR$/src/Experment/second/ex1/Main.java" />
         <option value="$PROJECT_DIR$/src/Experment/second/ex2/Circle.java" />
         <option value="$PROJECT_DIR$/src/Experment/second/ex2/Triangle.java" />
-        <option value="$PROJECT_DIR$/src/Experment/second/ex2/Square.java" />
         <option value="$PROJECT_DIR$/src/Experment/second/ex2/Main.java" />
         <option value="$PROJECT_DIR$/src/Experment/second/ex3/MyException.java" />
         <option value="$PROJECT_DIR$/src/Experment/second/ex3/Main.java" />
+        <option value="$PROJECT_DIR$/src/Experment/first/RunNian.java" />
+        <option value="$PROJECT_DIR$/src/Experment/first/NineCaculation.java" />
+        <option value="$PROJECT_DIR$/src/Experment/first/Gift.java" />
+        <option value="$PROJECT_DIR$/src/Experment/first/TwoVector.java" />
+        <option value="$PROJECT_DIR$/src/Experment/second/test/Main.java" />
+        <option value="$PROJECT_DIR$/src/Experment/second/test/B.java" />
         <option value="$PROJECT_DIR$/src/Experment/second/ex2/Shape.java" />
+        <option value="$PROJECT_DIR$/src/Experment/second/ex2/Square.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2088" />
-    <option name="y" value="-8" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="99" />
+    <option name="y" value="-13" />
+    <option name="width" value="1750" />
+    <option name="height" value="960" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -98,8 +110,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,6 +127,13 @@
               <item name="java_class_in_2019" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Experment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java_class_in_2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_class_in_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Experment" type="462c0819:PsiDirectoryNode" />
+              <item name="first" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java_class_in_2019" type="b2602c69:ProjectViewProjectNode" />
@@ -149,16 +166,26 @@
               <item name="second" type="462c0819:PsiDirectoryNode" />
               <item name="ex3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java_class_in_2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_class_in_2019" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Experment" type="462c0819:PsiDirectoryNode" />
+              <item name="second" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559635234258" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561512939796" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -238,16 +265,18 @@
       <workItem from="1559044598544" duration="3084000" />
       <workItem from="1559634837564" duration="666000" />
       <workItem from="1561001387136" duration="959000" />
+      <workItem from="1561461428047" duration="4348000" />
+      <workItem from="1561964580251" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4720000" />
+    <option name="totallyTimeSpent" value="9082000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.102878466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10501066" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -282,31 +311,41 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Experment/first/TwoVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Experment/first/RunNian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Experment/first/NineCaculation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Experment/first/Gift.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Experment/second/ex1/Course.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="1254">
           <caret line="50" column="9" lean-forward="true" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Experment/second/ex3/MyException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#145#146#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Experment/second/ex3/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -320,24 +359,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Experment/second/ex2/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Experment/second/test/A.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="76">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Experment/second/ex2/Shape.java">
+    <entry file="file://$PROJECT_DIR$/src/Experment/second/test/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="152">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="e#95#96#0" expanded="true" />
+            <element signature="e#123#124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Experment/second/test/B.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Experment/second/ex3/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Experment/second/ex2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Experment/second/ex2/Circle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="76">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="e#136#137#0" expanded="true" />
             <element signature="e#162#163#0" expanded="true" />
@@ -345,10 +409,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Experment/second/ex2/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Experment/second/ex2/Square.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="646">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding>
             <element signature="e#128#129#0" expanded="true" />
             <element signature="e#154#155#0" expanded="true" />
@@ -358,14 +433,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Experment/second/ex2/Triangle.java">
+    <entry file="file://$PROJECT_DIR$/src/Experment/second/ex3/MyException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        <state relative-caret-position="190">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#145#146#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Experment/second/ex2/Shape.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>

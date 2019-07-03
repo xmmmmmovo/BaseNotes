@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b784921-adfb-4339-8a53-e1918fa98e0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/MiGong/maze_main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/MiGong/maze_main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mysqltest&amp;chineseLawSpider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mysqltest&amp;chineseLawSpider/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/leetcode/71.简化路径.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/leetcode/71.简化路径.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/test.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/Gift.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/Gift.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/NineCaculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/NineCaculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/RunNian.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/RunNian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/TwoVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/TwoVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/second/ex2/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/second/ex2/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/web/SocketDemo-2.3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/web/SocketDemo-2.3/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +86,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -87,16 +94,10 @@
               <item name="dailyStudy" type="b2602c69:ProjectViewProjectNode" />
               <item name="dailyStudy" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="dailyStudy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dailyStudy" type="462c0819:PsiDirectoryNode" />
-              <item name="pic" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,16 +199,17 @@
       <workItem from="1559977164379" duration="1264000" />
       <workItem from="1560497684889" duration="1112000" />
       <workItem from="1560502235034" duration="1196000" />
+      <workItem from="1561541599290" duration="89000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15380000" />
+    <option name="totallyTimeSpent" value="15469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />

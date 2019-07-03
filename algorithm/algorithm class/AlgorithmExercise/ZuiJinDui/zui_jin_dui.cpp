@@ -199,7 +199,8 @@ int main(int argc, char* argv[]) {
 	// points.push_back(cv::Point(2, 555));
 	// points.push_back(cv::Point(213, 122));
 
-	sort(points.begin(), points.end(), [](const cv::Point &A, const cv::Point &B) {
+	sort(points.begin(), points.end(), 
+		[](const cv::Point &A, const cv::Point &B) {
 		return A.x < B.x;
 	});
 	cout << points << endl;
