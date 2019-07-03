@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c63d96b-0d2f-4b2a-9afb-e3b6a422b4c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/TestUsing/test_main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/TestUsing/test_main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/ZuiJinDui/zui_jin_dui.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/algorithm class/AlgorithmExercise/ZuiJinDui/zui_jin_dui.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/leetcode/71.简化路径.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/leetcode/71.简化路径.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/test.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/c++ study/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/c++ study/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/Gift.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/Gift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/NineCaculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/NineCaculation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/RunNian.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/RunNian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/TwoVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/TwoVector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/second/ex2/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/second/ex2/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/web/SocketDemo-2.3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/web/SocketDemo-2.3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/dailyStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/dailyStudy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitgnore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitgnore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/.rustc_info.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+            <state relative-caret-position="532">
+              <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -95,6 +84,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562163814843" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -141,12 +131,12 @@
       <updated>1562154149053</updated>
       <workItem from="1562154152943" duration="125000" />
       <workItem from="1562154307375" duration="48000" />
-      <workItem from="1562154374554" duration="1640000" />
+      <workItem from="1562154374554" duration="6368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1813000" />
+    <option name="totallyTimeSpent" value="6541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -161,7 +151,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16648412" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.54338396" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -169,7 +159,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.26615554" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2657267" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -203,8 +193,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="532">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
         </state>
       </provider>
     </entry>
