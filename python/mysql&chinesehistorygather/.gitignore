@@ -209,6 +209,6 @@ dmypy.json
 .pyre/
 
 /history/*
-/deal_history/*
+/std_history_fr/*
 
 # End of https://www.gitignore.io/api/python,pycharm

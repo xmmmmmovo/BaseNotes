@@ -1,8 +1,7 @@
 import numpy as np
 
 if __name__ == '__main__':
-    s = np.array([i for i in range(10)])
-    s = np.resize(s, (2, 5))
-    print(s)
-    s = (s - s.mean())/s.std()
+    s = "123156"
+    c = s.find("10")
+    s = s.replace('10', '-1')
     print(s)
