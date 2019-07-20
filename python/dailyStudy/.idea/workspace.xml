@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b784921-adfb-4339-8a53-e1918fa98e0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../algorithm/leetcode/71.简化路径.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/leetcode/71.简化路径.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RUST/TestUsing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RUST/TestUsing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RUST/TestUsing/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../RUST/TestUsing/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RUST/TestUsing/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RUST/TestUsing/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RUST/TestUsing/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../../RUST/TestUsing/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/leetcode/1.两数之和.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/leetcode/1.两数之和.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/test.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/Gift.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/Gift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/NineCaculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/NineCaculation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/RunNian.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/RunNian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/TwoVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/first/TwoVector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/second/ex2/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/java_class_in_2019/src/Experment/second/ex2/Shape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/web/SocketDemo-2.3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/web/SocketDemo-2.3/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +99,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mysql&amp;chinesehistorygather" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
@@ -200,16 +196,17 @@
       <workItem from="1560497684889" duration="1112000" />
       <workItem from="1560502235034" duration="1196000" />
       <workItem from="1561541599290" duration="89000" />
+      <workItem from="1563186347362" duration="69000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15469000" />
+    <option name="totallyTimeSpent" value="15538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -271,13 +268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/read_cail_2018.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/ProgramData/Anaconda3/Lib/site-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15715">
@@ -299,6 +289,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_cail_2018.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
