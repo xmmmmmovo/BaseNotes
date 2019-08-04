@@ -1,3 +1,10 @@
+/**
+ * author: xmmmmmovo
+ * generation time: 2019/08/02
+ * filename: test.cpp
+ * language & build version : C++ 11
+*/
+
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
@@ -6,8 +13,13 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    cout << "1" << endl;
+    int n[10];
 
-    system("pause");
+    for (int i = 0; i < 10; i++) {
+        cin >> n[i];
+    }
+
+    cout << "max" << *max_element(n, n+10) << "min" << *min_element(n, n +10) << endl;
+
     return 0;
 }
