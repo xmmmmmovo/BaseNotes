@@ -13,13 +13,6 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    int n[10];
-
-    for (int i = 0; i < 10; i++) {
-        cin >> n[i];
-    }
-
-    cout << "max" << *max_element(n, n+10) << "min" << *min_element(n, n +10) << endl;
 
     return 0;
 }
