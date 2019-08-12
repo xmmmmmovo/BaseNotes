@@ -1,4 +1,4 @@
-package main
+package study_bilibili
 
 import (
 	"errors"

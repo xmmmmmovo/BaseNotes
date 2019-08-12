@@ -4,7 +4,6 @@
  * filename: test.cpp
  * language & build version : C++ 11
 */
-
 #include <iostream>
 #include <cstdio>
 #include <cstdlib>
