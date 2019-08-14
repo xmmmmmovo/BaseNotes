@@ -14,15 +14,10 @@ using namespace std;
 int main(int argc, char const *argv[]) {
 
     int a = 0, b = 0, c = 0;
-    double unknow = 0.0;
 
-    scanf("%d %d %d", &a, &b, &c);
+    scanf("%d%d%d", &a, &b, &c);
 
-    while (a * unknow + b != c) {
-        unknow = unknow + 0.01;
-    }
-
-    printf("%lf", &unknow);
+    printf("%d", max(a, max(b, c)));
 
     return 0;
 }

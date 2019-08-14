@@ -1,4 +1,4 @@
-package study_bilibili
+package main
 
 import (
 	"fmt"

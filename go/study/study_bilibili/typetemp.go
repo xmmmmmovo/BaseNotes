@@ -1,4 +1,4 @@
-package study_bilibili
+package main
 
 import (
 	"fmt" // 如果前面加下划线_代表忽略
