@@ -11,5 +11,8 @@ func main() {
 	}
 	fmt.Println(args)
 
+	for key, value := range args{
+		fmt.Println(key, value)
+	}
 
 }
