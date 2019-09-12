@@ -52,5 +52,6 @@
         "string_view": "cpp",
         "algorithm": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Enabled"
+    "C_Cpp.errorSquiggles": "Enabled",
+    "python.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe"
 }
