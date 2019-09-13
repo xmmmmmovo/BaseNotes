@@ -2,53 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a1d4e9c-a917-46db-be4c-13cba8e48900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.ipr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.iws" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/Application/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/errors/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/errors/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/dependencies.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/messages" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/files/manual.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/files/wiki.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation/welcome.textile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/docviewer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/javascripts/jquery-1.6.4.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/stylesheets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Application.test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/BasicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/data.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_errors_500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_welcome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/classes/models/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/classes/production/app/controllers/Application.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/classes/production/app/models/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/classes/production/app/views/Application/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/classes/production/app/views/errors/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/classes/production/app/views/errors/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/classes/production/app/views/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/classes/test/app/Application.test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/classes/test/app/ApplicationTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/classes/test/app/BasicTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/classes/test/app/data.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/data structure class/.vscode/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyInDaily/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyInDaily/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../somethingUnimportant/question/解题思路来着.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../somethingUnimportant/question/解题思路来着.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.iws" beforeDir="false" afterPath="$PROJECT_DIR$/app.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Application.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -149,6 +104,7 @@
       <workItem from="1568212843870" duration="189000" />
       <workItem from="1568264362174" duration="4846000" />
       <workItem from="1568294788794" duration="602000" />
+      <workItem from="1568304790002" duration="1780000" />
     </task>
     <servers />
   </component>
