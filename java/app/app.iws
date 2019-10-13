@@ -2,42 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a1d4e9c-a917-46db-be4c-13cba8e48900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../c++/c++Progect/JavaGCinCpp/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../c++/c++Progect/JavaGCinCpp/Gabage.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../c++/c++Progect/JavaGCinCpp/Gabage.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../c++/c++Progect/JavaGCinCpp/MemBlock.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../c++/c++Progect/JavaGCinCpp/MemBlock.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RUST/TestUsing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RUST/TestUsing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RUST/TestUsing/TestUsing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RUST/TestUsing/TestUsing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../go/kratos-demo/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../../go/kratos-demo/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../go/study/algorithm/toGoatLatin.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../go/study_with_example/src/iteration/repeat.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../go/study_with_example/src/3iteration/repeat.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../go/study_with_example/src/iteration/repeat_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../go/study_with_example/src/3iteration/repeat_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../StudyInDaily/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyInDaily/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyInDaily/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyInDaily/src/homework2018/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../StudyInDaily/src/RegTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../StudyInDaily/src/homework2018/RegTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.iws" beforeDir="false" afterPath="$PROJECT_DIR$/app.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Post.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-result/BasicTest.class.passed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-result/TEST-BasicTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-result/TEST-BasicTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/BasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BasicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/BasicTest" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/BasicTest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_errors_404.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_errors_404.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_welcome_en.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_welcome_en.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/classes/BasicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/BasicTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-result/PostTest.class.passed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-result/TEST-PostTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-result/TEST-PostTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/PostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/PostTest" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/PostTest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_errors_500.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_errors_500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_500.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Post" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Post" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/PostTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/PostTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/models/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/Post.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/classes/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/python_work/helloworld.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/python_work/name_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/python_work/sting.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +62,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\AndroidLabtest\notes\java\app\conf" />
+      <recent name="D:\AndroidLabtest\notes\java\app\data" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -148,7 +133,10 @@
       <workItem from="1569839297844" duration="3295000" />
       <workItem from="1570614644668" duration="2095000" />
       <workItem from="1570723337702" duration="6138000" />
-      <workItem from="1570793934684" duration="20552000" />
+      <workItem from="1570793934684" duration="21090000" />
+      <workItem from="1570959815067" duration="6447000" />
+      <workItem from="1570972806844" duration="50000" />
+      <workItem from="1570972873295" duration="34000" />
     </task>
     <servers />
   </component>

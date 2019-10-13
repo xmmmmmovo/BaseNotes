@@ -2,42 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7980eaf3-93aa-4bd1-893e-8a47f7d58eb2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../c++/c++Progect/JavaGCinCpp/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../c++/c++Progect/JavaGCinCpp/Gabage.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../c++/c++Progect/JavaGCinCpp/Gabage.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../c++/c++Progect/JavaGCinCpp/MemBlock.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../c++/c++Progect/JavaGCinCpp/MemBlock.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RUST/TestUsing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RUST/TestUsing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RUST/TestUsing/TestUsing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RUST/TestUsing/TestUsing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../go/kratos-demo/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../../go/kratos-demo/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../go/study/algorithm/toGoatLatin.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../go/study_with_example/src/iteration/repeat.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../go/study_with_example/src/3iteration/repeat.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../go/study_with_example/src/iteration/repeat_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../go/study_with_example/src/3iteration/repeat_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2018/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RegTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2018/RegTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/app.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/app/controllers/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/controllers/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/app/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../app/conf/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/../app/conf/routes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/test-result/BasicTest.class.passed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/test-result/TEST-BasicTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app/test-result/TEST-BasicTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/test/BasicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/test/BasicTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/BasicTest" beforeDir="false" afterPath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/BasicTest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/_app_views_Application_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/_app_views_Application_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/_app_views_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/_app_views_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/_play__framework_templates_errors_404.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/_play__framework_templates_errors_404.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/_play__framework_templates_tags_welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/_play__framework_templates_tags_welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/_play__framework_templates_tags_welcome_en.html" beforeDir="false" afterPath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/_play__framework_templates_tags_welcome_en.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/controllers.Application" beforeDir="false" afterPath="$PROJECT_DIR$/../app/tmp/bytecode/DEV/controllers.Application" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/tmp/classes/BasicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app/tmp/classes/BasicTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/tmp/classes/controllers/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app/tmp/classes/controllers/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/tmp/classes/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../app/tmp/classes/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/python_work/helloworld.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/python_work/name_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/python_work/sting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/app/models/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/models/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/app/models/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/models/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/test/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/test/PostTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,6 +106,7 @@
       <workItem from="1559042696127" duration="301000" />
       <workItem from="1568032260711" duration="4896000" />
       <workItem from="1570802869208" duration="5510000" />
+      <workItem from="1570959825083" duration="585000" />
     </task>
     <servers />
   </component>
