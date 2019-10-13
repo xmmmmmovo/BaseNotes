@@ -3,22 +3,19 @@
  * generation time: 2019/08/02
  * filename: test.cpp
  * language & build version : C++ 11
-*/
-#include <iostream>
+ */
+#include <algorithm>
+#include <cmath>
 #include <cstdio>
 #include <cstdlib>
-#include <algorithm>
-#include <ctime>
+#include <iostream>
 
 using namespace std;
 
 int main(int argc, char const *argv[]) {
+  for (float x = -1.5f; x < 1.5f; x+=0.05f) {
+    putchar(x<=0.0f?"1324"[(int)(x)]:' ');
+  }
 
-    int a = 0, b = 0, c = 0;
-
-    scanf("%d%d%d", &a, &b, &c);
-
-    printf("%d", max(a, max(b, c)));
-
-    return 0;
+  return 0;
 }
