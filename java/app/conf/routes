@@ -9,6 +9,9 @@ GET     /                                       Application.index
 GET     /hello                                  Application.hello
 GET     /rendertext                             Application.renderTextStudy
 
+# 这里*代表所有无论是GET还是POST都会接受
+*       /admin                                  module:crud
+
 # 忽略用的图标
 GET     /favicon.ico                            404
 
@@ -16,4 +19,4 @@ GET     /favicon.ico                            404
 GET     /public/                                staticDir:public
 
 # 所有其他路由入口
-*       /{controller}/{action}                  {controller}.{action}
+#*       /{controller}/{action}                  {controller}.{action}

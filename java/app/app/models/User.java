@@ -4,16 +4,27 @@ package models;
  * 用户表
  */
 
+import play.data.validation.*;
 import play.db.jpa.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
-//或者
-//@Table(name = "User") //但个人更倾向于第一种类名即表名的写法 比较顺手
+@Table(name = "blog_user")
 public class User extends Model {
+
+    @Required
+    @Email
     public String email;
+
+    @Required
+    @MaxSize(64)
     public String fullName;
+
+    @Password
+    @Required
+    @MinSize(8)
     public String password;
     public boolean isAdmin = false;
 
@@ -27,4 +38,8 @@ public class User extends Model {
         return find("byEmailAndPassword", email, password).first();
     }
 
+    @Override
+    public String toString() {
+        return fullName;
+    }
 }

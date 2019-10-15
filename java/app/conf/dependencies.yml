@@ -3,3 +3,4 @@
 require:
     - play
     - play -> docviewer
+    - play -> crud
