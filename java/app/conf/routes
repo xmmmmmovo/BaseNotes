@@ -3,7 +3,10 @@
 # ~~~~
 
 # 主页面
-GET     /                                       Application.index
+GET     /                                         Application.index
+GET     /blog                                     Blog.index
+GET     /blog/new                                 Blog.form
+POST    /blog/new                                 Blog.save
 
 # 自定义路由
 GET     /hello                                  Application.hello
