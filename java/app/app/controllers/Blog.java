@@ -1,6 +1,5 @@
 package controllers;
 
-import javafx.geometry.Pos;
 import models.Post;
 import play.mvc.Controller;
 
