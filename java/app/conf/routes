@@ -3,6 +3,7 @@
 # ~~~~
 
 # 主页面
+*       /                                         module:secure
 GET     /                                         Application.index
 GET     /blog                                     Blog.index
 GET     /blog/new                                 Blog.form
