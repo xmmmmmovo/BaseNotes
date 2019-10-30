@@ -1,0 +1,18 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+
+# 学生类相关字段
+Student = 学生
+name = 姓名
+email = 电子邮箱
+address = 地址
+myTeacher = 对应教师
+
+# crud相关字段
+crud.save = 保存
+crud.saveAndContinue = 保存并继续
+crud.saveAndAddAnother = 保存并添加下一个
+crud.title = 学生管理系统
+crud.blank.title=添加&{%s}
+crud.add=添加&{%s}
