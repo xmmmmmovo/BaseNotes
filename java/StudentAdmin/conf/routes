@@ -7,6 +7,7 @@ GET     /                                       Application.index
 
 *       /admin                                  module:crud
 *       /st                                     Students.list
+*       /modifyName                             Students.modifyName
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

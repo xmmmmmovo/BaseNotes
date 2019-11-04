@@ -9,6 +9,14 @@ email = 电子邮箱
 address = 地址
 myTeacher = 对应教师
 
+student_change_name.title=修改姓名
+student_change_name.id=ID
+student_change_name.name=姓名
+student_change_name.save=保存
+
+student.actions=操作
+student.modify_name=修改姓名
+
 # crud相关字段
 crud.save = 保存
 crud.saveAndContinue = 保存并继续

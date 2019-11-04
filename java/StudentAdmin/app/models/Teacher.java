@@ -27,7 +27,7 @@ public class Teacher extends Model {
      * 稍微解释一下下面这几个字段意思
      * mappedBy参加下面这篇
      * https://blog.csdn.net/qq_31924435/article/details/53786717
-     * 所以这里的myTeacher就是根Student类里面对应的
+     * 所以这里的myTeacher就是跟Student类里面对应的
      * cascade 参见下面的博客
      * https://www.jianshu.com/p/e8caafce5445
      * fetch看这篇
