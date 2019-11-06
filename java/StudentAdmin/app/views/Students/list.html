@@ -10,13 +10,13 @@
     </div>
 
     <div id="crudListTable">
-        *{ 这里更改列 其中字段都是对应变量名的 }*
-        #{crud.table fields:['name', 'email', 'myTeacher', 'student.actions']}
-            #{crud.custom 'student.actions'}
-                <a href="@{Students.modifyName(object.id)}">&{"student.modify_name"}</a>
-            #{/crud.custom }
-        #{/crud.table}
-    </div>
+        #{crud.table fields:['nameString','email','Students.actions']}
+	        #{crud.custom 'Students.actions'}
+				<a href="@{Students.modifyName(object.id)}">&{"student.modify_name"}</a>
+			#{/crud.custom}
+		#{/crud.table}
+	</div>
+    
 
     <div id="crudListPagination">
         #{crud.pagination /}

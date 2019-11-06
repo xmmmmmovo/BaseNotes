@@ -5,10 +5,6 @@
 # Home page
 GET     /                                       Application.index
 
-*       /admin                                  module:crud
-*       /st                                     Students.list
-*       /modifyName                             Students.modifyName
-
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
@@ -17,3 +13,9 @@ GET     /public/                                staticDir:public
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
+
+# Import CRUD routes
+*      /admin              module:crud
+*		/st		Students.list
+*      /       module:secure
+

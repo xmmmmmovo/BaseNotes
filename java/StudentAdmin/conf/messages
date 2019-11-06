@@ -17,6 +17,10 @@ student_change_name.save=保存
 student.actions=操作
 student.modify_name=修改姓名
 
+# 菜单相关
+menu.logout = 登出
+menu.login = 登陆
+
 # crud相关字段
 crud.save = 保存
 crud.saveAndContinue = 保存并继续
