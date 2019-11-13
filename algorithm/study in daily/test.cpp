@@ -13,9 +13,6 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-  for (float x = -1.5f; x < 1.5f; x+=0.05f) {
-    putchar(x<=0.0f?"1324"[(int)(x)]:' ');
-  }
 
   return 0;
 }
