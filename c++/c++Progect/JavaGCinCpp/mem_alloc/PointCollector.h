@@ -1,0 +1,14 @@
+//
+// Created by 13256 on 2019/11/19.
+//
+
+#ifndef JAVAGCINCPP_POINTCOLLECTOR_H
+#define JAVAGCINCPP_POINTCOLLECTOR_H
+
+
+class PointCollector {
+
+};
+
+
+#endif //JAVAGCINCPP_POINTCOLLECTOR_H
