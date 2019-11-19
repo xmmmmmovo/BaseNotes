@@ -15,9 +15,9 @@ public class Students extends CRUD {
 	public static void doModifyName(Student object){
 		Student st = Student.findById(object.id);
 
-		if (null != object.nameString) {
+		if (null != object.name) {
 			// 保存新名字
-			st.nameString = object.nameString;
+			st.name = object.name;
 			st.save();
 			render("@modifynamedone", object);
 		}

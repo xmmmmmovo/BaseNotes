@@ -10,8 +10,8 @@
     </div>
 
     <div id="crudListTable">
-        #{crud.table fields:['nameString','email','Students.actions']}
-	        #{crud.custom 'Students.actions'}
+        #{crud.table fields:['name','cost','student.actions']}
+	        #{crud.custom 'student.actions'}
 				<a href="@{Students.modifyName(object.id)}">&{"student.modify_name"}</a>
 			#{/crud.custom}
 		#{/crud.table}

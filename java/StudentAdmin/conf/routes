@@ -15,7 +15,7 @@ GET     /public/                                staticDir:public
 *       /{controller}/{action}                  {controller}.{action}
 
 # Import CRUD routes
-*      /admin              module:crud
-*		/st		Students.list
-*      /       module:secure
+*      /admin                                   module:crud
+*		/st		                                Students.list
+*      /                                        module:secure
 

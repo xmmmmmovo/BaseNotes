@@ -3,11 +3,14 @@
 #
 
 # 学生类相关字段
-Student = 学生
+Students = 学生
 name = 姓名
 email = 电子邮箱
 address = 地址
-myTeacher = 对应教师
+cost = 学费
+
+# 研究生相关字段
+Postgraduates = 研究生
 
 student_change_name.title=修改姓名
 student_change_name.id=ID
