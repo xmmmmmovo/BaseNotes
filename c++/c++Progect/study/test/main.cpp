@@ -5,5 +5,5 @@
 int main(void) {
 	Sleep(12);
 
-	return 1;
+	return 0;
 }
