@@ -1,5 +1,5 @@
 //
-// Created by 13256 on 2019/12/4.
+// Created by xmmmmmovo on 2019/12/4.
 //
 
 #include <unistd.h>
@@ -63,5 +63,6 @@ int main(void) {
         }
     }
     printf("Fork end.\n\n");
+    // 这里不能return 0返回
     exit(0);
 }
