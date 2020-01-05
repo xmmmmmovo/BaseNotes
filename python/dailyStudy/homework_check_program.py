@@ -7,7 +7,4 @@ if __name__ == '__main__':
 
     classmates_file = open(classmates_filename, encoding='UTF-8')
 
-    all_stus_status = []
-    for line in classmates_file:
-        line = line[0:-1] # 可以改为[-1:]
-        os.mkdir(dirs + '/' + line)
+    all_stus_status = [l[:-1] for l in classmates_file]

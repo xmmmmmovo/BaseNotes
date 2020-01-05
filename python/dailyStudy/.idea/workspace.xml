@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b784921-adfb-4339-8a53-e1918fa98e0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../java/app/conf/messages" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/app/conf/messages" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../c++/c++Progect/OperatorSystem/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/c++Progect/OperatorSystem/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../c++/c++Progect/OperatorSystem/TestMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/c++Progect/OperatorSystem/TestMain.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework_check_program.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework_check_program.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.homework">
+  <component name="RunManager" selected="Python.test">
     <configuration name="homework" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dailyStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,6 +125,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="homework_name_change" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dailyStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/homework_name_change.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dailyStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,8 +171,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.homework" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.homework_name_change" />
+        <item itemvalue="Python.homework" />
         <item itemvalue="Python.homework_check_program" />
       </list>
     </recent_temporary>
@@ -179,6 +205,10 @@
       <workItem from="1571059152937" duration="105000" />
       <workItem from="1571304177284" duration="2526000" />
       <workItem from="1571565968714" duration="267000" />
+      <workItem from="1576494103846" duration="2803000" />
+      <workItem from="1577971147732" duration="1289000" />
+      <workItem from="1578016677660" duration="2582000" />
+      <workItem from="1578243614015" duration="300000" />
     </task>
     <servers />
   </component>
@@ -199,6 +229,8 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dailyStudy$homework_name_change.coverage" NAME="homework_name_change Coverage Results" MODIFIED="1578016889539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dailyStudy$homework.coverage" NAME="homework Coverage Results" MODIFIED="1571305332726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dailyStudy$test.coverage" NAME="test Coverage Results" MODIFIED="1578243931063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

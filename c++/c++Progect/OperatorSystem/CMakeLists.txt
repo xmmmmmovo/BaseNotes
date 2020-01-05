@@ -14,3 +14,5 @@ target_link_libraries(exp31 ${CMAKE_THREAD_LIBS_INIT})
 add_executable(exp41 exp4/BankAlgorithmMain.cpp)
 
 add_executable(test_project TestMain.cpp)
+
+add_executable(exp51 exp5/PageFIFOMain.cpp)
