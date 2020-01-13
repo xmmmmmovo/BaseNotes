@@ -1,0 +1,14 @@
+#{extends 'main.html' /}
+#{set title:'Post List' /}
+
+<div>Post</div>
+</br>
+#{list items:posts, as:'post'}
+<p class="post">
+    <a href="#">${post.title}</a>
+</p>
+#{/list}
+
+<p id="newPost" >
+    <a href="@{form()}"><span>+</span> Write a new post</a>
+</p>

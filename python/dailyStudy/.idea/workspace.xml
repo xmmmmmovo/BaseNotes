@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b784921-adfb-4339-8a53-e1918fa98e0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../c++/c++Progect/OperatorSystem/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/c++Progect/OperatorSystem/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../c++/c++Progect/OperatorSystem/TestMain.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../c++/c++Progect/OperatorSystem/TestMain.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework_check_program.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework_check_program.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,7 +204,8 @@
       <workItem from="1576494103846" duration="2803000" />
       <workItem from="1577971147732" duration="1289000" />
       <workItem from="1578016677660" duration="2582000" />
-      <workItem from="1578243614015" duration="300000" />
+      <workItem from="1578243614015" duration="913000" />
+      <workItem from="1578760964770" duration="8000" />
     </task>
     <servers />
   </component>

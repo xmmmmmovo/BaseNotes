@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch",
+            "request": "launch",
+            "console": "integratedTerminal",
+            "mainClass": ""
+        }
+    ]
+}

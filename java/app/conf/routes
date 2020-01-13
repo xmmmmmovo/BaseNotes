@@ -1,0 +1,26 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# 主页面
+*       /                                         module:secure
+GET     /                                         Application.index
+GET     /blog                                     Blog.index
+GET     /blog/new                                 Blog.form
+POST    /blog/new                                 Blog.save
+
+# 自定义路由
+GET     /hello                                  Application.hello
+GET     /rendertext                             Application.renderTextStudy
+
+# 这里*代表所有无论是GET还是POST都会接受
+*       /admin                                  module:crud
+
+# 忽略用的图标
+GET     /favicon.ico                            404
+
+# 从/app/public文件夹到/public path的静态文件
+GET     /public/                                staticDir:public
+
+# 所有其他路由入口
+#*       /{controller}/{action}                  {controller}.{action}
