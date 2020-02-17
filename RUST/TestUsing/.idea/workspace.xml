@@ -13,14 +13,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac176d0e-8b0f-4a8e-b494-cc8f617480f4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../react/admin/.idea/admin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestUsing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestUsing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../algorithm/study in daily/test.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../go/study_with_example/src/iteration/repeat.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../go/study_with_example/src/3iteration/repeat.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../go/study_with_example/src/iteration/repeat_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/../../go/study_with_example/src/3iteration/repeat_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/app/app.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/app/app.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/bili-study.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/public/css/minireset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/src/pages/admin/admin.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/src/pages/login/login.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/src/pages/login/login.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/bili-study/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/components/Hello.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/serviceWorker.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/test/App.test.tsx" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +84,11 @@
   </component>
   <component name="ProjectId" id="1OqqWSHGFsCy85Iu3setnx8ISnH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -62,19 +103,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.C/C++" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="sql.code.style.group" />
   </component>
   <component name="RunManager">
     <configuration name="Run TestUsing" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
@@ -122,6 +151,7 @@
       <workItem from="1566574449379" duration="9000" />
       <workItem from="1569060290221" duration="115000" />
       <workItem from="1578924793967" duration="4000" />
+      <workItem from="1580115086394" duration="171000" />
     </task>
     <servers />
   </component>
@@ -140,6 +170,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1961" y="194" key="SettingsEditor" timestamp="1580115251268">
+      <screen x="1920" y="-388" width="1080" height="1880" />
+    </state>
+    <state x="1961" y="194" key="SettingsEditor/0.0.1920.1040/1920.-388.1080.1880@1920.-388.1080.1880" timestamp="1580115251268" />
   </component>
   <component name="masterDetails">
     <states>
