@@ -1,0 +1,175 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |-
+    [package]
+    name = "strings_and_strs"
+    version = "0.1.0"
+    edition = "2018"
+
+    [dependencies]
+    escargot = "0.5"
+  learner_created: false
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 118
+    length: 4
+    placeholder_text: TODO
+    initial_state:
+      length: 4
+      offset: 118
+    initialized_from_dependency: false
+    possible_answer: string_slice
+    selected: false
+    status: Unchecked
+  - offset: 136
+    length: 4
+    placeholder_text: TODO
+    initial_state:
+      length: 4
+      offset: 136
+    initialized_from_dependency: false
+    possible_answer: 'string      '
+    selected: false
+    status: Unchecked
+  - offset: 165
+    length: 4
+    placeholder_text: TODO
+    initial_state:
+      length: 4
+      offset: 165
+    initialized_from_dependency: false
+    possible_answer: 'string      '
+    selected: false
+    status: Unchecked
+  - offset: 195
+    length: 4
+    placeholder_text: TODO
+    initial_state:
+      length: 4
+      offset: 195
+    initialized_from_dependency: false
+    possible_answer: 'string      '
+    selected: false
+    status: Unchecked
+  - offset: 232
+    length: 4
+    placeholder_text: TODO
+    initial_state:
+      length: 4
+      offset: 232
+    initialized_from_dependency: false
+    possible_answer: string_slice
+    selected: false
+    status: Unchecked
+  - offset: 265
+    length: 4
+    placeholder_text: TODO
+    initial_state:
+      length: 4
+      offset: 265
+    initialized_from_dependency: false
+    possible_answer: 'string      '
+    selected: false
+    status: Unchecked
+  - offset: 315
+    length: 4
+    placeholder_text: TODO
+    initial_state:
+      length: 4
+      offset: 315
+    initialized_from_dependency: false
+    possible_answer: string_slice
+    selected: false
+    status: Unchecked
+  - offset: 353
+    length: 4
+    placeholder_text: TODO
+    initial_state:
+      length: 4
+      offset: 353
+    initialized_from_dependency: false
+    possible_answer: string_slice
+    selected: false
+    status: Unchecked
+  - offset: 388
+    length: 4
+    placeholder_text: TODO
+    initial_state:
+      length: 4
+      offset: 388
+    initialized_from_dependency: false
+    possible_answer: 'string      '
+    selected: false
+    status: Unchecked
+  - offset: 450
+    length: 4
+    placeholder_text: TODO
+    initial_state:
+      length: 4
+      offset: 450
+    initialized_from_dependency: false
+    possible_answer: 'string      '
+    selected: false
+    status: Unchecked
+  text: |-
+    fn string_slice(arg: &str) { println!("{}", arg); }
+
+    fn string(arg: String) { println!("{}", arg); }
+
+    fn main() {
+        TODO("blue");
+        TODO("red".to_string());
+        TODO(String::from("hi"));
+        TODO("rust is fun!".to_owned());
+        TODO("nice weather".into());
+        TODO(format!("Interpolation {}", "Station"));
+        TODO(&String::from("abc")[0..1]);
+        TODO("  hello there ".trim());
+        TODO("Happy Monday!".to_string().replace("Mon", "Tues"));
+        TODO("mY sHiFt KeY iS sTiCkY".to_lowercase());
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |-
+    #[test]
+    fn prints_the_second_number_is() {
+        //TODO: here are even two unwraps in a row, that's dangerous
+        let actual = escargot::CargoBuild::new()
+            .bin("strings_and_strs")
+            .run()
+            .unwrap()
+            .command()
+            .output()
+            .unwrap()
+            .stdout;
+        //TODO: recover from an incorrect output
+        let actual_as_string = std::str::from_utf8(&actual).unwrap();
+        let expected_blue = "blue";
+        let expected_red = "red";
+        let expected_hi = "hi";
+        let expected_rust_is_fun = "rust is fun";
+        let expected_nice_weather = "nice weather";
+        let expected_interpolation_station = "Interpolation Station";
+        let expected_a = "a";
+        let expected_hello_there = "hello there";
+        let expected_happy_monday = "Happy Tuesday!";
+        let expected_my_shift_key_is_sticky = "my shift key is sticky";
+
+        assert!(actual_as_string.contains(expected_blue), "The output is missing the line \"blue\"");
+        assert!(actual_as_string.contains(expected_red), "The output is missing the line \"red\"");
+        assert!(actual_as_string.contains(expected_hi), "The output is missing the line \"hi\"");
+        assert!(actual_as_string.contains(expected_rust_is_fun), "The output is missing the line \"rust_is_fun\"");
+        assert!(actual_as_string.contains(expected_nice_weather), "The output is missing the line \"nice weather\"");
+        assert!(actual_as_string.contains(expected_interpolation_station), "The output is missing the line \"Interpolation Station\"");
+        assert!(actual_as_string.contains(expected_a), "The output is missing the line \"a\"");
+        assert!(actual_as_string.contains(expected_hello_there), "The output is missing the line \"hello there\"");
+        assert!(actual_as_string.contains(expected_happy_monday), "The output is missing the line \"Happy Monday!\"");
+        assert!(actual_as_string.contains(expected_my_shift_key_is_sticky), "The output is missing the line \"my shift key is sticky\"");
+    }
+  learner_created: false
+status: Unchecked
+record: -1

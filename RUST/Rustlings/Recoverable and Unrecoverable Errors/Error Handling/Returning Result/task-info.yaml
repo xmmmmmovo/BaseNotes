@@ -1,0 +1,78 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "returning_result"
+    version = "0.1.0"
+    edition = "2018"
+  learner_created: false
+- name: src/lib.rs
+  visible: true
+  placeholders:
+  - offset: 70
+    length: 14
+    placeholder_text: Option<String>
+    initial_state:
+      length: 14
+      offset: 70
+    initialized_from_dependency: false
+    possible_answer: Result<String, &'static str>
+    selected: false
+    status: Unchecked
+  - offset: 119
+    length: 4
+    placeholder_text: Some
+    initial_state:
+      length: 4
+      offset: 119
+    initialized_from_dependency: false
+    possible_answer: Ok
+    selected: false
+    status: Unchecked
+  - offset: 262
+    length: 4
+    placeholder_text: None
+    initial_state:
+      length: 4
+      offset: 262
+    initialized_from_dependency: false
+    possible_answer: Err("`name` was empty; it must be nonempty.")
+    selected: false
+    status: Unchecked
+  text: |
+    use std::error::Error;
+
+    pub fn generate_nametag_text(name: String) -> Option<String> {
+        if name.len() > 0 {
+            Some(format!("Hi! My name is {}", name))
+        } else {
+            // The error message should be: "`name` was empty; it must be nonempty."
+            None
+        }
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |
+    use returning_result::generate_nametag_text;
+
+    #[test]
+    fn generates_nametag_text_for_a_nonempty_name() {
+        assert_eq!(
+            generate_nametag_text("Beyoncé".into()),
+            Ok("Hi! My name is Beyoncé".into())
+        );
+    }
+
+    #[test]
+    fn explains_why_generating_nametag_text_fails() {
+        assert_eq!(
+            generate_nametag_text("".into()),
+            Err("`name` was empty; it must be nonempty.".into())
+        );
+    }
+  learner_created: false
+status: Unchecked
+record: -1

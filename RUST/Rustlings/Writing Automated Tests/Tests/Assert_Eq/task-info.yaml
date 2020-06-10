@@ -1,0 +1,34 @@
+type: theory
+files:
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "assert_eq"
+    version = "0.1.0"
+    edition = "2018"
+  learner_created: false
+- name: src/lib.rs
+  visible: true
+  placeholders:
+  - offset: 85
+    length: 47
+    placeholder_text: /*insert a correct assertion to pass the task*/
+    initial_state:
+      length: 47
+      offset: 85
+    initialized_from_dependency: false
+    possible_answer: 1, 1
+    selected: false
+    status: Unchecked
+  text: |-
+    #[cfg(test)]
+    mod tests {
+        #[test]
+        fn you_can_assert_eq() {
+            assert_eq!(/*insert a correct assertion to pass the task*/);
+        }
+    }
+  learner_created: false
+status: Unchecked
+record: -1

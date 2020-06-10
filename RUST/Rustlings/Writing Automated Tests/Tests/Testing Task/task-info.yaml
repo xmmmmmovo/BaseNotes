@@ -1,0 +1,64 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "testing_task"
+    version = "0.1.0"
+    edition = "2018"
+  learner_created: false
+- name: src/lib.rs
+  visible: true
+  text: |-
+    pub fn is_even(num: i32) -> bool {
+        num % 2 == 0
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: true
+  placeholders:
+  - offset: 122
+    length: 47
+    placeholder_text: /*insert the parameter for the assertion here*/
+    initial_state:
+      length: 47
+      offset: 122
+    initialized_from_dependency: false
+    possible_answer: 2
+    selected: false
+    status: Unchecked
+  - offset: 248
+    length: 47
+    placeholder_text: /*insert the parameter for the assertion here*/
+    initial_state:
+      length: 47
+      offset: 248
+    initialized_from_dependency: false
+    possible_answer: 5
+    selected: false
+    status: Unchecked
+  text: |+
+    #[cfg(test)]
+    mod tests {
+        use testing_task::is_even;
+
+        #[test]
+        fn is_true_when_even() {
+            assert!(is_even(/*insert the parameter for the assertion here*/));
+        }
+
+        #[test]
+        fn is_false_when_odd() {
+            assert_eq!(is_even(/*insert the parameter for the assertion here*/), false);
+        }
+    }
+
+
+
+
+
+
+  learner_created: false
+status: Unchecked
+record: -1

@@ -13,57 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac176d0e-8b0f-4a8e-b494-cc8f617480f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../react/admin/.idea/admin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/bili-study.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/public/css/minireset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/src/pages/admin/admin.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/src/pages/login/login.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/src/pages/login/login.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/bili-study/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/components/Hello.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/serviceWorker.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../react/my-app/src/test/App.test.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ClangdSettings">
-    <option name="formatViaClangd" value="false" />
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
@@ -86,13 +41,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564714793832" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
@@ -152,24 +107,24 @@
       <workItem from="1569060290221" duration="115000" />
       <workItem from="1578924793967" duration="4000" />
       <workItem from="1580115086394" duration="171000" />
+      <workItem from="1588777139812" duration="147000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1961" y="194" key="SettingsEditor" timestamp="1580115251268">

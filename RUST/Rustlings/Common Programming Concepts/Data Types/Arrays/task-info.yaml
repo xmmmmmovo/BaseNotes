@@ -1,0 +1,51 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "arrays"
+    version = "0.1.0"
+    edition = "2018"
+  learner_created: false
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 24
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 24
+    initialized_from_dependency: false
+    possible_answer: '["All work and no play makes Jack a dull boy"; 100]'
+    selected: false
+    status: Unchecked
+  text: |
+    fn main() {
+        let a = type here;
+
+        if a.len() >= 100 {
+            println!("Wow, that's a big array!");
+        } else {
+            println!("Meh, I eat arrays like that for breakfast.");
+        }
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |+
+    #[test]
+    fn if_compiles() {
+        //Mocking test to run only the compiler's checker
+        assert!(true);
+    }
+
+
+
+
+
+
+  learner_created: false
+status: Unchecked
+record: -1

@@ -1,0 +1,54 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "boolean"
+    version = "0.1.0"
+    edition = "2018"
+  learner_created: false
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 109
+    length: 70
+    placeholder_text: // Finish the rest of this line like the example! Or make it
+      be false!
+    initial_state:
+      length: 70
+      offset: 109
+    initialized_from_dependency: false
+    possible_answer: is_evening = false;
+    selected: false
+    status: Unchecked
+  text: |
+    fn main() {
+        let is_morning = true;
+        if is_morning {
+            println!("Good morning!");
+        }
+
+        let // Finish the rest of this line like the example! Or make it be false!
+        if is_evening {
+            println!("Good evening!");
+        }
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |+
+    #[test]
+    fn if_compiles() {
+        //Mocking test to run only the compiler's checker
+        assert!(true);
+    }
+
+
+
+
+
+
+  learner_created: false
+status: Unchecked
+record: -1

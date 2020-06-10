@@ -1,0 +1,56 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "iterators4"
+    version = "0.1.0"
+    edition = "2018"
+  learner_created: false
+- name: src/lib.rs
+  visible: true
+  placeholders:
+  - offset: 40
+    length: 29
+    placeholder_text: //Implement the function here
+    initial_state:
+      length: 29
+      offset: 40
+    initialized_from_dependency: false
+    possible_answer: |-
+      if num == 1 {
+              return 1;
+          }
+          else {
+              num*factorial(num-1)
+          }
+    selected: false
+    status: Unchecked
+  text: |
+    pub fn factorial(num: u64) -> u64 {
+        //Implement the function here
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |
+    use iterators4::factorial;
+
+    #[test]
+    fn factorial_of_1() {
+        assert_eq!(1, factorial(1));
+    }
+
+    #[test]
+    fn factorial_of_2() {
+        assert_eq!(2, factorial(2));
+    }
+
+    #[test]
+    fn factorial_of_4() {
+        assert_eq!(24, factorial(4));
+    }
+  learner_created: false
+status: Unchecked
+record: -1
