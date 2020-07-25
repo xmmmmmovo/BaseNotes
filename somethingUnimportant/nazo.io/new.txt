@@ -1,3 +1,4 @@
 bytealigned -> 6
 unprintable -> 7
 oopscode -> 11
+shortweet -> 18

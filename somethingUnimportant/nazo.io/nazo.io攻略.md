@@ -132,7 +132,7 @@
 
 ### 14.我爱记歌词
 
-![14](http://ww1.sinaimg.cn/large/006ZO6XQgy1fw949qgnznj30fy0g0gm7.jpg)
+![14](http://ww1.sinaimg.cn/large/006ZO6XQgy1fw949qgnznj30fy0g0gm7.jpg![image-20200711235913315](pics/image-20200711235913315.png)
 
 hint是里的歌词是种子，歌名又是小苹果，图片名字叫apple
 
