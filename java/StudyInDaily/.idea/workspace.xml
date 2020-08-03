@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7980eaf3-93aa-4bd1-893e-8a47f7d58eb2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/app.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/app/models/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/models/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/app/models/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/app/models/Post.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/test/PostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app/test/PostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyInDaily/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/StudyInDaily/RegTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/dailyStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/dailyStudy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../somethingUnimportant/nazo.io/pic/TIM截图20181015182644.png" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,11 +41,16 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555597024742" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
@@ -54,19 +58,14 @@
       <recent name="D:\AndroidLabtest\notes\java\StudyInDaily\libs" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.RegTest">
+  <component name="RunManager" selected="Application.E1d4d19">
+    <configuration name="E1d4d19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="E1d4d19" />
+      <module name="StudyInDaily" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="homework2018.Main" />
       <module name="StudyInDaily" />
@@ -86,6 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.E1d4d19" />
         <item itemvalue="Application.RegTest" />
         <item itemvalue="Application.Main" />
       </list>
@@ -107,23 +107,41 @@
       <workItem from="1568032260711" duration="4896000" />
       <workItem from="1570802869208" duration="5510000" />
       <workItem from="1570959825083" duration="585000" />
+      <workItem from="1596199349431" duration="689000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1596206453011">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596206453011" />
+    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1596206453010">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596206453010" />
+    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1596206453010">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596206453010" />
+    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1596206453010">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596206453010" />
   </component>
 </project>
