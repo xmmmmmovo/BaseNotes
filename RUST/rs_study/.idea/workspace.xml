@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/aa/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/learn_owner/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/learn_struct/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/learn_enum/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/learn_option/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ac33a2b-e23c-4955-83e4-9c7c2b21b66c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../TestUsing/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestUsing/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestUsing/TestUsing.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestUsing/owner/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestUsing/owner/src/main.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TestUsing/target/.rustc_info.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/.vscode/c_cpp_properties.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/StudyInDaily/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/StudyInDaily/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../somethingUnimportant/萌新指南V1.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../somethingUnimportant/萌新指南V1.1.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="spqjve8w" />
+  </component>
+  <component name="ProjectId" id="1guqQN90qpWC9avwqlw4x1y2LL4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RunManager" selected="Cargo Command.Run learn_option">
+    <configuration name="Run learn_enum" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package learn_enum --bin learn_enum" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/learn_enum" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run learn_option" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package learn_option --bin learn_option" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/learn_option" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package rs_study --bin rs_study" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo Command.Run learn_option" />
+        <item itemvalue="Cargo Command.Run learn_enum" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ac33a2b-e23c-4955-83e4-9c7c2b21b66c" name="Default Changelist" comment="" />
+      <created>1598974807330</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598974807330</updated>
+      <workItem from="1598974808658" duration="2280000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="811" height="559" key="GridCell.Tab.0.bottom" timestamp="1598976439505">
+      <screen x="1920" y="-371" width="1080" height="1880" />
+    </state>
+    <state width="811" height="559" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1598976439505" />
+    <state width="811" height="559" key="GridCell.Tab.0.center" timestamp="1598976439505">
+      <screen x="1920" y="-371" width="1080" height="1880" />
+    </state>
+    <state width="811" height="559" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1598976439505" />
+    <state width="811" height="559" key="GridCell.Tab.0.left" timestamp="1598976439505">
+      <screen x="1920" y="-371" width="1080" height="1880" />
+    </state>
+    <state width="811" height="559" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1598976439505" />
+    <state width="811" height="559" key="GridCell.Tab.0.right" timestamp="1598976439505">
+      <screen x="1920" y="-371" width="1080" height="1880" />
+    </state>
+    <state width="811" height="559" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1598976439505" />
+    <state x="1961" y="213" key="SettingsEditor" timestamp="1598974888589">
+      <screen x="1920" y="-371" width="1080" height="1880" />
+    </state>
+    <state x="1961" y="213" key="SettingsEditor/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1598974888589" />
+  </component>
+</project>

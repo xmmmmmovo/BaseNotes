@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7980eaf3-93aa-4bd1-893e-8a47f7d58eb2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudyInDaily/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudyInDaily/RegTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../python/dailyStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/dailyStudy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../somethingUnimportant/nazo.io/pic/TIM截图20181015182644.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +54,16 @@
       <recent name="D:\AndroidLabtest\notes\java\StudyInDaily\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.E1d4d19">
+  <component name="RunManager" selected="Application.FbonacciSearch">
     <configuration name="E1d4d19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="E1d4d19" />
+      <module name="StudyInDaily" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FbonacciSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FbonacciSearch" />
       <module name="StudyInDaily" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,6 +88,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FbonacciSearch" />
         <item itemvalue="Application.E1d4d19" />
         <item itemvalue="Application.RegTest" />
         <item itemvalue="Application.Main" />
@@ -108,6 +112,8 @@
       <workItem from="1570802869208" duration="5510000" />
       <workItem from="1570959825083" duration="585000" />
       <workItem from="1596199349431" duration="689000" />
+      <workItem from="1596454771851" duration="1717000" />
+      <workItem from="1596476212847" duration="654000" />
     </task>
     <servers />
   </component>
@@ -127,21 +133,41 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="280" key="GridCell.Tab.0.bottom" timestamp="1596206453011">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1037" height="555" key="GridCell.Tab.0.bottom" timestamp="1596505950666">
+      <screen x="1920" y="-371" width="1080" height="1880" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596206453011" />
-    <state width="1877" height="280" key="GridCell.Tab.0.center" timestamp="1596206453010">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1037" height="555" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1596505950666" />
+    <state width="1037" height="555" key="GridCell.Tab.0.center" timestamp="1596505950665">
+      <screen x="1920" y="-371" width="1080" height="1880" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596206453010" />
-    <state width="1877" height="280" key="GridCell.Tab.0.left" timestamp="1596206453010">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1037" height="555" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1596505950665" />
+    <state width="1037" height="555" key="GridCell.Tab.0.left" timestamp="1596505950665">
+      <screen x="1920" y="-371" width="1080" height="1880" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596206453010" />
-    <state width="1877" height="280" key="GridCell.Tab.0.right" timestamp="1596206453010">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1037" height="555" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1596505950665" />
+    <state width="1037" height="555" key="GridCell.Tab.0.right" timestamp="1596505950666">
+      <screen x="1920" y="-371" width="1080" height="1880" />
     </state>
     <state width="1877" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596206453010" />
+    <state width="1037" height="555" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1596505950666" />
+    <state width="1037" height="336" key="GridCell.Tab.1.bottom" timestamp="1596475002116">
+      <screen x="1920" y="-371" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="336" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1596475002116" />
+    <state width="1037" height="336" key="GridCell.Tab.1.center" timestamp="1596475002116">
+      <screen x="1920" y="-371" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="336" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1596475002116" />
+    <state width="1037" height="336" key="GridCell.Tab.1.left" timestamp="1596475002116">
+      <screen x="1920" y="-371" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="336" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1596475002116" />
+    <state width="1037" height="336" key="GridCell.Tab.1.right" timestamp="1596475002116">
+      <screen x="1920" y="-371" width="1080" height="1880" />
+    </state>
+    <state width="1037" height="336" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1596475002116" />
   </component>
 </project>
