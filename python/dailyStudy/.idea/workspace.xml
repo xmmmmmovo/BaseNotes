@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b784921-adfb-4339-8a53-e1918fa98e0a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinStudy/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinStudy/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RUST/rs_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RUST/rs_study/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../RUST/rs_study/learn_option/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../../RUST/rs_study/learn_option/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dailyStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dailyStudy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +64,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -73,7 +78,7 @@
       <recent name="D:\AndroidLabtest\notes\python\dailyStudy\bilibili_backup" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.ctf3">
     <configuration name="bilibili (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dailyStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="homework_name_change" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ctf3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dailyStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,12 +131,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bilibili_ctf" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/homework_name_change.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bilibili_ctf/ctf3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ctf3" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.bilibili (1)" />
         <item itemvalue="Python.bilibili" />
         <item itemvalue="Python.report" />
-        <item itemvalue="Python.homework_name_change" />
       </list>
     </recent_temporary>
   </component>
@@ -232,6 +237,7 @@
       <workItem from="1595125048802" duration="1630000" />
       <workItem from="1595126951234" duration="1272000" />
       <workItem from="1595759879553" duration="1565000" />
+      <workItem from="1603535738094" duration="4222000" />
     </task>
     <servers />
   </component>
@@ -251,30 +257,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1369" height="250" key="GridCell.Tab.0.bottom" timestamp="1596011699703">
+    <state width="1877" height="354" key="GridCell.Tab.0.bottom" timestamp="1603550968762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1369" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699703" />
     <state width="518" height="685" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760183748" />
-    <state width="1037" height="647" key="GridCell.Tab.0.bottom/1920.-433.1080.1880/0.0.1920.1040@1920.-433.1080.1880" timestamp="1588987839692" />
-    <state width="1369" height="250" key="GridCell.Tab.0.center" timestamp="1596011699703">
+    <state width="1877" height="354" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603550968762" />
+    <state width="1877" height="354" key="GridCell.Tab.0.center" timestamp="1603550968762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1369" height="250" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699703" />
     <state width="518" height="685" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760183748" />
-    <state width="1037" height="647" key="GridCell.Tab.0.center/1920.-433.1080.1880/0.0.1920.1040@1920.-433.1080.1880" timestamp="1588987839692" />
-    <state width="1369" height="250" key="GridCell.Tab.0.left" timestamp="1596011699703">
+    <state width="1877" height="354" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603550968762" />
+    <state width="1877" height="354" key="GridCell.Tab.0.left" timestamp="1603550968762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1369" height="250" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699703" />
     <state width="518" height="685" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760183747" />
-    <state width="1037" height="647" key="GridCell.Tab.0.left/1920.-433.1080.1880/0.0.1920.1040@1920.-433.1080.1880" timestamp="1588987839692" />
-    <state width="1369" height="250" key="GridCell.Tab.0.right" timestamp="1596011699703">
+    <state width="1877" height="354" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603550968762" />
+    <state width="1877" height="354" key="GridCell.Tab.0.right" timestamp="1603550968762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1369" height="250" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699703" />
     <state width="518" height="685" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760183748" />
-    <state width="1037" height="647" key="GridCell.Tab.0.right/1920.-433.1080.1880/0.0.1920.1040@1920.-433.1080.1880" timestamp="1588987839692" />
+    <state width="1877" height="354" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603550968762" />
     <state width="833" height="681" key="GridCell.Tab.1.bottom" timestamp="1596011699672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -295,10 +301,6 @@
     </state>
     <state width="833" height="681" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699672" />
     <state width="833" height="681" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760164502" />
-    <state x="1961" y="148" key="SettingsEditor" timestamp="1588903333008">
-      <screen x="1920" y="-433" width="1080" height="1880" />
-    </state>
-    <state x="1961" y="148" key="SettingsEditor/1920.-433.1080.1880/0.0.1920.1040@1920.-433.1080.1880" timestamp="1588903333008" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/dailyStudy$report.coverage" NAME="report Coverage Results" MODIFIED="1588987736806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -307,5 +309,6 @@
     <SUITE FILE_PATH="coverage/dailyStudy$homework_name_change.coverage" NAME="homework_name_change Coverage Results" MODIFIED="1578016889539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dailyStudy$homework.coverage" NAME="homework Coverage Results" MODIFIED="1571305332726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dailyStudy$test.coverage" NAME="test Coverage Results" MODIFIED="1595760183739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dailyStudy$ctf3.coverage" NAME="ctf3 Coverage Results" MODIFIED="1603549212067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bilibili_ctf" />
   </component>
 </project>

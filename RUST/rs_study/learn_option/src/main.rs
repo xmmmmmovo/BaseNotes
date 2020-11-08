@@ -9,5 +9,6 @@ fn main() {
         Some(i) => i,
         None => 0,
     };
+    let k: Option<i32> = None;
     println!("{:?}", tmp);
 }

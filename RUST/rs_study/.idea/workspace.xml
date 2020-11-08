@@ -10,7 +10,6 @@
   </component>
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/aa/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/learn_owner/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/learn_struct/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/learn_enum/Cargo.toml" />
@@ -18,25 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ac33a2b-e23c-4955-83e4-9c7c2b21b66c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../TestUsing/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestUsing/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestUsing/Cargo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestUsing/TestUsing.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestUsing/owner/Cargo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestUsing/owner/src/main.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TestUsing/target/.rustc_info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/.vscode/c_cpp_properties.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../algorithm/data structure class/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/StudyInDaily/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/StudyInDaily/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../somethingUnimportant/萌新指南V1.1.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../somethingUnimportant/萌新指南V1.1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn_option/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/learn_option/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598974807330</updated>
-      <workItem from="1598974808658" duration="2280000" />
+      <workItem from="1598974808658" duration="5562000" />
     </task>
     <servers />
   </component>
@@ -142,22 +124,22 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="811" height="559" key="GridCell.Tab.0.bottom" timestamp="1598976439505">
+    <state width="811" height="559" key="GridCell.Tab.0.bottom" timestamp="1599037586148">
       <screen x="1920" y="-371" width="1080" height="1880" />
     </state>
-    <state width="811" height="559" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1598976439505" />
-    <state width="811" height="559" key="GridCell.Tab.0.center" timestamp="1598976439505">
+    <state width="811" height="559" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1599037586148" />
+    <state width="811" height="559" key="GridCell.Tab.0.center" timestamp="1599037586148">
       <screen x="1920" y="-371" width="1080" height="1880" />
     </state>
-    <state width="811" height="559" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1598976439505" />
-    <state width="811" height="559" key="GridCell.Tab.0.left" timestamp="1598976439505">
+    <state width="811" height="559" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1599037586148" />
+    <state width="811" height="559" key="GridCell.Tab.0.left" timestamp="1599037586148">
       <screen x="1920" y="-371" width="1080" height="1880" />
     </state>
-    <state width="811" height="559" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1598976439505" />
-    <state width="811" height="559" key="GridCell.Tab.0.right" timestamp="1598976439505">
+    <state width="811" height="559" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1599037586148" />
+    <state width="811" height="559" key="GridCell.Tab.0.right" timestamp="1599037586148">
       <screen x="1920" y="-371" width="1080" height="1880" />
     </state>
-    <state width="811" height="559" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1598976439505" />
+    <state width="811" height="559" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1599037586148" />
     <state x="1961" y="213" key="SettingsEditor" timestamp="1598974888589">
       <screen x="1920" y="-371" width="1080" height="1880" />
     </state>
