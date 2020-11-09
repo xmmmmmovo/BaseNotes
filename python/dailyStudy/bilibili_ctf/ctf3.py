@@ -4,7 +4,7 @@ import json
 headers = {
     'Content-Type': 'application/json',
     'User-Agent': 'bilibili Security Browser',
-    'Cookie': 'session=eyJ1aWQiOiI1MjA0NjYifQ.X5O1Gg.ieXSEwkmXgqYRjhLTF1o27FeMoQ'
+    'Cookie': ''
 }
 
 
