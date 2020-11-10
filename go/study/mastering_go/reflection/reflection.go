@@ -23,7 +23,7 @@ func main() {
 	xRefl := reflect.ValueOf(&x).Elem()
 	xType := xRefl.Type()
 	fmt.Printf("The type of x is %s.\n", xType)
-	A := a{100, 200.12, "Struct a"}
+	A := a{100, 200.12, "Struct aa"}
 	B := b{1, 2, "Struct b", -1.2}
 	var rA, rB reflect.Value
 	rA = reflect.ValueOf(&A).Elem()
