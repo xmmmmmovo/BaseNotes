@@ -1,0 +1,34 @@
+type: theory
+files:
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 73
+    length: 6
+    placeholder_text: x = 6;
+    initial_state:
+      length: 6
+      offset: 73
+    initialized_from_dependency: false
+    possible_answer: //x = 6;
+    selected: false
+    status: Unchecked
+  text: |
+    fn main() {
+        let x = 5;
+        println!("The value of x is: {}", x);
+        x = 6;
+        println!("The value of x is: {}", x);
+    }
+  learner_created: false
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "variables_and_mutability"
+    version = "0.1.0"
+    edition = "2018"
+  learner_created: false
+status: Unchecked
+record: -1
+solution_hidden: true

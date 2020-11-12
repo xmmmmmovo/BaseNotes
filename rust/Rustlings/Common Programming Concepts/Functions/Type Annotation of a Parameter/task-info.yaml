@@ -1,0 +1,51 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "type_annotation_of_a_parameter"
+    version = "0.1.0"
+    edition = "2018"
+  learner_created: false
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 46
+    length: 4
+    placeholder_text: /*insert the type annotation here*/
+    initial_state:
+      length: 35
+      offset: 46
+    initialized_from_dependency: false
+    possible_answer: ' i32'
+    selected: false
+    status: Solved
+  text: |
+    fn main() {
+        call_me(3);
+    }
+
+    fn call_me(num:/*insert the type annotation here*/) {
+        for i in 0..num {
+            println!("Ring! Call number {}", i + 1);
+        }
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |+
+    #[test]
+    fn if_compiles() {
+        //Mocking test to run only the compiler's checker
+        assert!(true);
+    }
+
+
+
+
+
+
+  learner_created: false
+status: Solved
+record: -1
