@@ -1,5 +1,0 @@
-<view class='content'>
-	<view class='img'>
-		<image src='../images/1p.jpg' style='width:100%; height:200px;'></image>
-	</view>
-</view>
