@@ -52,4 +52,13 @@
 
 ### [web学习](https://github.com/xmmmmmovo/notes/tree/master/web)
 
-### [微信小程序](https://github.com/xmmmmmovo/notes/tree/master/WXML)
+### [Go](./go)
+
+- [通过例子学go](./go/study_with_example)
+
+### [kotlin](./kotlin)
+
+### [react](./react)
+
+### [rust](./rust)
+
