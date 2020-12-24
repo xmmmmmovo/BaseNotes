@@ -5,25 +5,32 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
     </configurations>
   </component>
   <component name="CargoProjects">
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/learn_owner/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/learn_struct/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/learn_enum/Cargo.toml" />
-    <cargoProject FILE="$PROJECT_DIR$/learn_option/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ac33a2b-e23c-4955-83e4-9c7c2b21b66c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/dailyStudy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/dailyStudy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/rs_study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rs_study.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn_option/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/learn_option/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -32,7 +39,9 @@
     <option name="directoryName" value="spqjve8w" />
   </component>
   <component name="ProjectId" id="1guqQN90qpWC9avwqlw4x1y2LL4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,29 +51,60 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../SnailOS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="settings.editor.selected.configurable" value="language.rust" />
   </component>
-  <component name="RunManager" selected="Cargo Command.Run learn_option">
-    <configuration name="Run learn_enum" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+  <component name="RunManager" selected="Cargo.Run learn_create4">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run learn_create (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package learn_enum --bin learn_enum" />
+      <option name="command" value="run --package learn_create --bin learn_create" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/learn_enum" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/learn_create/mylib" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run learn_option" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Run learn_create" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package learn_option --bin learn_option" />
+      <option name="command" value="run --package learn_create --bin learn_create" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/learn_option" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/learn_hashmap" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run learn_create4" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package learn_create4 --bin learn_create4" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/learn_create4" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run learn_hashmap" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package learn_hashmap --bin learn_hashmap" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/learn_hashmap" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
@@ -82,31 +122,32 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+    <configuration name="run [learn_option]" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="run" />
+      <option name="command" value="run --package learn_option --bin learn_option" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/learn_option" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo Command.Run learn_option" />
-        <item itemvalue="Cargo Command.Run learn_enum" />
+        <item itemvalue="Cargo.Run learn_create4" />
+        <item itemvalue="Cargo.Run learn_create (1)" />
+        <item itemvalue="Cargo.Run learn_create" />
+        <item itemvalue="Cargo.Run learn_hashmap" />
+        <item itemvalue="Cargo.run [learn_option]" />
       </list>
     </recent_temporary>
   </component>
   <component name="RustProjectSettings">
+    <option name="newResolveEnabled" value="true" />
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -117,32 +158,17 @@
       <option name="presentableId" value="Default" />
       <updated>1598974807330</updated>
       <workItem from="1598974808658" duration="5562000" />
+      <workItem from="1607736873510" duration="17000" />
+      <workItem from="1607736978278" duration="7279000" />
+      <workItem from="1607785290806" duration="1496000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="811" height="559" key="GridCell.Tab.0.bottom" timestamp="1599037586148">
-      <screen x="1920" y="-371" width="1080" height="1880" />
-    </state>
-    <state width="811" height="559" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1599037586148" />
-    <state width="811" height="559" key="GridCell.Tab.0.center" timestamp="1599037586148">
-      <screen x="1920" y="-371" width="1080" height="1880" />
-    </state>
-    <state width="811" height="559" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1599037586148" />
-    <state width="811" height="559" key="GridCell.Tab.0.left" timestamp="1599037586148">
-      <screen x="1920" y="-371" width="1080" height="1880" />
-    </state>
-    <state width="811" height="559" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1599037586148" />
-    <state width="811" height="559" key="GridCell.Tab.0.right" timestamp="1599037586148">
-      <screen x="1920" y="-371" width="1080" height="1880" />
-    </state>
-    <state width="811" height="559" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1599037586148" />
-    <state x="1961" y="213" key="SettingsEditor" timestamp="1598974888589">
-      <screen x="1920" y="-371" width="1080" height="1880" />
-    </state>
-    <state x="1961" y="213" key="SettingsEditor/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1598974888589" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

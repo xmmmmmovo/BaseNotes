@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b784921-adfb-4339-8a53-e1918fa98e0a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Kotlin/KotlinStudy/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Kotlin/KotlinStudy/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RUST/rs_study/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../RUST/rs_study/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../RUST/rs_study/learn_option/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/../../RUST/rs_study/learn_option/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dailyStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dailyStudy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -78,51 +76,7 @@
       <recent name="D:\AndroidLabtest\notes\python\dailyStudy\bilibili_backup" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ctf3">
-    <configuration name="bilibili (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="dailyStudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bilibili_backup" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bilibili_backup/bilibili.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="bilibili" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="dailyStudy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\AndroidLabtest\notes\python\dailyStudy\bilibili_backup\bilibili.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.parser">
     <configuration name="ctf3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dailyStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -145,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="report" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dailyStudy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,12 +107,56 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/final_parser" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/report.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final_parser/parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="reduce" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dailyStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functional_programing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functional_programing/reduce.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="select" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dailyStudy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/final_parser" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final_parser/select.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.parser" />
+        <item itemvalue="Python.select" />
+        <item itemvalue="Python.reduce" />
         <item itemvalue="Python.ctf3" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.bilibili (1)" />
-        <item itemvalue="Python.bilibili" />
-        <item itemvalue="Python.report" />
       </list>
     </recent_temporary>
   </component>
@@ -238,6 +236,14 @@
       <workItem from="1595126951234" duration="1272000" />
       <workItem from="1595759879553" duration="1565000" />
       <workItem from="1603535738094" duration="4222000" />
+      <workItem from="1606826303705" duration="5603000" />
+      <workItem from="1606899510574" duration="35000" />
+      <workItem from="1606902453689" duration="1112000" />
+      <workItem from="1607589723100" duration="4789000" />
+      <workItem from="1607603712343" duration="10000" />
+      <workItem from="1607610108247" duration="2321000" />
+      <workItem from="1607614085620" duration="626000" />
+      <workItem from="1607617486787" duration="264000" />
     </task>
     <servers />
   </component>
@@ -257,58 +263,46 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="354" key="GridCell.Tab.0.bottom" timestamp="1603550968762">
+    <state x="1032" y="160" key="#Plugins" timestamp="1606902497259">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1369" height="250" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699703" />
-    <state width="518" height="685" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760183748" />
-    <state width="1877" height="354" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1603550968762" />
-    <state width="1877" height="354" key="GridCell.Tab.0.center" timestamp="1603550968762">
+    <state x="1032" y="160" key="#Plugins/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606902497259" />
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom" timestamp="1607657708470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1369" height="250" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699703" />
-    <state width="518" height="685" key="GridCell.Tab.0.center/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760183748" />
-    <state width="1877" height="354" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1603550968762" />
-    <state width="1877" height="354" key="GridCell.Tab.0.left" timestamp="1603550968762">
+    <state width="914" height="350" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606903604842" />
+    <state width="1877" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607657708470" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center" timestamp="1607657708470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1369" height="250" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699703" />
-    <state width="518" height="685" key="GridCell.Tab.0.left/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760183747" />
-    <state width="1877" height="354" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1603550968762" />
-    <state width="1877" height="354" key="GridCell.Tab.0.right" timestamp="1603550968762">
+    <state width="914" height="350" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606903604842" />
+    <state width="1877" height="352" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607657708470" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left" timestamp="1607657708470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1369" height="250" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699703" />
-    <state width="518" height="685" key="GridCell.Tab.0.right/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760183748" />
-    <state width="1877" height="354" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1603550968762" />
-    <state width="833" height="681" key="GridCell.Tab.1.bottom" timestamp="1596011699672">
+    <state width="914" height="350" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606903604842" />
+    <state width="1877" height="352" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607657708470" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right" timestamp="1607657708470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="833" height="681" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699672" />
-    <state width="833" height="681" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760164502" />
-    <state width="833" height="681" key="GridCell.Tab.1.center" timestamp="1596011699671">
+    <state width="914" height="350" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606903604842" />
+    <state width="1877" height="352" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607657708470" />
+    <state x="922" y="164" key="SettingsEditor" timestamp="1607603326355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="833" height="681" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699671" />
-    <state width="833" height="681" key="GridCell.Tab.1.center/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760164502" />
-    <state width="833" height="681" key="GridCell.Tab.1.left" timestamp="1596011699671">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="833" height="681" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699671" />
-    <state width="833" height="681" key="GridCell.Tab.1.left/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760164501" />
-    <state width="833" height="681" key="GridCell.Tab.1.right" timestamp="1596011699672">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="833" height="681" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-371.1080.1880@0.0.1920.1040" timestamp="1596011699672" />
-    <state width="833" height="681" key="GridCell.Tab.1.right/0.0.1920.1040/1920.-371.1080.1880@1920.-371.1080.1880" timestamp="1595760164502" />
+    <state x="922" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1606899549151" />
+    <state x="922" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607603326355" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/dailyStudy$report.coverage" NAME="report Coverage Results" MODIFIED="1588987736806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dailyStudy$select.coverage" NAME="select Coverage Results" MODIFIED="1607603358451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/final_parser" />
     <SUITE FILE_PATH="coverage/dailyStudy$bilibili.coverage" NAME="bilibili Coverage Results" MODIFIED="1595125863784" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dailyStudy$bilibili__1_.coverage" NAME="bilibili (1) Coverage Results" MODIFIED="1595760066974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bilibili_backup" />
     <SUITE FILE_PATH="coverage/dailyStudy$homework_name_change.coverage" NAME="homework_name_change Coverage Results" MODIFIED="1578016889539" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dailyStudy$homework.coverage" NAME="homework Coverage Results" MODIFIED="1571305332726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dailyStudy$test.coverage" NAME="test Coverage Results" MODIFIED="1595760183739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dailyStudy$parser.coverage" NAME="parser Coverage Results" MODIFIED="1607617622932" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/final_parser" />
+    <SUITE FILE_PATH="coverage/dailyStudy$reduce.coverage" NAME="reduce Coverage Results" MODIFIED="1606903344887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/functional_programing" />
     <SUITE FILE_PATH="coverage/dailyStudy$ctf3.coverage" NAME="ctf3 Coverage Results" MODIFIED="1603549212067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bilibili_ctf" />
   </component>
 </project>
