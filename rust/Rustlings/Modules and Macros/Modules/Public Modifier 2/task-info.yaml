@@ -1,0 +1,89 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |-
+    [package]
+    name = "public_modifier_2"
+    version = "0.1.0"
+    edition = "2018"
+
+    [dependencies]
+    escargot = "0.5"
+  learner_created: false
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 27
+    length: 4
+    placeholder_text: /*insert a modifier here to make the module accessible from
+      outside*/
+    initial_state:
+      length: 69
+      offset: 27
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: pub
+  - offset: 69
+    length: 4
+    placeholder_text: /*insert a modifier here to make the module accessible from
+      outside*/
+    initial_state:
+      length: 69
+      offset: 134
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: pub
+  text: |
+    mod delicious_snacks {
+        /*insert a modifier here to make the module accessible from outside*/ use self::fruits::PEAR as fruit;
+        /*insert a modifier here to make the module accessible from outside*/ use self::veggies::CUCUMBER as veggie;
+
+        mod fruits {
+            pub const PEAR: &'static str = "Pear";
+            pub const APPLE: &'static str = "Apple";
+        }
+
+        mod veggies {
+            pub const CUCUMBER: &'static str = "Cucumber";
+            pub const CARROT: &'static str = "Carrot";
+        }
+    }
+
+    fn main() {
+        println!("favorite snacks: {} and {}",
+                 delicious_snacks::fruit,
+                 delicious_snacks::veggie);
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |+
+    #[test]
+    fn prints_the_second_number_is() {
+        //TODO: here are even two unwraps in a row, that's dangerous
+        let actual = escargot::CargoBuild::new()
+            .bin("public_modifier_2")
+            .run()
+            .unwrap()
+            .command()
+            .output()
+            .unwrap()
+            .stdout;
+        //TODO: recover from an incorrect output
+        let actual_as_string = std::str::from_utf8(&actual).unwrap();
+        let expected_output  = "favorite snacks: Pear and Cucumber\n";
+        assert_eq!(actual_as_string, expected_output, "The output provided is not equal to the expected one.");
+    }
+
+
+
+
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 20 Feb 2021 16:15:16 UTC
+record: -1

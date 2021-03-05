@@ -1,0 +1,20 @@
+type: theory
+files:
+- name: src/main.rs
+  visible: true
+  text: |
+    fn main() {
+        // put you code here to launch it
+    }
+  learner_created: false
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "shared_state_concurrency"
+    version = "0.1.0"
+    edition = "2018"
+  learner_created: false
+status: Unchecked
+record: -1
+post_submission_on_open: true

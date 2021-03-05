@@ -1,0 +1,72 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "matching_result_2"
+    version = "0.1.0"
+    edition = "2018"
+  learner_created: false
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 154
+    length: 87
+    placeholder_text: '?'
+    initial_state:
+      length: 1
+      offset: 154
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |2-
+       {
+              Ok(cost) => cost,
+              Err(ParseIntError) => panic!(ParseIntError)
+          }
+  text: |
+    use std::num::ParseIntError;
+
+    fn main() {
+        let mut tokens = 100;
+        let pretend_user_input = "8";
+
+        let cost = match total_cost(pretend_user_input)?;
+
+        if cost > tokens {
+            println!("You can't afford that many!");
+        } else {
+            tokens -= cost;
+            println!("You now have {} tokens.", tokens);
+        }
+    }
+
+    fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
+        let processing_fee = 1;
+        let cost_per_item = 5;
+        let qty = item_quantity.parse::<i32>()?;
+
+        Ok(qty * cost_per_item + processing_fee)
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |+
+    #[test]
+    fn if_compiles() {
+        //Mocking test to run only the compiler's checker
+        assert!(true);
+    }
+
+
+
+
+
+
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 20 Feb 2021 17:11:55 UTC
+record: -1

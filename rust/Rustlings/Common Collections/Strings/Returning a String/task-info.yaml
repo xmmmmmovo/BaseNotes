@@ -1,0 +1,63 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "returning_a_string"
+    version = "0.1.0"
+    edition = "2018"
+  learner_created: false
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 163
+    length: 0
+    placeholder_text: /*type the beginning of the trait here*/
+    initial_state:
+      length: 40
+      offset: 163
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: String::from
+  - offset: 169
+    length: 12
+    placeholder_text: /*and the last part here*/
+    initial_state:
+      length: 26
+      offset: 210
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: )
+  text: |
+    fn main() {
+        let answer = current_favorite_color();
+        println!("My current favorite color is {}", answer);
+    }
+
+    pub fn current_favorite_color() -> String {
+        /*type the beginning of the trait here*/("blue"/*and the last part here*/
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |+
+    #[test]
+    fn if_compiles() {
+        //Mocking test to run only the compiler's checker
+        assert!(true);
+    }
+
+
+
+
+
+
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 20 Feb 2021 16:57:33 UTC
+record: -1

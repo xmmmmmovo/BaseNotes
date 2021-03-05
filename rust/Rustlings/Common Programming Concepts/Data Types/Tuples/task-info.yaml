@@ -1,0 +1,72 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |-
+    [package]
+    name = "tuples"
+    version = "0.1.0"
+    edition = "2018"
+
+    [dependencies]
+    escargot = "0.5"
+  learner_created: false
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 59
+    length: 13
+    placeholder_text: /*destructure the tuple here*/
+    initial_state:
+      length: 30
+      offset: 59
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: (name, age)
+  text: |-
+    fn main() {
+        let cat = ("Furry McFurson", 3.5);
+        let /*destructure the tuple here*/ = cat;
+
+        println!("{} is {} years old.", name, age);
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |+
+    extern crate escargot;
+
+    use std::fmt;
+
+    #[test]
+    fn prints_is_years_old() {
+        //TODO: here are even two unwraps in a row, that's dangerous
+        let actual = escargot::CargoBuild::new()
+            .bin("tuples")
+            .run()
+            .unwrap()
+            .command()
+            .output()
+            .unwrap()
+            .stdout;
+        //TODO: recover from an incorrect output
+        let actual_as_string = std::str::from_utf8(&actual).unwrap();
+        let expected_is  = "is";
+        let expected_years = "years";
+        let expected_old = "old";
+        assert!(actual_as_string.contains(expected_is), "The \"{} is {} years old\" line is missing from the output ");
+        assert!(actual_as_string.contains(expected_old), "The \"{} is {} years old\" line is missing from the output ");
+        assert!(actual_as_string.contains(expected_years), "The \"{} is {} years old\" line is missing from the output ");
+    }
+
+
+
+
+
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 20 Feb 2021 14:40:04 UTC
+record: -1

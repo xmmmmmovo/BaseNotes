@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "chat-s",
+    "chat-c"
+]

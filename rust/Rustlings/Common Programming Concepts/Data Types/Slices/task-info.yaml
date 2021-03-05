@@ -1,0 +1,72 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "slices"
+    version = "0.1.0"
+    edition = "2018"
+
+    [dependencies]
+    escargot = "0.5"
+  learner_created: false
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 63
+    length: 8
+    placeholder_text: //type the invocation of the slice here
+    initial_state:
+      length: 39
+      offset: 63
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: '&a[1..4]'
+  text: |
+    fn main() {
+        let a = [1, 2, 3, 4, 5];
+
+        let nice_slice = //type the invocation of the slice here;
+
+        if nice_slice == [2, 3, 4] {
+            println!("Nice slice!");
+        } else {
+            println!("Not quite what I was expecting... I see: {:?}", nice_slice);
+        }
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |+
+    extern crate escargot;
+
+    #[test]
+    fn if_compiles() {
+        //Mocking test to run only the compiler's checker
+        let actual = escargot::CargoBuild::new()
+            .bin("slices")
+            .run()
+            .unwrap()
+            .command()
+            .output()
+            .unwrap()
+            .stdout;
+        //TODO: recover from an incorrect output
+        let actual_as_string = std::str::from_utf8(&actual).unwrap();
+        let expected_true  = "Nice slice!";
+        assert!(actual_as_string.contains(expected_true), "The output should be \"Nice slice!\". Check, if the statement returns true.");
+    }
+
+
+
+
+
+
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 20 Feb 2021 14:39:38 UTC
+record: -1

@@ -1,0 +1,72 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |-
+    [package]
+    name = "tuple_index"
+    version = "0.1.0"
+    edition = "2018"
+
+    [dependencies]
+    escargot = "0.5"
+  learner_created: false
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 78
+    length: 12
+    placeholder_text: /*Access the second element of the tuple here using tuple index*/
+    initial_state:
+      length: 65
+      offset: 81
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: numbers.1
+  text: |-
+    fn main() {
+        let numbers = (1, 2, 3);
+        println!("The second number is {}", /*Access the second element of the tuple here using tuple index*/);
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |+
+    extern crate escargot;
+
+    use std::fmt;
+
+    #[test]
+    fn prints_the_second_number_is() {
+        //TODO: here are even two unwraps in a row, that's dangerous
+        let actual = escargot::CargoBuild::new()
+            .bin("tuple_index")
+            .run()
+            .unwrap()
+            .command()
+            .output()
+            .unwrap()
+            .stdout;
+        //TODO: recover from an incorrect output
+        let actual_as_string = std::str::from_utf8(&actual).unwrap();
+        let expected_the_second_number_is  = "The second number is ";
+        let expected_number = "2";
+        let expected_number_err_1 = "1";
+        let expected_number_err_3 = "3";
+        assert!(actual_as_string.contains(expected_the_second_number_is), "\"The second number is\" line is missing from the output.");
+        assert!(!actual_as_string.contains(expected_number_err_1), "The number is incorrect, seems you have printed the first element.");
+        assert!(!actual_as_string.contains(expected_number_err_3), "The number is incorrect, seems you have printed the third element.");
+        assert!(actual_as_string.contains(expected_number), "The expected second element of the tuple is missing from the output ");
+    }
+
+
+
+
+
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 20 Feb 2021 14:47:40 UTC
+record: -1

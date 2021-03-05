@@ -1,0 +1,64 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |-
+    [package]
+    name = "public_modifier"
+    version = "0.1.0"
+    edition = "2018"
+
+    [dependencies]
+    escargot = "0.5"
+  learner_created: false
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 26
+    length: 4
+    placeholder_text: /*insert the keyword here to make the function public*/
+    initial_state:
+      length: 55
+      offset: 26
+    initialized_from_dependency: false
+    selected: false
+    status: Solved
+    encrypted_possible_answer: 'pub '
+  text: |
+    mod sausage_factory {
+        /*insert the keyword here to make the function public*/fn make_sausage() {
+            println!("sausage!");
+        }
+    }
+
+    fn main() {
+        sausage_factory::make_sausage();
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |+
+    #[test]
+    fn prints_the_second_number_is() {
+        //TODO: here are even two unwraps in a row, that's dangerous
+        let actual = escargot::CargoBuild::new()
+            .bin("public_modifier")
+            .run()
+            .unwrap()
+            .command()
+            .output()
+            .unwrap()
+            .stdout;
+        //TODO: recover from an incorrect output
+        let actual_as_string = std::str::from_utf8(&actual).unwrap();
+        let expected_sausage  = "sausage!";
+        assert!(actual_as_string.contains(expected_sausage), "The sausage line is missing from the output.");
+    }
+
+
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 20 Feb 2021 16:14:53 UTC
+record: -1

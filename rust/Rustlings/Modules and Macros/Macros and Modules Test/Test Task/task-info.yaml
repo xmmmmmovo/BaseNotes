@@ -1,0 +1,57 @@
+type: edu
+files:
+- name: Cargo.toml
+  visible: false
+  text: |
+    [package]
+    name = "macro_test"
+    version = "0.1.0"
+    edition = "2018"
+  learner_created: false
+- name: src/main.rs
+  visible: true
+  placeholders:
+  - offset: 0
+    length: 78
+    placeholder_text: /*declare your macro here*/
+    initial_state:
+      length: 27
+      offset: 0
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      macro_rules! my_macro {
+          ("world!") => {
+              "Hello world!";
+          };
+      }
+  text: |
+    /*declare your macro here*/
+
+    fn main() {
+        if my_macro!("world!") != "Hello world!" {
+            panic!("Oh no! Wrong output!");
+        }
+    }
+  learner_created: false
+- name: tests/tests.rs
+  visible: false
+  text: |+
+    #[test]
+    fn if_compiles() {
+        //Mocking test to run only the compiler's checker
+        assert!(true);
+    }
+
+
+
+
+
+
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sat, 20 Feb 2021 16:26:54 UTC
+record: -1
