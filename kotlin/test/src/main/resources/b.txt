@@ -1,0 +1,6 @@
+mov ax 10000
+mov bx ax
+dec bx
+jnz bx -1
+dec ax
+jnz ax -4
