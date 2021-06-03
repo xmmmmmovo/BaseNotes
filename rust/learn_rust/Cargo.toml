@@ -1,0 +1,24 @@
+[workspace]
+members = [
+    "hello_world",
+    "types",
+    "self_types",
+    "variable_bind",
+    "variable_cast",
+    "control",
+    "function",
+    "mod_test",
+    "crates",
+    "attribute",
+    "generic",
+    "scope_rules",
+    "trait_test",
+    "macro_test",
+    "error_handle",
+    "std",
+    "test_test",
+    "std_ext",
+    "misc",
+    "book_mod",
+    "csv_challenge"
+]

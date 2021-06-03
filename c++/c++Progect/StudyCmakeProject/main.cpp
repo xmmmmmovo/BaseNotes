@@ -3,22 +3,16 @@
  * generation time: 2019/05/05
  * filename: main.cpp
  * language & build version : C++ 11
-*/
+ */
 #include <iostream>
-#include <cstdio>
-#include <cstdlib>
-#include <algorithm>
-#include <opencv2/opencv.hpp>
+
+#define MIN(a, b) ({auto &at = (a); auto &bt = (b); (at) < (bt) ? (at) : (bt);})
+//#define MIN(a, b) ((a) < (b) ? (a) : (b))
 
 using namespace std;
 
 int main(int argc, char const *argv[]) {
-    cv::namedWindow("test", cv::WINDOW_AUTOSIZE);
-    cv::Mat m = cv::imread("D:\\AndroidLabtest\\notes\\c++\\c++Progect\\StudyCmakeProject\\testpic.jpg", 
-                            cv::IMREAD_COLOR);
-    cv::imshow("test", m);
-    cv::waitKey(0);
-
-    // system("pause");
-    return 0;
+  int i = 3, j = 6;
+  cout << MIN(i += 1, j);
+  return 0;
 }

@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "clang-arm64",
+            "intelliSenseMode": "clang-arm64",
+            "compilerPath": "clang++",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

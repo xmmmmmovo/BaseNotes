@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/hello_world/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/self_types/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/types/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/variable_bind/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/attribute/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/control/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/crates/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/function/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/generic/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/mod_test/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/variable_cast/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/error_handle/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/macro_test/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/misc/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/scope_rules/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/std/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/std_ext/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test_test/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test_test/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/trait_test/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book_mod/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/csv_challenge/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/csv_challenge/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

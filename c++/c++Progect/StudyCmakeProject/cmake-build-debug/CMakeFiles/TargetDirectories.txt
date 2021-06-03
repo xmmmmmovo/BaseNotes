@@ -1,0 +1,3 @@
+/Users/xmmmmmovo/Documents/code/note/c++/c++Progect/StudyCmakeProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/xmmmmmovo/Documents/code/note/c++/c++Progect/StudyCmakeProject/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/xmmmmmovo/Documents/code/note/c++/c++Progect/StudyCmakeProject/cmake-build-debug/CMakeFiles/main.dir
