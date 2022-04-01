@@ -1,6 +1,0 @@
-# Owner
-
-
-# Author
-
-# Reviewer

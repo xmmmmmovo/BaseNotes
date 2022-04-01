@@ -5,9 +5,7 @@
  * language & build version : C++ 11
  */
 #include <iostream>
-
-#define MIN(a, b) ({auto &at = (a); auto &bt = (b); (at) < (bt) ? (at) : (bt);})
-//#define MIN(a, b) ((a) < (b) ? (a) : (b))
+#include <opencv2/opencv.hpp>
 
 using namespace std;
 

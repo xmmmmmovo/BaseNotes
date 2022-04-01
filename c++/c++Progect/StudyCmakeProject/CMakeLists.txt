@@ -5,3 +5,4 @@ project(study_cmake_test)
 find_package(OpenCV REQUIRED)
 
 add_executable(main main.cpp)
+add_library(OpenCV main)

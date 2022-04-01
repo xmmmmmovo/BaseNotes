@@ -1,0 +1,9 @@
+{
+  "replace": "false",
+  "values": [
+    "create_stuff_additions:brass_chestplate",
+    "create_stuff_additions:encased_jet_chestplate",
+    "create_stuff_additions:andesite_encased_jet_chestplate",
+    "minecraft:elytra"
+  ]
+}
